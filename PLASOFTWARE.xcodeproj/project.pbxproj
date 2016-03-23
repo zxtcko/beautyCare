@@ -1,0 +1,676 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A1C34051CA1277400B255E2 /* ShopProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1C34041CA1277400B255E2 /* ShopProductCell.swift */; };
+		8A1C34091CA12D2F00B255E2 /* ProductInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1C34081CA12D2F00B255E2 /* ProductInfoViewController.swift */; };
+		8A1C340C1CA13FA200B255E2 /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1C340B1CA13FA200B255E2 /* ActivityCell.swift */; };
+		8A1C340E1CA144DA00B255E2 /* ActivityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1C340D1CA144DA00B255E2 /* ActivityDetailViewController.swift */; };
+		8A4EB0B01C9F86CE0000EA47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4EB0AF1C9F86CE0000EA47 /* AppDelegate.swift */; };
+		8A4EB0B21C9F86CE0000EA47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4EB0B11C9F86CE0000EA47 /* ViewController.swift */; };
+		8A4EB0B51C9F86CE0000EA47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A4EB0B31C9F86CE0000EA47 /* Main.storyboard */; };
+		8A4EB0B71C9F86CE0000EA47 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A4EB0B61C9F86CE0000EA47 /* Images.xcassets */; };
+		8A4EB0BA1C9F86CE0000EA47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A4EB0B81C9F86CE0000EA47 /* LaunchScreen.storyboard */; };
+		8A4EB0C51C9F86CE0000EA47 /* PLASOFTWARETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4EB0C41C9F86CE0000EA47 /* PLASOFTWARETests.swift */; };
+		8A4EB0D01C9F86CE0000EA47 /* PLASOFTWAREUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4EB0CF1C9F86CE0000EA47 /* PLASOFTWAREUITests.swift */; };
+		8A4EB0E11C9F873A0000EA47 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4EB0E01C9F873A0000EA47 /* Extensions.swift */; };
+		8A4EB0E31C9F8B0A0000EA47 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4EB0E21C9F8B0A0000EA47 /* SignInViewController.swift */; };
+		8A4EB0E51C9F8DDB0000EA47 /* ReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4EB0E41C9F8DDB0000EA47 /* ReservationViewController.swift */; };
+		8A4EB0E71C9F92190000EA47 /* ShopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4EB0E61C9F92190000EA47 /* ShopsViewController.swift */; };
+		8A4EB0E91C9F92300000EA47 /* ActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4EB0E81C9F92300000EA47 /* ActivitiesViewController.swift */; };
+		8A4EB0EB1C9F93140000EA47 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4EB0EA1C9F93140000EA47 /* MainViewController.swift */; };
+		8A4EB0ED1C9F9E090000EA47 /* ReservationCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4EB0EC1C9F9E090000EA47 /* ReservationCellView.swift */; };
+		8A4EB0EF1C9FC6D70000EA47 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4EB0EE1C9FC6D60000EA47 /* ScheduleViewController.swift */; };
+		8A4EB0F11C9FCC310000EA47 /* ShopPopoverMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4EB0F01C9FCC310000EA47 /* ShopPopoverMenu.swift */; };
+		8A4EB0F31CA0D79B0000EA47 /* NewReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4EB0F21CA0D79B0000EA47 /* NewReservationViewController.swift */; };
+		8A4EB0FB1CA0D8740000EA47 /* ConfirmingReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4EB0FA1CA0D8740000EA47 /* ConfirmingReservationViewController.swift */; };
+		8A4EB0FD1CA0D8D30000EA47 /* ReservedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4EB0FC1CA0D8D30000EA47 /* ReservedViewController.swift */; };
+		8A4EB0FF1CA0DC880000EA47 /* ReservationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4EB0FE1CA0DC880000EA47 /* ReservationDetailViewController.swift */; };
+		8AA38F8D1CA110D000CD7DEA /* ConfirmingReservationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA38F8C1CA110D000CD7DEA /* ConfirmingReservationCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8A4EB0C11C9F86CE0000EA47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A4EB0A41C9F86CD0000EA47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A4EB0AB1C9F86CD0000EA47;
+			remoteInfo = PLASOFTWARE;
+		};
+		8A4EB0CC1C9F86CE0000EA47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A4EB0A41C9F86CD0000EA47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A4EB0AB1C9F86CD0000EA47;
+			remoteInfo = PLASOFTWARE;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8A1C34041CA1277400B255E2 /* ShopProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopProductCell.swift; sourceTree = "<group>"; };
+		8A1C34081CA12D2F00B255E2 /* ProductInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductInfoViewController.swift; sourceTree = "<group>"; };
+		8A1C340B1CA13FA200B255E2 /* ActivityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
+		8A1C340D1CA144DA00B255E2 /* ActivityDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityDetailViewController.swift; sourceTree = "<group>"; };
+		8A4EB0AC1C9F86CE0000EA47 /* PLASOFTWARE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PLASOFTWARE.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A4EB0AF1C9F86CE0000EA47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8A4EB0B11C9F86CE0000EA47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8A4EB0B41C9F86CE0000EA47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8A4EB0B61C9F86CE0000EA47 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8A4EB0B91C9F86CE0000EA47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8A4EB0BB1C9F86CE0000EA47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A4EB0C01C9F86CE0000EA47 /* PLASOFTWARETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PLASOFTWARETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A4EB0C41C9F86CE0000EA47 /* PLASOFTWARETests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLASOFTWARETests.swift; sourceTree = "<group>"; };
+		8A4EB0C61C9F86CE0000EA47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A4EB0CB1C9F86CE0000EA47 /* PLASOFTWAREUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PLASOFTWAREUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A4EB0CF1C9F86CE0000EA47 /* PLASOFTWAREUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLASOFTWAREUITests.swift; sourceTree = "<group>"; };
+		8A4EB0D11C9F86CE0000EA47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A4EB0E01C9F873A0000EA47 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8A4EB0E21C9F8B0A0000EA47 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		8A4EB0E41C9F8DDB0000EA47 /* ReservationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservationViewController.swift; sourceTree = "<group>"; };
+		8A4EB0E61C9F92190000EA47 /* ShopsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopsViewController.swift; sourceTree = "<group>"; };
+		8A4EB0E81C9F92300000EA47 /* ActivitiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitiesViewController.swift; sourceTree = "<group>"; };
+		8A4EB0EA1C9F93140000EA47 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		8A4EB0EC1C9F9E090000EA47 /* ReservationCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservationCellView.swift; sourceTree = "<group>"; };
+		8A4EB0EE1C9FC6D60000EA47 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		8A4EB0F01C9FCC310000EA47 /* ShopPopoverMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopPopoverMenu.swift; sourceTree = "<group>"; };
+		8A4EB0F21CA0D79B0000EA47 /* NewReservationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewReservationViewController.swift; sourceTree = "<group>"; };
+		8A4EB0FA1CA0D8740000EA47 /* ConfirmingReservationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmingReservationViewController.swift; sourceTree = "<group>"; };
+		8A4EB0FC1CA0D8D30000EA47 /* ReservedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservedViewController.swift; sourceTree = "<group>"; };
+		8A4EB0FE1CA0DC880000EA47 /* ReservationDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservationDetailViewController.swift; sourceTree = "<group>"; };
+		8AA38F8C1CA110D000CD7DEA /* ConfirmingReservationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmingReservationCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A4EB0A91C9F86CD0000EA47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A4EB0BD1C9F86CE0000EA47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A4EB0C81C9F86CE0000EA47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A1C34061CA1277800B255E2 /* Reservation */ = {
+			isa = PBXGroup;
+			children = (
+				8A4EB0EC1C9F9E090000EA47 /* ReservationCellView.swift */,
+				8AA38F8C1CA110D000CD7DEA /* ConfirmingReservationCell.swift */,
+			);
+			name = Reservation;
+			sourceTree = "<group>";
+		};
+		8A1C34071CA1277F00B255E2 /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				8A1C34041CA1277400B255E2 /* ShopProductCell.swift */,
+			);
+			name = Shop;
+			sourceTree = "<group>";
+		};
+		8A1C340A1CA13F8C00B255E2 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				8A1C340B1CA13FA200B255E2 /* ActivityCell.swift */,
+			);
+			name = Activity;
+			sourceTree = "<group>";
+		};
+		8A4EB0A31C9F86CD0000EA47 = {
+			isa = PBXGroup;
+			children = (
+				8A4EB0AE1C9F86CE0000EA47 /* PLASOFTWARE */,
+				8A4EB0C31C9F86CE0000EA47 /* PLASOFTWARETests */,
+				8A4EB0CE1C9F86CE0000EA47 /* PLASOFTWAREUITests */,
+				8A4EB0AD1C9F86CE0000EA47 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8A4EB0AD1C9F86CE0000EA47 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A4EB0AC1C9F86CE0000EA47 /* PLASOFTWARE.app */,
+				8A4EB0C01C9F86CE0000EA47 /* PLASOFTWARETests.xctest */,
+				8A4EB0CB1C9F86CE0000EA47 /* PLASOFTWAREUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A4EB0AE1C9F86CE0000EA47 /* PLASOFTWARE */ = {
+			isa = PBXGroup;
+			children = (
+				8A4EB0DF1C9F870B0000EA47 /* View Controllers */,
+				8A4EB0DE1C9F87060000EA47 /* Views */,
+				8A4EB0DD1C9F86FD0000EA47 /* Models */,
+				8A4EB0E01C9F873A0000EA47 /* Extensions.swift */,
+				8A4EB0AF1C9F86CE0000EA47 /* AppDelegate.swift */,
+				8A4EB0B11C9F86CE0000EA47 /* ViewController.swift */,
+				8A4EB0B31C9F86CE0000EA47 /* Main.storyboard */,
+				8A4EB0B61C9F86CE0000EA47 /* Images.xcassets */,
+				8A4EB0B81C9F86CE0000EA47 /* LaunchScreen.storyboard */,
+				8A4EB0BB1C9F86CE0000EA47 /* Info.plist */,
+			);
+			path = PLASOFTWARE;
+			sourceTree = "<group>";
+		};
+		8A4EB0C31C9F86CE0000EA47 /* PLASOFTWARETests */ = {
+			isa = PBXGroup;
+			children = (
+				8A4EB0C41C9F86CE0000EA47 /* PLASOFTWARETests.swift */,
+				8A4EB0C61C9F86CE0000EA47 /* Info.plist */,
+			);
+			path = PLASOFTWARETests;
+			sourceTree = "<group>";
+		};
+		8A4EB0CE1C9F86CE0000EA47 /* PLASOFTWAREUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8A4EB0CF1C9F86CE0000EA47 /* PLASOFTWAREUITests.swift */,
+				8A4EB0D11C9F86CE0000EA47 /* Info.plist */,
+			);
+			path = PLASOFTWAREUITests;
+			sourceTree = "<group>";
+		};
+		8A4EB0DD1C9F86FD0000EA47 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		8A4EB0DE1C9F87060000EA47 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8A1C340A1CA13F8C00B255E2 /* Activity */,
+				8A1C34071CA1277F00B255E2 /* Shop */,
+				8A1C34061CA1277800B255E2 /* Reservation */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		8A4EB0DF1C9F870B0000EA47 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8A4EB0F91CA0D82B0000EA47 /* Login */,
+				8A4EB0F81CA0D8200000EA47 /* Activities */,
+				8A4EB0F71CA0D7D20000EA47 /* Schedule */,
+				8A4EB0F61CA0D7C20000EA47 /* Shop */,
+				8A4EB0F51CA0D7B90000EA47 /* Main */,
+				8A4EB0F41CA0D7A30000EA47 /* Reservation */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		8A4EB0F41CA0D7A30000EA47 /* Reservation */ = {
+			isa = PBXGroup;
+			children = (
+				8A4EB0E41C9F8DDB0000EA47 /* ReservationViewController.swift */,
+				8A4EB0F21CA0D79B0000EA47 /* NewReservationViewController.swift */,
+				8A4EB0FA1CA0D8740000EA47 /* ConfirmingReservationViewController.swift */,
+				8A4EB0FC1CA0D8D30000EA47 /* ReservedViewController.swift */,
+				8A4EB0FE1CA0DC880000EA47 /* ReservationDetailViewController.swift */,
+			);
+			name = Reservation;
+			sourceTree = "<group>";
+		};
+		8A4EB0F51CA0D7B90000EA47 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8A4EB0EA1C9F93140000EA47 /* MainViewController.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		8A4EB0F61CA0D7C20000EA47 /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				8A4EB0F01C9FCC310000EA47 /* ShopPopoverMenu.swift */,
+				8A4EB0E61C9F92190000EA47 /* ShopsViewController.swift */,
+				8A1C34081CA12D2F00B255E2 /* ProductInfoViewController.swift */,
+			);
+			name = Shop;
+			sourceTree = "<group>";
+		};
+		8A4EB0F71CA0D7D20000EA47 /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				8A4EB0EE1C9FC6D60000EA47 /* ScheduleViewController.swift */,
+			);
+			name = Schedule;
+			sourceTree = "<group>";
+		};
+		8A4EB0F81CA0D8200000EA47 /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				8A4EB0E81C9F92300000EA47 /* ActivitiesViewController.swift */,
+				8A1C340D1CA144DA00B255E2 /* ActivityDetailViewController.swift */,
+			);
+			name = Activities;
+			sourceTree = "<group>";
+		};
+		8A4EB0F91CA0D82B0000EA47 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8A4EB0E21C9F8B0A0000EA47 /* SignInViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A4EB0AB1C9F86CD0000EA47 /* PLASOFTWARE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A4EB0D41C9F86CE0000EA47 /* Build configuration list for PBXNativeTarget "PLASOFTWARE" */;
+			buildPhases = (
+				8A4EB0A81C9F86CD0000EA47 /* Sources */,
+				8A4EB0A91C9F86CD0000EA47 /* Frameworks */,
+				8A4EB0AA1C9F86CD0000EA47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PLASOFTWARE;
+			productName = PLASOFTWARE;
+			productReference = 8A4EB0AC1C9F86CE0000EA47 /* PLASOFTWARE.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8A4EB0BF1C9F86CE0000EA47 /* PLASOFTWARETests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A4EB0D71C9F86CE0000EA47 /* Build configuration list for PBXNativeTarget "PLASOFTWARETests" */;
+			buildPhases = (
+				8A4EB0BC1C9F86CE0000EA47 /* Sources */,
+				8A4EB0BD1C9F86CE0000EA47 /* Frameworks */,
+				8A4EB0BE1C9F86CE0000EA47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A4EB0C21C9F86CE0000EA47 /* PBXTargetDependency */,
+			);
+			name = PLASOFTWARETests;
+			productName = PLASOFTWARETests;
+			productReference = 8A4EB0C01C9F86CE0000EA47 /* PLASOFTWARETests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8A4EB0CA1C9F86CE0000EA47 /* PLASOFTWAREUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A4EB0DA1C9F86CE0000EA47 /* Build configuration list for PBXNativeTarget "PLASOFTWAREUITests" */;
+			buildPhases = (
+				8A4EB0C71C9F86CE0000EA47 /* Sources */,
+				8A4EB0C81C9F86CE0000EA47 /* Frameworks */,
+				8A4EB0C91C9F86CE0000EA47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A4EB0CD1C9F86CE0000EA47 /* PBXTargetDependency */,
+			);
+			name = PLASOFTWAREUITests;
+			productName = PLASOFTWAREUITests;
+			productReference = 8A4EB0CB1C9F86CE0000EA47 /* PLASOFTWAREUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A4EB0A41C9F86CD0000EA47 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Young;
+				TargetAttributes = {
+					8A4EB0AB1C9F86CD0000EA47 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					8A4EB0BF1C9F86CE0000EA47 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 8A4EB0AB1C9F86CD0000EA47;
+					};
+					8A4EB0CA1C9F86CE0000EA47 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 8A4EB0AB1C9F86CD0000EA47;
+					};
+				};
+			};
+			buildConfigurationList = 8A4EB0A71C9F86CD0000EA47 /* Build configuration list for PBXProject "PLASOFTWARE" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8A4EB0A31C9F86CD0000EA47;
+			productRefGroup = 8A4EB0AD1C9F86CE0000EA47 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A4EB0AB1C9F86CD0000EA47 /* PLASOFTWARE */,
+				8A4EB0BF1C9F86CE0000EA47 /* PLASOFTWARETests */,
+				8A4EB0CA1C9F86CE0000EA47 /* PLASOFTWAREUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A4EB0AA1C9F86CD0000EA47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A4EB0BA1C9F86CE0000EA47 /* LaunchScreen.storyboard in Resources */,
+				8A4EB0B71C9F86CE0000EA47 /* Images.xcassets in Resources */,
+				8A4EB0B51C9F86CE0000EA47 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A4EB0BE1C9F86CE0000EA47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A4EB0C91C9F86CE0000EA47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A4EB0A81C9F86CD0000EA47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A1C340E1CA144DA00B255E2 /* ActivityDetailViewController.swift in Sources */,
+				8A1C34091CA12D2F00B255E2 /* ProductInfoViewController.swift in Sources */,
+				8A4EB0E51C9F8DDB0000EA47 /* ReservationViewController.swift in Sources */,
+				8A4EB0F11C9FCC310000EA47 /* ShopPopoverMenu.swift in Sources */,
+				8A4EB0E31C9F8B0A0000EA47 /* SignInViewController.swift in Sources */,
+				8A4EB0FB1CA0D8740000EA47 /* ConfirmingReservationViewController.swift in Sources */,
+				8A4EB0B21C9F86CE0000EA47 /* ViewController.swift in Sources */,
+				8A4EB0E91C9F92300000EA47 /* ActivitiesViewController.swift in Sources */,
+				8A1C34051CA1277400B255E2 /* ShopProductCell.swift in Sources */,
+				8A4EB0FD1CA0D8D30000EA47 /* ReservedViewController.swift in Sources */,
+				8A4EB0FF1CA0DC880000EA47 /* ReservationDetailViewController.swift in Sources */,
+				8A1C340C1CA13FA200B255E2 /* ActivityCell.swift in Sources */,
+				8AA38F8D1CA110D000CD7DEA /* ConfirmingReservationCell.swift in Sources */,
+				8A4EB0E11C9F873A0000EA47 /* Extensions.swift in Sources */,
+				8A4EB0EF1C9FC6D70000EA47 /* ScheduleViewController.swift in Sources */,
+				8A4EB0E71C9F92190000EA47 /* ShopsViewController.swift in Sources */,
+				8A4EB0F31CA0D79B0000EA47 /* NewReservationViewController.swift in Sources */,
+				8A4EB0B01C9F86CE0000EA47 /* AppDelegate.swift in Sources */,
+				8A4EB0ED1C9F9E090000EA47 /* ReservationCellView.swift in Sources */,
+				8A4EB0EB1C9F93140000EA47 /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A4EB0BC1C9F86CE0000EA47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A4EB0C51C9F86CE0000EA47 /* PLASOFTWARETests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A4EB0C71C9F86CE0000EA47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A4EB0D01C9F86CE0000EA47 /* PLASOFTWAREUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8A4EB0C21C9F86CE0000EA47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A4EB0AB1C9F86CD0000EA47 /* PLASOFTWARE */;
+			targetProxy = 8A4EB0C11C9F86CE0000EA47 /* PBXContainerItemProxy */;
+		};
+		8A4EB0CD1C9F86CE0000EA47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A4EB0AB1C9F86CD0000EA47 /* PLASOFTWARE */;
+			targetProxy = 8A4EB0CC1C9F86CE0000EA47 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8A4EB0B31C9F86CE0000EA47 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A4EB0B41C9F86CE0000EA47 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8A4EB0B81C9F86CE0000EA47 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A4EB0B91C9F86CE0000EA47 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8A4EB0D21C9F86CE0000EA47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8A4EB0D31C9F86CE0000EA47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A4EB0D51C9F86CE0000EA47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PLASOFTWARE/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = happy9.PLASOFTWARE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8A4EB0D61C9F86CE0000EA47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PLASOFTWARE/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = happy9.PLASOFTWARE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8A4EB0D81C9F86CE0000EA47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PLASOFTWARETests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = happy9.PLASOFTWARETests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PLASOFTWARE.app/PLASOFTWARE";
+			};
+			name = Debug;
+		};
+		8A4EB0D91C9F86CE0000EA47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PLASOFTWARETests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = happy9.PLASOFTWARETests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PLASOFTWARE.app/PLASOFTWARE";
+			};
+			name = Release;
+		};
+		8A4EB0DB1C9F86CE0000EA47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PLASOFTWAREUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = happy9.PLASOFTWAREUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PLASOFTWARE;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		8A4EB0DC1C9F86CE0000EA47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PLASOFTWAREUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = happy9.PLASOFTWAREUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PLASOFTWARE;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A4EB0A71C9F86CD0000EA47 /* Build configuration list for PBXProject "PLASOFTWARE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A4EB0D21C9F86CE0000EA47 /* Debug */,
+				8A4EB0D31C9F86CE0000EA47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A4EB0D41C9F86CE0000EA47 /* Build configuration list for PBXNativeTarget "PLASOFTWARE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A4EB0D51C9F86CE0000EA47 /* Debug */,
+				8A4EB0D61C9F86CE0000EA47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A4EB0D71C9F86CE0000EA47 /* Build configuration list for PBXNativeTarget "PLASOFTWARETests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A4EB0D81C9F86CE0000EA47 /* Debug */,
+				8A4EB0D91C9F86CE0000EA47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A4EB0DA1C9F86CE0000EA47 /* Build configuration list for PBXNativeTarget "PLASOFTWAREUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A4EB0DB1C9F86CE0000EA47 /* Debug */,
+				8A4EB0DC1C9F86CE0000EA47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A4EB0A41C9F86CD0000EA47 /* Project object */;
+}
