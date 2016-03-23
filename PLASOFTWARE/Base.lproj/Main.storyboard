@@ -587,7 +587,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7u5-EM-a5W">
                                 <rect key="frame" x="88" y="8" width="80" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <state key="normal" title="BRANCH"/>
+                                <state key="normal" title="BRANCH q"/>
                                 <connections>
                                     <segue destination="I6d-Eg-weW" kind="popoverPresentation" identifier="branchPopover" popoverAnchorView="7u5-EM-a5W" id="XSj-NP-b6U">
                                         <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
