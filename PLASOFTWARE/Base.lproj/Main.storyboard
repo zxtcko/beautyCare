@@ -50,7 +50,7 @@
                                         <rect key="frame" x="0.0" y="38" width="335" height="2"/>
                                         <color key="backgroundColor" red="0.49803921580314636" green="0.49803921580314636" blue="0.49803921580314636" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="BUTTON WILL BE GREY IF NO ACCOUNT" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="asK-lR-R9b">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="asK-lR-R9b">
                                         <rect key="frame" x="46" y="8" width="289" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -68,7 +68,7 @@
                                         <rect key="frame" x="0.0" y="38" width="335" height="2"/>
                                         <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="PASSWORD FILL IN" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0LQ-eV-bJc">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0LQ-eV-bJc">
                                         <rect key="frame" x="46" y="8" width="289" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -85,8 +85,11 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egU-q1-MEC">
                                         <rect key="frame" x="8" y="5" width="30" height="30"/>
                                         <state key="normal" image="icon_08-20"/>
+                                        <connections>
+                                            <action selector="markPasswordAction:" destination="OFw-uj-Tba" eventType="touchUpInside" id="5qp-0p-9cf"/>
+                                        </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="REMEMBER PASSWORD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcD-Vg-ztE">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcD-Vg-ztE">
                                         <rect key="frame" x="46" y="9" width="178" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -120,6 +123,7 @@
                     <connections>
                         <outlet property="loginButton" destination="YcS-F4-UF4" id="AgA-Q4-L74"/>
                         <outlet property="markPasswordButton" destination="egU-q1-MEC" id="Ml1-oT-Fjx"/>
+                        <outlet property="markPasswordLabel" destination="wcD-Vg-ztE" id="8h9-Ha-1KJ"/>
                         <outlet property="passwordTextField" destination="0LQ-eV-bJc" id="dZD-6M-crw"/>
                         <outlet property="usenameTextField" destination="asK-lR-R9b" id="MlZ-UJ-Wdb"/>
                         <segue destination="8g8-jh-FsY" kind="show" identifier="MainViewControllerSegue" id="CMw-JU-gFL"/>
@@ -583,13 +587,76 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="ueL-Q5-m2h">
-                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="v0c-4X-NwV"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="v0c-4X-NwV">
+                            <connections>
+                                <segue destination="9cb-Nt-4zJ" kind="push" id="IvR-g8-LIX"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AAz-3s-2JO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2896.5" y="-1737.5"/>
+        </scene>
+        <!--Cancel Reservation View Controller-->
+        <scene sceneID="qR7-Ho-xS9">
+            <objects>
+                <viewController id="9cb-Nt-4zJ" customClass="CancelReservationViewController" customModule="PLASOFTWARE" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GtI-bB-Qiq"/>
+                        <viewControllerLayoutGuide type="bottom" id="zxq-ab-rAr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="P2g-Y4-TBk">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="背景2" translatesAutoresizingMaskIntoConstraints="NO" id="g4Y-fZ-6pH">
+                                <rect key="frame" x="-4" y="0.0" width="383" height="559"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sPr-ch-D9Q">
+                                <rect key="frame" x="20" y="20" width="335" height="363"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LAt-5G-l0o">
+                                <rect key="frame" x="20" y="427" width="145" height="40"/>
+                                <state key="normal" title="CONFIRM" backgroundImage="圆角矩形-1-拷贝">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZW-no-9ek">
+                                <rect key="frame" x="210" y="427" width="145" height="40"/>
+                                <state key="normal" title="GIVE UP" backgroundImage="圆角矩形-1-拷贝-3">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zxq-ab-rAr" firstAttribute="top" secondItem="g4Y-fZ-6pH" secondAttribute="bottom" id="LkB-tW-hRz"/>
+                            <constraint firstItem="g4Y-fZ-6pH" firstAttribute="leading" secondItem="P2g-Y4-TBk" secondAttribute="leadingMargin" constant="-20" id="Vqx-3c-Fff"/>
+                            <constraint firstItem="g4Y-fZ-6pH" firstAttribute="top" secondItem="GtI-bB-Qiq" secondAttribute="bottom" id="iRB-6B-zfF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="g4Y-fZ-6pH" secondAttribute="trailing" constant="-20" id="jb8-7L-3p4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fCO-ym-tNx"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="confirmButton" destination="LAt-5G-l0o" id="QBE-Bp-M8T"/>
+                        <outlet property="giveupButton" destination="DZW-no-9ek" id="q40-j8-3DU"/>
+                        <outlet property="textView" destination="sPr-ch-D9Q" id="yiU-RR-ogi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ohF-h2-48o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3368.5" y="-1737.5"/>
         </scene>
         <!--Shops View Controller-->
         <scene sceneID="Yh2-21-rVs">
@@ -991,7 +1058,7 @@
         <scene sceneID="SLI-F7-BAW">
             <objects>
                 <tableViewController id="gR2-2O-D8Z" customClass="ActivityDetailViewController" customModule="PLASOFTWARE" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" id="Zai-TD-9R8">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" id="Zai-TD-9R8">
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1004,7 +1071,7 @@
                                 <rect key="frame" x="0.0" y="148" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="H0K-3a-7mU" id="syM-xr-WbA">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="t3w-2V-oTa">
@@ -1059,7 +1126,7 @@
         <!--Navigation Controller-->
         <scene sceneID="gAM-Zd-DyF">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8g8-jh-FsY" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" hidesBarsWhenVerticallyCompact="YES" id="8g8-jh-FsY" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="yhe-lv-Ha3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1093,6 +1160,7 @@
         <image name="图层-4" width="750" height="240"/>
         <image name="圆角矩形-1" width="642" height="88"/>
         <image name="圆角矩形-1-拷贝" width="330" height="88"/>
+        <image name="圆角矩形-1-拷贝-3" width="330" height="88"/>
         <image name="矩形-3-拷贝-5" width="750" height="1"/>
         <image name="背景2" width="750" height="1334"/>
     </resources>

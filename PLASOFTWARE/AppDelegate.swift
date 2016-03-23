@@ -27,6 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UINavigationBar.appearance().barTintColor = UIColor.plaSteelblueColor()
         
+        
         let signInViewController: AnyObject! = UIStoryboard.mainStoryboard.instantiateViewControllerWithIdentifier(SignInViewControllerIdentifier)
         window?.rootViewController = signInViewController as? UIViewController
         

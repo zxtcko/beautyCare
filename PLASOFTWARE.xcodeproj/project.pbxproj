@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		015B19171CA2910B00D3D307 /* CancelReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015B19161CA2910B00D3D307 /* CancelReservationViewController.swift */; };
 		8A1C34051CA1277400B255E2 /* ShopProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1C34041CA1277400B255E2 /* ShopProductCell.swift */; };
 		8A1C34091CA12D2F00B255E2 /* ProductInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1C34081CA12D2F00B255E2 /* ProductInfoViewController.swift */; };
 		8A1C340C1CA13FA200B255E2 /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1C340B1CA13FA200B255E2 /* ActivityCell.swift */; };
@@ -52,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		015B19161CA2910B00D3D307 /* CancelReservationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancelReservationViewController.swift; sourceTree = "<group>"; };
 		8A1C34041CA1277400B255E2 /* ShopProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopProductCell.swift; sourceTree = "<group>"; };
 		8A1C34081CA12D2F00B255E2 /* ProductInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductInfoViewController.swift; sourceTree = "<group>"; };
 		8A1C340B1CA13FA200B255E2 /* ActivityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 				8A4EB0FA1CA0D8740000EA47 /* ConfirmingReservationViewController.swift */,
 				8A4EB0FC1CA0D8D30000EA47 /* ReservedViewController.swift */,
 				8A4EB0FE1CA0DC880000EA47 /* ReservationDetailViewController.swift */,
+				015B19161CA2910B00D3D307 /* CancelReservationViewController.swift */,
 			);
 			name = Reservation;
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 				8A4EB0F31CA0D79B0000EA47 /* NewReservationViewController.swift in Sources */,
 				8A4EB0B01C9F86CE0000EA47 /* AppDelegate.swift in Sources */,
 				8A4EB0ED1C9F9E090000EA47 /* ReservationCellView.swift in Sources */,
+				015B19171CA2910B00D3D307 /* CancelReservationViewController.swift in Sources */,
 				8A4EB0EB1C9F93140000EA47 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

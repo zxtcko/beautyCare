@@ -72,18 +72,27 @@ extension UIButton{
 
 extension CAGradientLayer{
     
-    func gradientForPla(startColor:UIColor, endColor:UIColor, startPoint:CGPoint, endPoint:CGPoint ) -> CAGradientLayer{
-        let gradient = CAGradientLayer()
-        let colors: [AnyObject] = [startColor.CGColor, endColor.CGColor]
-        gradient.colors = colors
-        gradient.startPoint = startPoint
-        gradient.endPoint = endPoint
-        return gradient
+    func gradientForPla(startColor:UIColor, endColor:UIColor, startPoint:CGPoint, endPoint:CGPoint ){
+        let colors: [AnyObject] = [startColor.CGColor, endColor]
+        self.colors = colors
+        self.startPoint = startPoint
+        self.endPoint = endPoint
     }
 }
 
 extension UIStoryboard{
     static var mainStoryboard: UIStoryboard {
         return UIStoryboard(name: "Main", bundle: nil)
+    }
+}
+
+extension UIViewController{
+    func hideKeyboardWhenTappedAround(){
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dismissKeyboard(){
+        view.endEditing(true)
     }
 }
