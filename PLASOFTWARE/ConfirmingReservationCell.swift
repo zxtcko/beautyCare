@@ -22,7 +22,7 @@ class ConfirmingReservationCell: UITableViewCell {
         
         let gradient = CAGradientLayer()
         gradient.frame = self.bounds
-        let colors: [AnyObject] = [UIColor.plaSteelblueColor().CGColor, UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.4).CGColor]
+        let colors: [AnyObject] = [UIColor.plaSteelblueColor().CGColor, UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.4)]
         gradient.colors = colors
         gradient.startPoint = CGPointMake(0.0, 0.5)
         gradient.endPoint = CGPointMake(1.0, 0.5)

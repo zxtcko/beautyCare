@@ -39,6 +39,24 @@ class MainViewController: UIViewController {
         scheduleButton.setTitleColor(UIColor.plaAquaColor(), forState: .Highlighted)
         scheduleButton.setImage(UIImage(named: "icon_03-19"), forState: .Highlighted)
         
+        let btnName = UIButton()
+        btnName.setImage(UIImage(named: "图层-2"), forState: .Normal)
+        btnName.frame = CGRectMake(0, 0, 30, 30)
         
+        let btnLogo = UIButton()
+        btnLogo.setImage(UIImage(named: "logoin_tv_logo"), forState: .Normal)
+        btnLogo.frame = CGRectMake(35, 15, 109, 12)
+        
+        let customLeftButtonItemView = UIView()
+        customLeftButtonItemView.frame = CGRectMake(0, 0, 180, 30)
+        customLeftButtonItemView.backgroundColor = UIColor.clearColor()
+        customLeftButtonItemView.addSubview(btnName)
+        customLeftButtonItemView.addSubview(btnLogo)
+        
+        //.... Set Right/Left Bar Button item
+        let leftBarButton = UIBarButtonItem()
+        leftBarButton.customView = customLeftButtonItemView
+        
+        self.navigationItem.leftBarButtonItem = leftBarButton
     }
 }

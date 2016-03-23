@@ -22,7 +22,7 @@ class ActivityCell: UITableViewCell {
         case 0:
             activityImageView.image = UIImage(named: "圆角矩形-1-拷贝-4")
         case 1:
-            activityImageView.image = UIImage(named: "图层-3")
+            activityImageView.image = UIImage(named: "图层-3png")
         case 2:
             activityImageView.image = UIImage(named: "图层-4")
         default: break

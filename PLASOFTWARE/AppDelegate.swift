@@ -8,16 +8,27 @@
 
 import UIKit
 
+
+let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+    var navigationController: UINavigationController{
+        return self.window!.rootViewController as! UINavigationController
+    }
+    
+    let SignInViewControllerIdentifier = "SignInViewController"
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
         UINavigationBar.appearance().barTintColor = UIColor.plaSteelblueColor()
+        
+        let signInViewController: AnyObject! = UIStoryboard.mainStoryboard.instantiateViewControllerWithIdentifier(SignInViewControllerIdentifier)
+        window?.rootViewController = signInViewController as? UIViewController
         
         print("simulator launched")
         return true

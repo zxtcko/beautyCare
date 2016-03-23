@@ -3,26 +3,131 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Sign In View Controller-->
         <scene sceneID="Xln-yo-WGZ">
             <objects>
-                <viewController id="OFw-uj-Tba" customClass="SignInViewController" customModule="PLASOFTWARE" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignInViewController" id="OFw-uj-Tba" customClass="SignInViewController" customModule="PLASOFTWARE" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Zxi-Uo-pnS"/>
                         <viewControllerLayoutGuide type="bottom" id="AIR-eY-B4u"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="iAs-ak-3uf">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="00登录页" translatesAutoresizingMaskIntoConstraints="NO" id="gzu-fL-R2S">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YcS-F4-UF4">
+                                <rect key="frame" x="20" y="539" width="335" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="rB0-mz-eCG"/>
+                                    <constraint firstAttribute="width" secondItem="YcS-F4-UF4" secondAttribute="height" multiplier="67:8" id="tGz-Jf-4gI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="LOG_IN" backgroundImage="圆角矩形-1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginAction:" destination="OFw-uj-Tba" eventType="touchUpInside" id="3a9-uw-Jf5"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_logo" translatesAutoresizingMaskIntoConstraints="NO" id="KqQ-xg-eU3">
+                                <rect key="frame" x="147" y="80" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="8Yl-4w-KAl"/>
+                                    <constraint firstAttribute="width" constant="80" id="EGX-0Q-9W7"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wY1-zv-wHv">
+                                <rect key="frame" x="20" y="356" width="335" height="40"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VYZ-Ua-kqK" userLabel="Separator Line">
+                                        <rect key="frame" x="0.0" y="38" width="335" height="2"/>
+                                        <color key="backgroundColor" red="0.49803921580314636" green="0.49803921580314636" blue="0.49803921580314636" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="BUTTON WILL BE GREY IF NO ACCOUNT" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="asK-lR-R9b">
+                                        <rect key="frame" x="46" y="8" width="289" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_08-10" translatesAutoresizingMaskIntoConstraints="NO" id="CkA-Ft-VZx">
+                                        <rect key="frame" x="8" y="5" width="30" height="30"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jlt-XH-YBa">
+                                <rect key="frame" x="20" y="410" width="335" height="40"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fDL-K0-70q" userLabel="Separator Line">
+                                        <rect key="frame" x="0.0" y="38" width="335" height="2"/>
+                                        <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="PASSWORD FILL IN" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0LQ-eV-bJc">
+                                        <rect key="frame" x="46" y="8" width="289" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_08-14" translatesAutoresizingMaskIntoConstraints="NO" id="xvc-sR-fDa">
+                                        <rect key="frame" x="8" y="5" width="30" height="30"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y52-Or-dYH">
+                                <rect key="frame" x="20" y="465" width="335" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egU-q1-MEC">
+                                        <rect key="frame" x="8" y="5" width="30" height="30"/>
+                                        <state key="normal" image="icon_08-20"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="REMEMBER PASSWORD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcD-Vg-ztE">
+                                        <rect key="frame" x="46" y="9" width="178" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoin_tv_logo" translatesAutoresizingMaskIntoConstraints="NO" id="yag-es-kqn">
+                                <rect key="frame" x="79" y="168" width="217" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="yag-es-kqn" secondAttribute="height" multiplier="217:24" id="Htz-0f-7It"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gzu-fL-R2S" firstAttribute="top" secondItem="iAs-ak-3uf" secondAttribute="topMargin" id="Cop-Vv-eDg"/>
+                            <constraint firstItem="gzu-fL-R2S" firstAttribute="leading" secondItem="iAs-ak-3uf" secondAttribute="leadingMargin" constant="-20" id="Dwg-am-RFb"/>
+                            <constraint firstItem="KqQ-xg-eU3" firstAttribute="top" secondItem="Zxi-Uo-pnS" secondAttribute="bottom" constant="60" id="Lc2-tw-mTr"/>
+                            <constraint firstItem="yag-es-kqn" firstAttribute="top" secondItem="KqQ-xg-eU3" secondAttribute="bottom" constant="8" id="NxF-W9-kAq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gzu-fL-R2S" secondAttribute="trailing" constant="-20" id="SVh-UY-j9R"/>
+                            <constraint firstItem="KqQ-xg-eU3" firstAttribute="centerX" secondItem="iAs-ak-3uf" secondAttribute="centerX" id="YK8-4c-ruh"/>
+                            <constraint firstItem="AIR-eY-B4u" firstAttribute="top" secondItem="YcS-F4-UF4" secondAttribute="bottom" constant="88" id="gph-8h-lZM"/>
+                            <constraint firstItem="AIR-eY-B4u" firstAttribute="top" secondItem="gzu-fL-R2S" secondAttribute="bottom" id="jEt-wr-c3f"/>
+                            <constraint firstItem="YcS-F4-UF4" firstAttribute="centerX" secondItem="iAs-ak-3uf" secondAttribute="centerX" id="tcV-pl-8jc"/>
+                            <constraint firstItem="yag-es-kqn" firstAttribute="centerX" secondItem="iAs-ak-3uf" secondAttribute="centerX" id="xiO-OA-yUE"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="loginButton" destination="YcS-F4-UF4" id="AgA-Q4-L74"/>
+                        <outlet property="markPasswordButton" destination="egU-q1-MEC" id="Ml1-oT-Fjx"/>
+                        <outlet property="passwordTextField" destination="0LQ-eV-bJc" id="dZD-6M-crw"/>
+                        <outlet property="usenameTextField" destination="asK-lR-R9b" id="MlZ-UJ-Wdb"/>
+                        <segue destination="8g8-jh-FsY" kind="show" identifier="MainViewControllerSegue" id="CMw-JU-gFL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H3h-7Y-5BF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="822" y="-817"/>
+            <point key="canvasLocation" x="-37.5" y="-864.5"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -93,7 +198,6 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="Vgt-bg-fNC">
                         <nil key="title"/>
-                        <barButtonItem key="leftBarButtonItem" image="icon_logo" style="done" id="4ha-7Z-6zC"/>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -587,7 +691,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7u5-EM-a5W">
                                 <rect key="frame" x="88" y="8" width="80" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <state key="normal" title="BRANCH q"/>
+                                <state key="normal" title="BRANCH"/>
                                 <connections>
                                     <segue destination="I6d-Eg-weW" kind="popoverPresentation" identifier="branchPopover" popoverAnchorView="7u5-EM-a5W" id="XSj-NP-b6U">
                                         <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
@@ -969,19 +1073,25 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="erO-q3-lWm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-18" y="-124"/>
+            <point key="canvasLocation" x="-37.5" y="-7.5"/>
         </scene>
     </scenes>
     <resources>
+        <image name="00登录页" width="750" height="1334"/>
         <image name="icon_03" width="75" height="75"/>
         <image name="icon_03-18" width="75" height="75"/>
         <image name="icon_03-24" width="75" height="75"/>
         <image name="icon_03-30" width="75" height="75"/>
         <image name="icon_07" width="93" height="37"/>
-        <image name="icon_logo" width="46" height="44"/>
+        <image name="icon_08-10" width="50" height="50"/>
+        <image name="icon_08-14" width="50" height="50"/>
+        <image name="icon_08-20" width="50" height="50"/>
+        <image name="icon_logo" width="138" height="134"/>
+        <image name="logoin_tv_logo" width="217" height="24"/>
         <image name="图层-1" width="750" height="510"/>
         <image name="图层-3-拷贝" width="750" height="510"/>
         <image name="图层-4" width="750" height="240"/>
+        <image name="圆角矩形-1" width="642" height="88"/>
         <image name="圆角矩形-1-拷贝" width="330" height="88"/>
         <image name="矩形-3-拷贝-5" width="750" height="1"/>
         <image name="背景2" width="750" height="1334"/>
