@@ -10,6 +10,10 @@ import UIKit
 
 class ReservationDetailViewController: UITableViewController {
     
+    @IBOutlet weak var cancelReservationButton: UIBarButtonItem!
+    
+    let cancelReservationSegue = "CancelReservationSegue"
+    
     let cellReusableIdentifier = "DetailCell"
     
     var headerImageView:UIImageView!
@@ -21,7 +25,12 @@ class ReservationDetailViewController: UITableViewController {
     func setupUI(){
         title = NSLocalizedString("DETAILS", comment: "")
         
-        
+        cancelReservationButton.target = self
+        cancelReservationButton.action = "cancelReservationAction"
+    }
+    
+    func cancelReservationAction(){
+        performSegueWithIdentifier(cancelReservationSegue, sender: nil)
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

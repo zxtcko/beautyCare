@@ -7,32 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		015B19171CA2910B00D3D307 /* CancelReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015B19161CA2910B00D3D307 /* CancelReservationViewController.swift */; };
-		8A1C34051CA1277400B255E2 /* ShopProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1C34041CA1277400B255E2 /* ShopProductCell.swift */; };
-		8A1C34091CA12D2F00B255E2 /* ProductInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1C34081CA12D2F00B255E2 /* ProductInfoViewController.swift */; };
-		8A1C340C1CA13FA200B255E2 /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1C340B1CA13FA200B255E2 /* ActivityCell.swift */; };
-		8A1C340E1CA144DA00B255E2 /* ActivityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1C340D1CA144DA00B255E2 /* ActivityDetailViewController.swift */; };
+		016081181CA3840400514BCD /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016080FD1CA3840400514BCD /* ActivityCell.swift */; };
+		016081191CA3840400514BCD /* ConfirmingReservationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016080FF1CA3840400514BCD /* ConfirmingReservationCell.swift */; };
+		0160811A1CA3840400514BCD /* ReservationCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016081001CA3840400514BCD /* ReservationCellView.swift */; };
+		0160811B1CA3840400514BCD /* ShopProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016081021CA3840400514BCD /* ShopProductCell.swift */; };
+		0160811C1CA3840400514BCD /* ActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016081051CA3840400514BCD /* ActivitiesViewController.swift */; };
+		0160811D1CA3840400514BCD /* ActivityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016081061CA3840400514BCD /* ActivityDetailViewController.swift */; };
+		0160811E1CA3840400514BCD /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016081081CA3840400514BCD /* SignInViewController.swift */; };
+		0160811F1CA3840400514BCD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0160810A1CA3840400514BCD /* MainViewController.swift */; };
+		016081201CA3840400514BCD /* CancelReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0160810C1CA3840400514BCD /* CancelReservationViewController.swift */; };
+		016081211CA3840400514BCD /* ConfirmingReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0160810D1CA3840400514BCD /* ConfirmingReservationViewController.swift */; };
+		016081221CA3840400514BCD /* NewReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0160810E1CA3840400514BCD /* NewReservationViewController.swift */; };
+		016081231CA3840400514BCD /* ReservationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0160810F1CA3840400514BCD /* ReservationDetailViewController.swift */; };
+		016081241CA3840400514BCD /* ReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016081101CA3840400514BCD /* ReservationViewController.swift */; };
+		016081251CA3840400514BCD /* ReservedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016081111CA3840400514BCD /* ReservedViewController.swift */; };
+		016081261CA3840400514BCD /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016081131CA3840400514BCD /* ScheduleViewController.swift */; };
+		016081271CA3840400514BCD /* ProductInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016081151CA3840400514BCD /* ProductInfoViewController.swift */; };
+		016081281CA3840400514BCD /* ShopPopoverMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016081161CA3840400514BCD /* ShopPopoverMenu.swift */; };
+		016081291CA3840400514BCD /* ShopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016081171CA3840400514BCD /* ShopsViewController.swift */; };
 		8A4EB0B01C9F86CE0000EA47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4EB0AF1C9F86CE0000EA47 /* AppDelegate.swift */; };
-		8A4EB0B21C9F86CE0000EA47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4EB0B11C9F86CE0000EA47 /* ViewController.swift */; };
 		8A4EB0B51C9F86CE0000EA47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A4EB0B31C9F86CE0000EA47 /* Main.storyboard */; };
 		8A4EB0B71C9F86CE0000EA47 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A4EB0B61C9F86CE0000EA47 /* Images.xcassets */; };
 		8A4EB0BA1C9F86CE0000EA47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A4EB0B81C9F86CE0000EA47 /* LaunchScreen.storyboard */; };
 		8A4EB0C51C9F86CE0000EA47 /* PLASOFTWARETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4EB0C41C9F86CE0000EA47 /* PLASOFTWARETests.swift */; };
 		8A4EB0D01C9F86CE0000EA47 /* PLASOFTWAREUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4EB0CF1C9F86CE0000EA47 /* PLASOFTWAREUITests.swift */; };
 		8A4EB0E11C9F873A0000EA47 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4EB0E01C9F873A0000EA47 /* Extensions.swift */; };
-		8A4EB0E31C9F8B0A0000EA47 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4EB0E21C9F8B0A0000EA47 /* SignInViewController.swift */; };
-		8A4EB0E51C9F8DDB0000EA47 /* ReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4EB0E41C9F8DDB0000EA47 /* ReservationViewController.swift */; };
-		8A4EB0E71C9F92190000EA47 /* ShopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4EB0E61C9F92190000EA47 /* ShopsViewController.swift */; };
-		8A4EB0E91C9F92300000EA47 /* ActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4EB0E81C9F92300000EA47 /* ActivitiesViewController.swift */; };
-		8A4EB0EB1C9F93140000EA47 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4EB0EA1C9F93140000EA47 /* MainViewController.swift */; };
-		8A4EB0ED1C9F9E090000EA47 /* ReservationCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4EB0EC1C9F9E090000EA47 /* ReservationCellView.swift */; };
-		8A4EB0EF1C9FC6D70000EA47 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4EB0EE1C9FC6D60000EA47 /* ScheduleViewController.swift */; };
-		8A4EB0F11C9FCC310000EA47 /* ShopPopoverMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4EB0F01C9FCC310000EA47 /* ShopPopoverMenu.swift */; };
-		8A4EB0F31CA0D79B0000EA47 /* NewReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4EB0F21CA0D79B0000EA47 /* NewReservationViewController.swift */; };
-		8A4EB0FB1CA0D8740000EA47 /* ConfirmingReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4EB0FA1CA0D8740000EA47 /* ConfirmingReservationViewController.swift */; };
-		8A4EB0FD1CA0D8D30000EA47 /* ReservedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4EB0FC1CA0D8D30000EA47 /* ReservedViewController.swift */; };
-		8A4EB0FF1CA0DC880000EA47 /* ReservationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4EB0FE1CA0DC880000EA47 /* ReservationDetailViewController.swift */; };
-		8AA38F8D1CA110D000CD7DEA /* ConfirmingReservationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA38F8C1CA110D000CD7DEA /* ConfirmingReservationCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,14 +52,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		015B19161CA2910B00D3D307 /* CancelReservationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancelReservationViewController.swift; sourceTree = "<group>"; };
-		8A1C34041CA1277400B255E2 /* ShopProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopProductCell.swift; sourceTree = "<group>"; };
-		8A1C34081CA12D2F00B255E2 /* ProductInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductInfoViewController.swift; sourceTree = "<group>"; };
-		8A1C340B1CA13FA200B255E2 /* ActivityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
-		8A1C340D1CA144DA00B255E2 /* ActivityDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityDetailViewController.swift; sourceTree = "<group>"; };
+		016080FD1CA3840400514BCD /* ActivityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
+		016080FF1CA3840400514BCD /* ConfirmingReservationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmingReservationCell.swift; sourceTree = "<group>"; };
+		016081001CA3840400514BCD /* ReservationCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservationCellView.swift; sourceTree = "<group>"; };
+		016081021CA3840400514BCD /* ShopProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopProductCell.swift; sourceTree = "<group>"; };
+		016081051CA3840400514BCD /* ActivitiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitiesViewController.swift; sourceTree = "<group>"; };
+		016081061CA3840400514BCD /* ActivityDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityDetailViewController.swift; sourceTree = "<group>"; };
+		016081081CA3840400514BCD /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		0160810A1CA3840400514BCD /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		0160810C1CA3840400514BCD /* CancelReservationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancelReservationViewController.swift; sourceTree = "<group>"; };
+		0160810D1CA3840400514BCD /* ConfirmingReservationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmingReservationViewController.swift; sourceTree = "<group>"; };
+		0160810E1CA3840400514BCD /* NewReservationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewReservationViewController.swift; sourceTree = "<group>"; };
+		0160810F1CA3840400514BCD /* ReservationDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservationDetailViewController.swift; sourceTree = "<group>"; };
+		016081101CA3840400514BCD /* ReservationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservationViewController.swift; sourceTree = "<group>"; };
+		016081111CA3840400514BCD /* ReservedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservedViewController.swift; sourceTree = "<group>"; };
+		016081131CA3840400514BCD /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		016081151CA3840400514BCD /* ProductInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductInfoViewController.swift; sourceTree = "<group>"; };
+		016081161CA3840400514BCD /* ShopPopoverMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopPopoverMenu.swift; sourceTree = "<group>"; };
+		016081171CA3840400514BCD /* ShopsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopsViewController.swift; sourceTree = "<group>"; };
 		8A4EB0AC1C9F86CE0000EA47 /* PLASOFTWARE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PLASOFTWARE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A4EB0AF1C9F86CE0000EA47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8A4EB0B11C9F86CE0000EA47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8A4EB0B41C9F86CE0000EA47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A4EB0B61C9F86CE0000EA47 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8A4EB0B91C9F86CE0000EA47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -72,19 +83,6 @@
 		8A4EB0CF1C9F86CE0000EA47 /* PLASOFTWAREUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLASOFTWAREUITests.swift; sourceTree = "<group>"; };
 		8A4EB0D11C9F86CE0000EA47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A4EB0E01C9F873A0000EA47 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		8A4EB0E21C9F8B0A0000EA47 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		8A4EB0E41C9F8DDB0000EA47 /* ReservationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservationViewController.swift; sourceTree = "<group>"; };
-		8A4EB0E61C9F92190000EA47 /* ShopsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopsViewController.swift; sourceTree = "<group>"; };
-		8A4EB0E81C9F92300000EA47 /* ActivitiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitiesViewController.swift; sourceTree = "<group>"; };
-		8A4EB0EA1C9F93140000EA47 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		8A4EB0EC1C9F9E090000EA47 /* ReservationCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservationCellView.swift; sourceTree = "<group>"; };
-		8A4EB0EE1C9FC6D60000EA47 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
-		8A4EB0F01C9FCC310000EA47 /* ShopPopoverMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopPopoverMenu.swift; sourceTree = "<group>"; };
-		8A4EB0F21CA0D79B0000EA47 /* NewReservationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewReservationViewController.swift; sourceTree = "<group>"; };
-		8A4EB0FA1CA0D8740000EA47 /* ConfirmingReservationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmingReservationViewController.swift; sourceTree = "<group>"; };
-		8A4EB0FC1CA0D8D30000EA47 /* ReservedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservedViewController.swift; sourceTree = "<group>"; };
-		8A4EB0FE1CA0DC880000EA47 /* ReservationDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservationDetailViewController.swift; sourceTree = "<group>"; };
-		8AA38F8C1CA110D000CD7DEA /* ConfirmingReservationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmingReservationCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,29 +110,115 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8A1C34061CA1277800B255E2 /* Reservation */ = {
+		016080FA1CA3840400514BCD /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				8A4EB0EC1C9F9E090000EA47 /* ReservationCellView.swift */,
-				8AA38F8C1CA110D000CD7DEA /* ConfirmingReservationCell.swift */,
 			);
-			name = Reservation;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		8A1C34071CA1277F00B255E2 /* Shop */ = {
+		016080FB1CA3840400514BCD /* View */ = {
 			isa = PBXGroup;
 			children = (
-				8A1C34041CA1277400B255E2 /* ShopProductCell.swift */,
+				016080FC1CA3840400514BCD /* Activities */,
+				016080FE1CA3840400514BCD /* Reservation */,
+				016081011CA3840400514BCD /* Shop */,
 			);
-			name = Shop;
+			path = View;
 			sourceTree = "<group>";
 		};
-		8A1C340A1CA13F8C00B255E2 /* Activity */ = {
+		016080FC1CA3840400514BCD /* Activities */ = {
 			isa = PBXGroup;
 			children = (
-				8A1C340B1CA13FA200B255E2 /* ActivityCell.swift */,
+				016080FD1CA3840400514BCD /* ActivityCell.swift */,
 			);
-			name = Activity;
+			path = Activities;
+			sourceTree = "<group>";
+		};
+		016080FE1CA3840400514BCD /* Reservation */ = {
+			isa = PBXGroup;
+			children = (
+				016080FF1CA3840400514BCD /* ConfirmingReservationCell.swift */,
+				016081001CA3840400514BCD /* ReservationCellView.swift */,
+			);
+			path = Reservation;
+			sourceTree = "<group>";
+		};
+		016081011CA3840400514BCD /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				016081021CA3840400514BCD /* ShopProductCell.swift */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
+		016081031CA3840400514BCD /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				016081041CA3840400514BCD /* Activities */,
+				016081071CA3840400514BCD /* Login */,
+				016081091CA3840400514BCD /* Main */,
+				0160810B1CA3840400514BCD /* Reservation */,
+				016081121CA3840400514BCD /* Schedule */,
+				016081141CA3840400514BCD /* Shop */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		016081041CA3840400514BCD /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				016081051CA3840400514BCD /* ActivitiesViewController.swift */,
+				016081061CA3840400514BCD /* ActivityDetailViewController.swift */,
+			);
+			path = Activities;
+			sourceTree = "<group>";
+		};
+		016081071CA3840400514BCD /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				016081081CA3840400514BCD /* SignInViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		016081091CA3840400514BCD /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0160810A1CA3840400514BCD /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		0160810B1CA3840400514BCD /* Reservation */ = {
+			isa = PBXGroup;
+			children = (
+				0160810C1CA3840400514BCD /* CancelReservationViewController.swift */,
+				0160810D1CA3840400514BCD /* ConfirmingReservationViewController.swift */,
+				0160810E1CA3840400514BCD /* NewReservationViewController.swift */,
+				0160810F1CA3840400514BCD /* ReservationDetailViewController.swift */,
+				016081101CA3840400514BCD /* ReservationViewController.swift */,
+				016081111CA3840400514BCD /* ReservedViewController.swift */,
+			);
+			path = Reservation;
+			sourceTree = "<group>";
+		};
+		016081121CA3840400514BCD /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				016081131CA3840400514BCD /* ScheduleViewController.swift */,
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
+		016081141CA3840400514BCD /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				016081151CA3840400514BCD /* ProductInfoViewController.swift */,
+				016081161CA3840400514BCD /* ShopPopoverMenu.swift */,
+				016081171CA3840400514BCD /* ShopsViewController.swift */,
+			);
+			path = Shop;
 			sourceTree = "<group>";
 		};
 		8A4EB0A31C9F86CD0000EA47 = {
@@ -160,12 +244,11 @@
 		8A4EB0AE1C9F86CE0000EA47 /* PLASOFTWARE */ = {
 			isa = PBXGroup;
 			children = (
-				8A4EB0DF1C9F870B0000EA47 /* View Controllers */,
-				8A4EB0DE1C9F87060000EA47 /* Views */,
-				8A4EB0DD1C9F86FD0000EA47 /* Models */,
+				016080FA1CA3840400514BCD /* Model */,
+				016080FB1CA3840400514BCD /* View */,
+				016081031CA3840400514BCD /* ViewController */,
 				8A4EB0E01C9F873A0000EA47 /* Extensions.swift */,
 				8A4EB0AF1C9F86CE0000EA47 /* AppDelegate.swift */,
-				8A4EB0B11C9F86CE0000EA47 /* ViewController.swift */,
 				8A4EB0B31C9F86CE0000EA47 /* Main.storyboard */,
 				8A4EB0B61C9F86CE0000EA47 /* Images.xcassets */,
 				8A4EB0B81C9F86CE0000EA47 /* LaunchScreen.storyboard */,
@@ -190,92 +273,6 @@
 				8A4EB0D11C9F86CE0000EA47 /* Info.plist */,
 			);
 			path = PLASOFTWAREUITests;
-			sourceTree = "<group>";
-		};
-		8A4EB0DD1C9F86FD0000EA47 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
-		8A4EB0DE1C9F87060000EA47 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				8A1C340A1CA13F8C00B255E2 /* Activity */,
-				8A1C34071CA1277F00B255E2 /* Shop */,
-				8A1C34061CA1277800B255E2 /* Reservation */,
-			);
-			name = Views;
-			sourceTree = "<group>";
-		};
-		8A4EB0DF1C9F870B0000EA47 /* View Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				8A4EB0F91CA0D82B0000EA47 /* Login */,
-				8A4EB0F81CA0D8200000EA47 /* Activities */,
-				8A4EB0F71CA0D7D20000EA47 /* Schedule */,
-				8A4EB0F61CA0D7C20000EA47 /* Shop */,
-				8A4EB0F51CA0D7B90000EA47 /* Main */,
-				8A4EB0F41CA0D7A30000EA47 /* Reservation */,
-			);
-			name = "View Controllers";
-			sourceTree = "<group>";
-		};
-		8A4EB0F41CA0D7A30000EA47 /* Reservation */ = {
-			isa = PBXGroup;
-			children = (
-				8A4EB0E41C9F8DDB0000EA47 /* ReservationViewController.swift */,
-				8A4EB0F21CA0D79B0000EA47 /* NewReservationViewController.swift */,
-				8A4EB0FA1CA0D8740000EA47 /* ConfirmingReservationViewController.swift */,
-				8A4EB0FC1CA0D8D30000EA47 /* ReservedViewController.swift */,
-				8A4EB0FE1CA0DC880000EA47 /* ReservationDetailViewController.swift */,
-				015B19161CA2910B00D3D307 /* CancelReservationViewController.swift */,
-			);
-			name = Reservation;
-			sourceTree = "<group>";
-		};
-		8A4EB0F51CA0D7B90000EA47 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				8A4EB0EA1C9F93140000EA47 /* MainViewController.swift */,
-			);
-			name = Main;
-			sourceTree = "<group>";
-		};
-		8A4EB0F61CA0D7C20000EA47 /* Shop */ = {
-			isa = PBXGroup;
-			children = (
-				8A4EB0F01C9FCC310000EA47 /* ShopPopoverMenu.swift */,
-				8A4EB0E61C9F92190000EA47 /* ShopsViewController.swift */,
-				8A1C34081CA12D2F00B255E2 /* ProductInfoViewController.swift */,
-			);
-			name = Shop;
-			sourceTree = "<group>";
-		};
-		8A4EB0F71CA0D7D20000EA47 /* Schedule */ = {
-			isa = PBXGroup;
-			children = (
-				8A4EB0EE1C9FC6D60000EA47 /* ScheduleViewController.swift */,
-			);
-			name = Schedule;
-			sourceTree = "<group>";
-		};
-		8A4EB0F81CA0D8200000EA47 /* Activities */ = {
-			isa = PBXGroup;
-			children = (
-				8A4EB0E81C9F92300000EA47 /* ActivitiesViewController.swift */,
-				8A1C340D1CA144DA00B255E2 /* ActivityDetailViewController.swift */,
-			);
-			name = Activities;
-			sourceTree = "<group>";
-		};
-		8A4EB0F91CA0D82B0000EA47 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				8A4EB0E21C9F8B0A0000EA47 /* SignInViewController.swift */,
-			);
-			name = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -409,27 +406,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A1C340E1CA144DA00B255E2 /* ActivityDetailViewController.swift in Sources */,
-				8A1C34091CA12D2F00B255E2 /* ProductInfoViewController.swift in Sources */,
-				8A4EB0E51C9F8DDB0000EA47 /* ReservationViewController.swift in Sources */,
-				8A4EB0F11C9FCC310000EA47 /* ShopPopoverMenu.swift in Sources */,
-				8A4EB0E31C9F8B0A0000EA47 /* SignInViewController.swift in Sources */,
-				8A4EB0FB1CA0D8740000EA47 /* ConfirmingReservationViewController.swift in Sources */,
-				8A4EB0B21C9F86CE0000EA47 /* ViewController.swift in Sources */,
-				8A4EB0E91C9F92300000EA47 /* ActivitiesViewController.swift in Sources */,
-				8A1C34051CA1277400B255E2 /* ShopProductCell.swift in Sources */,
-				8A4EB0FD1CA0D8D30000EA47 /* ReservedViewController.swift in Sources */,
-				8A4EB0FF1CA0DC880000EA47 /* ReservationDetailViewController.swift in Sources */,
-				8A1C340C1CA13FA200B255E2 /* ActivityCell.swift in Sources */,
-				8AA38F8D1CA110D000CD7DEA /* ConfirmingReservationCell.swift in Sources */,
+				016081271CA3840400514BCD /* ProductInfoViewController.swift in Sources */,
+				016081191CA3840400514BCD /* ConfirmingReservationCell.swift in Sources */,
+				0160811B1CA3840400514BCD /* ShopProductCell.swift in Sources */,
+				016081261CA3840400514BCD /* ScheduleViewController.swift in Sources */,
 				8A4EB0E11C9F873A0000EA47 /* Extensions.swift in Sources */,
-				8A4EB0EF1C9FC6D70000EA47 /* ScheduleViewController.swift in Sources */,
-				8A4EB0E71C9F92190000EA47 /* ShopsViewController.swift in Sources */,
-				8A4EB0F31CA0D79B0000EA47 /* NewReservationViewController.swift in Sources */,
+				0160811C1CA3840400514BCD /* ActivitiesViewController.swift in Sources */,
+				0160811D1CA3840400514BCD /* ActivityDetailViewController.swift in Sources */,
+				016081241CA3840400514BCD /* ReservationViewController.swift in Sources */,
+				016081291CA3840400514BCD /* ShopsViewController.swift in Sources */,
+				016081251CA3840400514BCD /* ReservedViewController.swift in Sources */,
+				0160811E1CA3840400514BCD /* SignInViewController.swift in Sources */,
+				016081201CA3840400514BCD /* CancelReservationViewController.swift in Sources */,
+				016081181CA3840400514BCD /* ActivityCell.swift in Sources */,
+				016081221CA3840400514BCD /* NewReservationViewController.swift in Sources */,
+				0160811A1CA3840400514BCD /* ReservationCellView.swift in Sources */,
+				016081231CA3840400514BCD /* ReservationDetailViewController.swift in Sources */,
+				016081211CA3840400514BCD /* ConfirmingReservationViewController.swift in Sources */,
 				8A4EB0B01C9F86CE0000EA47 /* AppDelegate.swift in Sources */,
-				8A4EB0ED1C9F9E090000EA47 /* ReservationCellView.swift in Sources */,
-				015B19171CA2910B00D3D307 /* CancelReservationViewController.swift in Sources */,
-				8A4EB0EB1C9F93140000EA47 /* MainViewController.swift in Sources */,
+				0160811F1CA3840400514BCD /* MainViewController.swift in Sources */,
+				016081281CA3840400514BCD /* ShopPopoverMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

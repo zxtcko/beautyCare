@@ -52,6 +52,7 @@
                                     </view>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="asK-lR-R9b">
                                         <rect key="frame" x="46" y="8" width="289" height="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -70,8 +71,9 @@
                                     </view>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0LQ-eV-bJc">
                                         <rect key="frame" x="46" y="8" width="289" height="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_08-14" translatesAutoresizingMaskIntoConstraints="NO" id="xvc-sR-fDa">
                                         <rect key="frame" x="8" y="5" width="30" height="30"/>
@@ -587,13 +589,13 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="ueL-Q5-m2h">
-                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="v0c-4X-NwV">
-                            <connections>
-                                <segue destination="9cb-Nt-4zJ" kind="push" id="IvR-g8-LIX"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="v0c-4X-NwV"/>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="cancelReservationButton" destination="v0c-4X-NwV" id="4rq-Or-ri6"/>
+                        <segue destination="9cb-Nt-4zJ" kind="push" identifier="CancelReservationSegue" id="6gm-JO-heJ"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AAz-3s-2JO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

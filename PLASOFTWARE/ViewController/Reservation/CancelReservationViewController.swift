@@ -16,8 +16,9 @@ class CancelReservationViewController: UIViewController, UITextViewDelegate {
     
     @IBOutlet weak var textView: UITextView!
     
+    
     override func viewDidLoad() {
-        self.hideKeyboardWhenTappedAround()
+        super.viewDidLoad()
         setupUI()
     }
     
@@ -28,6 +29,8 @@ class CancelReservationViewController: UIViewController, UITextViewDelegate {
         textView.delegate = self
         textView.text = NSLocalizedString("The reason of cancel", comment: "")
         textView.textColor = UIColor.lightGrayColor()
+        
+        self.hideKeyboardWhenTappedAround()
     }
     
     func textViewDidBeginEditing(textView: UITextView) {
