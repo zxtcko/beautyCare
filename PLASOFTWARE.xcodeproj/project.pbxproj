@@ -25,6 +25,8 @@
 		016081271CA3840400514BCD /* ProductInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016081151CA3840400514BCD /* ProductInfoViewController.swift */; };
 		016081281CA3840400514BCD /* ShopPopoverMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016081161CA3840400514BCD /* ShopPopoverMenu.swift */; };
 		016081291CA3840400514BCD /* ShopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016081171CA3840400514BCD /* ShopsViewController.swift */; };
+		016081331CA5395A00514BCD /* ShopBookingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016081321CA5395A00514BCD /* ShopBookingTableViewController.swift */; };
+		016081351CA53E4A00514BCD /* ShopBookingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016081341CA53E4A00514BCD /* ShopBookingCell.swift */; };
 		8A4EB0B01C9F86CE0000EA47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4EB0AF1C9F86CE0000EA47 /* AppDelegate.swift */; };
 		8A4EB0B51C9F86CE0000EA47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A4EB0B31C9F86CE0000EA47 /* Main.storyboard */; };
 		8A4EB0B71C9F86CE0000EA47 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A4EB0B61C9F86CE0000EA47 /* Images.xcassets */; };
@@ -70,6 +72,8 @@
 		016081151CA3840400514BCD /* ProductInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductInfoViewController.swift; sourceTree = "<group>"; };
 		016081161CA3840400514BCD /* ShopPopoverMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopPopoverMenu.swift; sourceTree = "<group>"; };
 		016081171CA3840400514BCD /* ShopsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopsViewController.swift; sourceTree = "<group>"; };
+		016081321CA5395A00514BCD /* ShopBookingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopBookingTableViewController.swift; sourceTree = "<group>"; };
+		016081341CA53E4A00514BCD /* ShopBookingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopBookingCell.swift; sourceTree = "<group>"; };
 		8A4EB0AC1C9F86CE0000EA47 /* PLASOFTWARE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PLASOFTWARE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A4EB0AF1C9F86CE0000EA47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A4EB0B41C9F86CE0000EA47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -148,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				016081021CA3840400514BCD /* ShopProductCell.swift */,
+				016081341CA53E4A00514BCD /* ShopBookingCell.swift */,
 			);
 			path = Shop;
 			sourceTree = "<group>";
@@ -217,6 +222,7 @@
 				016081151CA3840400514BCD /* ProductInfoViewController.swift */,
 				016081161CA3840400514BCD /* ShopPopoverMenu.swift */,
 				016081171CA3840400514BCD /* ShopsViewController.swift */,
+				016081321CA5395A00514BCD /* ShopBookingTableViewController.swift */,
 			);
 			path = Shop;
 			sourceTree = "<group>";
@@ -417,6 +423,7 @@
 				016081291CA3840400514BCD /* ShopsViewController.swift in Sources */,
 				016081251CA3840400514BCD /* ReservedViewController.swift in Sources */,
 				0160811E1CA3840400514BCD /* SignInViewController.swift in Sources */,
+				016081331CA5395A00514BCD /* ShopBookingTableViewController.swift in Sources */,
 				016081201CA3840400514BCD /* CancelReservationViewController.swift in Sources */,
 				016081181CA3840400514BCD /* ActivityCell.swift in Sources */,
 				016081221CA3840400514BCD /* NewReservationViewController.swift in Sources */,
@@ -424,6 +431,7 @@
 				016081231CA3840400514BCD /* ReservationDetailViewController.swift in Sources */,
 				016081211CA3840400514BCD /* ConfirmingReservationViewController.swift in Sources */,
 				8A4EB0B01C9F86CE0000EA47 /* AppDelegate.swift in Sources */,
+				016081351CA53E4A00514BCD /* ShopBookingCell.swift in Sources */,
 				0160811F1CA3840400514BCD /* MainViewController.swift in Sources */,
 				016081281CA3840400514BCD /* ShopPopoverMenu.swift in Sources */,
 			);

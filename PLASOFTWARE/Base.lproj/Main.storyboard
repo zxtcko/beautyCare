@@ -782,7 +782,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4AJ-Dk-mVC">
-                        <barButtonItem key="rightBarButtonItem" title="MY BOOKING" id="V3w-z7-c99"/>
+                        <barButtonItem key="rightBarButtonItem" title="MY BOOKING" id="V3w-z7-c99">
+                            <connections>
+                                <segue destination="bCT-wI-mO4" kind="push" id="OnS-be-W89"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -1004,6 +1008,113 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cfN-9N-bjf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2308.5" y="-539.5"/>
+        </scene>
+        <!--Shop Booking Table View Controller-->
+        <scene sceneID="We2-7a-4qe">
+            <objects>
+                <tableViewController id="bCT-wI-mO4" customClass="ShopBookingTableViewController" customModule="PLASOFTWARE" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" id="FDz-9Z-oJ7">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShopBookingCell" id="QXE-h2-Iid" customClass="ShopBookingCell" customModule="PLASOFTWARE" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="120"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QXE-h2-Iid" id="bMo-P3-B07">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1A6-3X-lcf">
+                                            <rect key="frame" x="8" y="10" width="100" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="100" id="0ih-zT-SMm"/>
+                                                <constraint firstAttribute="width" secondItem="1A6-3X-lcf" secondAttribute="height" multiplier="1:1" id="KVP-9n-FZc"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZH-qZ-AL3">
+                                            <rect key="frame" x="116" y="8" width="42" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="LcH-VG-lLS"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phc-s2-dSw">
+                                            <rect key="frame" x="116" y="31" width="42" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="tMk-JY-bgd"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdL-JY-WMR">
+                                            <rect key="frame" x="116" y="89" width="42" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="bXj-P6-gUN"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3jo-9l-SqU">
+                                            <rect key="frame" x="227" y="81" width="140" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="140" id="4BY-uG-poy"/>
+                                                <constraint firstAttribute="height" constant="30" id="MK3-wQ-udv"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <state key="normal" title="CANCEL BOOKING" backgroundImage="圆角矩形-1-拷贝">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="seW-1j-a83">
+                                            <rect key="frame" x="116" y="49" width="42" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="Twh-jl-WJE"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="phc-s2-dSw" firstAttribute="leading" secondItem="1A6-3X-lcf" secondAttribute="trailing" constant="8" id="3W9-5a-0le"/>
+                                        <constraint firstItem="qZH-qZ-AL3" firstAttribute="top" secondItem="bMo-P3-B07" secondAttribute="topMargin" id="65u-wL-Jc7"/>
+                                        <constraint firstItem="qZH-qZ-AL3" firstAttribute="leading" secondItem="1A6-3X-lcf" secondAttribute="trailing" constant="8" id="84H-Yb-D3n"/>
+                                        <constraint firstItem="3jo-9l-SqU" firstAttribute="bottom" secondItem="bMo-P3-B07" secondAttribute="bottomMargin" id="BTQ-z3-f9L"/>
+                                        <constraint firstItem="pdL-JY-WMR" firstAttribute="leading" secondItem="1A6-3X-lcf" secondAttribute="trailing" constant="8" id="GuQ-Ov-Bra"/>
+                                        <constraint firstItem="3jo-9l-SqU" firstAttribute="trailing" secondItem="bMo-P3-B07" secondAttribute="trailingMargin" id="S8V-eX-all"/>
+                                        <constraint firstItem="1A6-3X-lcf" firstAttribute="top" secondItem="bMo-P3-B07" secondAttribute="topMargin" constant="2" id="UEY-Kg-SYB"/>
+                                        <constraint firstItem="phc-s2-dSw" firstAttribute="top" secondItem="qZH-qZ-AL3" secondAttribute="bottom" constant="2" id="amn-CN-6hZ"/>
+                                        <constraint firstItem="seW-1j-a83" firstAttribute="leading" secondItem="1A6-3X-lcf" secondAttribute="trailing" constant="8" id="eeT-iN-bpw"/>
+                                        <constraint firstItem="seW-1j-a83" firstAttribute="top" secondItem="qZH-qZ-AL3" secondAttribute="bottom" constant="20" id="kZb-cX-0To"/>
+                                        <constraint firstItem="1A6-3X-lcf" firstAttribute="leading" secondItem="bMo-P3-B07" secondAttribute="leadingMargin" id="t7g-jv-Ems"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="pdL-JY-WMR" secondAttribute="bottom" constant="1" id="zu5-lz-sQi"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="addressLabel" destination="seW-1j-a83" id="rIy-Fc-KSm"/>
+                                    <outlet property="bookingImageView" destination="1A6-3X-lcf" id="aNW-sB-Tzz"/>
+                                    <outlet property="branchLabel" destination="phc-s2-dSw" id="3ak-VT-teX"/>
+                                    <outlet property="cancelButton" destination="3jo-9l-SqU" id="0HB-Lr-lDC"/>
+                                    <outlet property="nameLabel" destination="qZH-qZ-AL3" id="q9j-wO-gWt"/>
+                                    <outlet property="priceLabel" destination="pdL-JY-WMR" id="MEj-mD-Rsg"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="bCT-wI-mO4" id="xmx-8s-TlK"/>
+                            <outlet property="delegate" destination="bCT-wI-mO4" id="BCX-FY-O3J"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="uOJ-yQ-shY"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TMx-zF-6TJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2772.5" y="-539.5"/>
         </scene>
         <!--Activities View Controller-->
         <scene sceneID="jEj-Jg-vLp">
