@@ -1,0 +1,27 @@
+说明：
+测试前请先绑定IP：192.168.1.21 localhost.cn
+
+注册：
+url: http://localhost.cn/beaut/registeruser.php
+方式：POST
+参数：
+mobile	手机号
+user	注册帐号
+pass	密码
+string	校验码（生成：md5(pass.md5(time.user.check_char.mobile))，其中 check_char="QW!!22*&90)" ）
+time	时间戳
+返回值：（json数据）
+iserror	为1时表示错误，0时表示成功
+info	错误或成功的信息
+
+登录：
+url: http://localhost.cn/beaut/loginuser.php
+方式：POST
+参数：
+user	帐号
+pass	密码
+string	校验码（生成：md5(pass.md5(time.user.check_char))，其中 check_char="QW!!22*&90)" ）
+time	时间戳
+返回值：（json数据）
+iserror	为1时表示错误，0时表示成功
+info	错误或成功的信息

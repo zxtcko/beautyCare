@@ -1,0 +1,150 @@
+
+/* Class = "UIButton"; normalTitle = "CANCEL BOOKING"; ObjectID = "3jo-9l-SqU"; */
+"3jo-9l-SqU.normalTitle" = "HUỶ ĐẶT HẸN";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "4l9-6v-lK9"; */
+"4l9-6v-lK9.normalTitle" = "PHÍM";
+
+/* Class = "UIButton"; normalTitle = "+"; ObjectID = "52T-ew-pSL"; */
+"52T-ew-pSL.normalTitle" = "+";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "5Ca-pr-vki"; */
+"5Ca-pr-vki.text" = "TIÊU ĐỀ";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "72u-BQ-2UB"; */
+"72u-BQ-2UB.text" = "CHI TIẾT";
+
+/* Class = "UIButton"; normalTitle = "BRANCH"; ObjectID = "7u5-EM-a5W"; */
+"7u5-EM-a5W.normalTitle" = "CHI NHÁNH";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "8iX-vn-kwU"; */
+"8iX-vn-kwU.text" = "THƯƠNG HIỆU";
+
+/* Class = "UIButton"; normalTitle = "SHOPS"; ObjectID = "9cv-Lt-GRk"; */
+"9cv-Lt-GRk.normalTitle" = "CỬA HÀNG";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "B63-Hl-PtV"; */
+"B63-Hl-PtV.normalTitle" = "PHÍM";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "D8K-bS-5NA"; */
+"D8K-bS-5NA.text" = "THƯƠNG HIỆU";
+
+/* Class = "UIButton"; normalTitle = "GIVE UP"; ObjectID = "DZW-no-9ek"; */
+"DZW-no-9ek.normalTitle" = "HUỶ";
+
+/* Class = "UILabel"; text = "BRANCH"; ObjectID = "Dds-nn-jeR"; */
+"Dds-nn-jeR.text" = "CHI NHÁNH";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "DxP-X6-GQl"; */
+"DxP-X6-GQl.text" = "THƯƠNG HIỆU";
+
+/* Class = "UILabel"; text = "NAME"; ObjectID = "GS0-Y3-sWg"; */
+"GS0-Y3-sWg.text" = "TÊN";
+
+/* Class = "UILabel"; text = "TIME"; ObjectID = "JGe-WN-tl7"; */
+"JGe-WN-tl7.text" = "THỜI GIAN";
+
+/* Class = "UIButton"; normalTitle = "ACTIVITIES"; ObjectID = "Jv0-HR-zse"; */
+"Jv0-HR-zse.normalTitle" = "KHUYẾN MẠI";
+
+/* Class = "UIButton"; normalTitle = "CONFIRM"; ObjectID = "LAt-5G-l0o"; */
+"LAt-5G-l0o.normalTitle" = "ĐỒNG Ý";
+
+/* Class = "UILabel"; text = "Quantity"; ObjectID = "Nyl-nl-G7Z"; */
+"Nyl-nl-G7Z.text" = "SỐ LƯỢNG";
+
+/* Class = "UIButton"; normalTitle = "CONFIRM"; ObjectID = "OuN-AR-Da2"; */
+"OuN-AR-Da2.normalTitle" = "ĐỒNG Ý";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "QF8-vH-87R"; */
+"QF8-vH-87R.text" = "CHI TIẾT";
+
+/* Class = "UIButton"; normalTitle = "CATEGORY"; ObjectID = "Qoa-MA-8Op"; */
+"Qoa-MA-8Op.normalTitle" = "PHÂN LOẠI";
+
+/* Class = "UILabel"; text = "ITEM"; ObjectID = "Qw7-ZS-6p4"; */
+"Qw7-ZS-6p4.text" = "SẢN PHẨM";
+
+/* Class = "UIButton"; normalTitle = "-"; ObjectID = "RVz-AX-PaK"; */
+"RVz-AX-PaK.normalTitle" = "-";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "T7C-rp-0Xt"; */
+"T7C-rp-0Xt.normalTitle" = "PHÍM";
+
+/* Class = "UIBarButtonItem"; title = "MY BOOKING"; ObjectID = "V3w-z7-c99"; */
+"V3w-z7-c99.title" = "ĐẶT HẸN CỦA TÔI";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "WVl-fV-zIZ"; */
+"WVl-fV-zIZ.text" = "CHI TIẾT";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "Xuf-x6-4pS"; */
+"Xuf-x6-4pS.text" = "1";
+
+/* Class = "UILabel"; text = "ITEM"; ObjectID = "Y53-2s-6uV"; */
+"Y53-2s-6uV.text" = "SẢN PHẨM";
+
+/* Class = "UIButton"; normalTitle = "LOG_IN"; ObjectID = "YcS-F4-UF4"; */
+"YcS-F4-UF4.normalTitle" = "ĐĂNG NHẬP";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "aR5-zz-XsE"; */
+"aR5-zz-XsE.text" = "THƯƠNG HIỆU";
+
+/* Class = "UIButton"; normalTitle = "SCHEDULE"; ObjectID = "blz-ja-SKD"; */
+"blz-ja-SKD.normalTitle" = "LỊCH";
+
+/* Class = "UILabel"; text = "TIME"; ObjectID = "e0u-eL-duS"; */
+"e0u-eL-duS.text" = "THỜI GIAN";
+
+/* Class = "UILabel"; text = "Item Details"; ObjectID = "elX-Ft-fMT"; */
+"elX-Ft-fMT.text" = "CHI TIẾT SẢN PHẨM";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "fCX-xq-0c5"; */
+"fCX-xq-0c5.normalTitle" = "PHÍM";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "fWz-v0-uZA"; */
+"fWz-v0-uZA.text" = "THƯƠNG HIỆU";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "kf3-XS-NRm"; */
+"kf3-XS-NRm.normalTitle" = "PHÍM";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "nuJ-6R-aam"; */
+"nuJ-6R-aam.normalTitle" = "PHÍM";
+
+/* Class = "UIButton"; normalTitle = "RESERVATION"; ObjectID = "pK2-1Y-4xX"; */
+"pK2-1Y-4xX.normalTitle" = "ĐẶT HẸN";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "pdL-JY-WMR"; */
+"pdL-JY-WMR.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "phc-s2-dSw"; */
+"phc-s2-dSw.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "qZH-qZ-AL3"; */
+"qZH-qZ-AL3.text" = "Label";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "r0c-LZ-0px"; */
+"r0c-LZ-0px.text" = "Title";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "seW-1j-a83"; */
+"seW-1j-a83.text" = "Label";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "t3w-2V-oTa"; */
+"t3w-2V-oTa.text" = "Title";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "th8-tn-SsO"; */
+"th8-tn-SsO.text" = "Label";
+
+/* Class = "UILabel"; text = "$ 9999"; ObjectID = "w14-Ez-Kh6"; */
+"w14-Ez-Kh6.text" = "$ 9999";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "wSO-wb-Ni9"; */
+"wSO-wb-Ni9.text" = "Label";
+
+/* Class = "UILabel"; text = "BRAND"; ObjectID = "wq0-oq-qkW"; */
+"wq0-oq-qkW.text" = "CHI NHÁNH";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "xzz-IR-B28"; */
+"xzz-IR-B28.normalTitle" = "PHÍM";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "z6z-h5-YLh"; */
+"z6z-h5-YLh.text" = "Label";

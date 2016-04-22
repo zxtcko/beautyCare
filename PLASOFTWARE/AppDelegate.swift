@@ -22,6 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     let SignInViewControllerIdentifier = "SignInViewController"
     
+    let RegistViewControllerIdentifier = "RegistViewController"
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
@@ -29,7 +31,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         let signInViewController: AnyObject! = UIStoryboard.mainStoryboard.instantiateViewControllerWithIdentifier(SignInViewControllerIdentifier)
+        
         window?.rootViewController = signInViewController as? UIViewController
+        
+//        let registViewController: AnyObject! = UIStoryboard.mainStoryboard.instantiateViewControllerWithIdentifier(RegistViewControllerIdentifier)
+//        
+//        window?.rootViewController = registViewController as? UIViewController
         
         print("simulator launched")
         return true
@@ -59,4 +66,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
-

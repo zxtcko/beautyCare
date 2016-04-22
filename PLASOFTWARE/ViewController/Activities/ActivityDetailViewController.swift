@@ -32,14 +32,14 @@ class ActivityDetailViewController: UITableViewController {
         
         switch indexPath.row{
         case 0:
-            cell.textLabel?.text = "BRANCH"
-            cell.detailTextLabel?.text = "Hanoi"
+            cell.textLabel?.text = NSLocalizedString("BRANCH", comment: "")
+            cell.detailTextLabel?.text = NSLocalizedString("Hanoi", comment: "")
         case 1:
-            cell.textLabel?.text = "ITEMS"
-            cell.detailTextLabel?.text = "The Neck Care"
+            cell.textLabel?.text = NSLocalizedString("ITEMS", comment: "")
+            cell.detailTextLabel?.text = NSLocalizedString("The Neck Care", comment: "")
         case 2:
-            cell.textLabel?.text = "BEAUTICIAN"
-            cell.detailTextLabel?.text = "MeiLi Wang"
+            cell.textLabel?.text = NSLocalizedString("BEAUTICIAN", comment: "")
+            cell.detailTextLabel?.text = NSLocalizedString("MeiLi Wang", comment: "")
         default:break
         }
         

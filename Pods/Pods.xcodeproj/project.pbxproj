@@ -1,0 +1,871 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03F494989CC1A8857B68A317D5D6860F /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE82608C8C2A46981A07D7E422BEB45 /* Response.swift */; };
+		0681ADC8BAE2C3185F13487BAAB4D9DD /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948996616B0A38BD6FE8C4CB309CC964 /* Upload.swift */; };
+		2C5450AC69398958CF6F7539EF7D99E5 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FC4583A4BD15196E6859EA5E990AD3F /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F1A8C9ACEEE1004A02256B70F3DFC49 /* Pods-PLASOFTWAREUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 33EAE1690C649409AC14D6E7E29B0BC4 /* Pods-PLASOFTWAREUITests-dummy.m */; };
+		47573F09AFB42AEFCE5D0C07B242B478 /* Pods-PLASOFTWAREUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ED7FDFB772B47680ECADFCD11728E60E /* Pods-PLASOFTWAREUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BB8CB026471055EE0BCF7AB9815C953 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3997E5D2953ECDF377B85B234FDF550D /* Foundation.framework */; };
+		4DE5FCC41D100B113B6645EA64410F16 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5465E2051CE332BA7D4E0595F9B44718 /* ParameterEncoding.swift */; };
+		5015A01A000251006A0FC579720F7F13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3997E5D2953ECDF377B85B234FDF550D /* Foundation.framework */; };
+		80F496237530D382A045A29654D8C11C /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52836A3E223CCB5C120D4BE7D37AC1BF /* ServerTrustPolicy.swift */; };
+		82971968CBDAB224212EEB4607C9FB8D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7835749D1C4FA403E4BB17A0C787EDCA /* Result.swift */; };
+		8399DBEE3E2D98EB1F466132E476F4D9 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10653C142FFDF1986227894BF0317944 /* MultipartFormData.swift */; };
+		9F18D930A30FE44906F08678A9B9E098 /* Pods-PLASOFTWARE-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D71226C2B1DCF4454ECCF65B567852D /* Pods-PLASOFTWARE-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2C172FE407C0BC3478ADCA91A6C9CEC /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5241F56B5C8C48BD734958D586267D1A /* Manager.swift */; };
+		A3505FA2FB3067D53847AD288AC04F03 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA14379DE2012C9EFB2B9C3A3A39AB4 /* Download.swift */; };
+		B0FB4B01682814B9E3D32F9DC4A5E762 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D4D8DBF3D77B1F970DB9DF6C963A84 /* Alamofire.swift */; };
+		B6D2DC3E3DA44CD382B9B425F40E11C1 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1C843C58F0C2DFE4522F24897D8CCE /* Alamofire-dummy.m */; };
+		C156F624B23C1FB73DCE0D45BEC5140B /* Pods-PLASOFTWARE-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 603B8ED288A71E9DFF80EAFA119FDF33 /* Pods-PLASOFTWARE-dummy.m */; };
+		C6156C88425341A0EF78B3C9071C8F61 /* Pods-PLASOFTWARETests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E8A55518B30A932056FF4A3FDC211A6 /* Pods-PLASOFTWARETests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C75519F0450166A6F28126ECC7664E9C /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779B19103BE8402A434ED95F67573911 /* Validation.swift */; };
+		D21B7325B3642887BFBE977E021F2D26 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EBB70A7BA5F9037CD2DA409E148A73 /* ResponseSerialization.swift */; };
+		D300BC0040D05EECDBE756AD9130E253 /* Pods-PLASOFTWARETests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 23237FDF63959F5A11F6987E8C1BB69D /* Pods-PLASOFTWARETests-dummy.m */; };
+		D75CA395D510E08C404E55F5BDAE55CE /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83957AB2EE778B52399CC4C903539BD0 /* Error.swift */; };
+		DEDFE5A351D2C2FB93E3796CD740A382 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3997E5D2953ECDF377B85B234FDF550D /* Foundation.framework */; };
+		EE604447ADA105BA80B4FA24FF3AB301 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3997E5D2953ECDF377B85B234FDF550D /* Foundation.framework */; };
+		FC14480CECE872865A9C6E584F886DA3 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23887509C9FF173ECBE0A470EDD527 /* Request.swift */; };
+		FEF0D7653948988B804226129471C1EC /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89117FC38D94C9DF36CA21E3C96EEB7 /* Stream.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D21C90B007D72347CA09070D41FE43AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 432ECC54282C84882B482CCB4CF227FC;
+			remoteInfo = Alamofire;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		025CD37140906ECCE47373BB1BE70859 /* Pods-PLASOFTWARETests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PLASOFTWARETests.release.xcconfig"; sourceTree = "<group>"; };
+		0D71226C2B1DCF4454ECCF65B567852D /* Pods-PLASOFTWARE-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PLASOFTWARE-umbrella.h"; sourceTree = "<group>"; };
+		102F638E633D687A0163404533F14F62 /* Pods-PLASOFTWAREUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PLASOFTWAREUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		10653C142FFDF1986227894BF0317944 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		17D8D589CF62A55561885817CF5BC9A5 /* Pods-PLASOFTWARETests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PLASOFTWARETests-frameworks.sh"; sourceTree = "<group>"; };
+		1F20E4A5224193E5DC694C35C63F80E4 /* Pods-PLASOFTWAREUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PLASOFTWAREUITests-frameworks.sh"; sourceTree = "<group>"; };
+		21FA4AD1EF77337F9C8F2AD871ED371D /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		23237FDF63959F5A11F6987E8C1BB69D /* Pods-PLASOFTWARETests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PLASOFTWARETests-dummy.m"; sourceTree = "<group>"; };
+		23D4D8DBF3D77B1F970DB9DF6C963A84 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		2A9ED914AF9904653A5E8C20844A22B2 /* Pods_PLASOFTWAREUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PLASOFTWAREUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F70177294DBF4F99DDF8698937A641A /* Pods-PLASOFTWARE-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PLASOFTWARE-acknowledgements.plist"; sourceTree = "<group>"; };
+		303748BE4E0EE296EBE1B3AF6C311903 /* Pods-PLASOFTWARE.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PLASOFTWARE.modulemap"; sourceTree = "<group>"; };
+		33EAE1690C649409AC14D6E7E29B0BC4 /* Pods-PLASOFTWAREUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PLASOFTWAREUITests-dummy.m"; sourceTree = "<group>"; };
+		3997E5D2953ECDF377B85B234FDF550D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4ACB2B83715F39121EA99EFEF82FA317 /* Pods-PLASOFTWAREUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PLASOFTWAREUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4D1381CA62341D8A70EA5F1F4D4C2D77 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FC4583A4BD15196E6859EA5E990AD3F /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		5241F56B5C8C48BD734958D586267D1A /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Source/Manager.swift; sourceTree = "<group>"; };
+		52836A3E223CCB5C120D4BE7D37AC1BF /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		5465E2051CE332BA7D4E0595F9B44718 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		58535ACBBB7F454163165F71F8478712 /* Pods-PLASOFTWARETests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PLASOFTWARETests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5E2C9CFB57A48949F78C4C3FA96A5A08 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E53BF5A61CAF6972C5CDD2C3EE6C003 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		603B8ED288A71E9DFF80EAFA119FDF33 /* Pods-PLASOFTWARE-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PLASOFTWARE-dummy.m"; sourceTree = "<group>"; };
+		65B825FA6B2ECC9B569BDF127BE0353C /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68406E5F3F8E6762AF7A02DDA1EE2983 /* Pods-PLASOFTWARE-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PLASOFTWARE-frameworks.sh"; sourceTree = "<group>"; };
+		6A719CE2CEFED62D05AED98EB6CF4D3E /* Pods-PLASOFTWARETests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PLASOFTWARETests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		761A3C2D854D5521EB256AD05C4A52C9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		779B19103BE8402A434ED95F67573911 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		7835749D1C4FA403E4BB17A0C787EDCA /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		790ACA4CE96A2C9F3767C951184AE514 /* Pods-PLASOFTWARE-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PLASOFTWARE-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7BE74512E4A3FB5A76E08833FFA91604 /* Pods-PLASOFTWARETests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PLASOFTWARETests-resources.sh"; sourceTree = "<group>"; };
+		7D7AAA0E85E40ED735D6BCBF7A243C46 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		7DE472CF1530A5BEB67A830500DEA5F1 /* Pods-PLASOFTWARE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PLASOFTWARE.release.xcconfig"; sourceTree = "<group>"; };
+		83957AB2EE778B52399CC4C903539BD0 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Source/Error.swift; sourceTree = "<group>"; };
+		8AE82608C8C2A46981A07D7E422BEB45 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		8D1C843C58F0C2DFE4522F24897D8CCE /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		8E8A55518B30A932056FF4A3FDC211A6 /* Pods-PLASOFTWARETests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PLASOFTWARETests-umbrella.h"; sourceTree = "<group>"; };
+		948996616B0A38BD6FE8C4CB309CC964 /* Upload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Upload.swift; path = Source/Upload.swift; sourceTree = "<group>"; };
+		ADA14379DE2012C9EFB2B9C3A3A39AB4 /* Download.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Download.swift; path = Source/Download.swift; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C42A1FBD158E5AA06C70B1BBED2464E9 /* Pods_PLASOFTWARE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PLASOFTWARE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C89117FC38D94C9DF36CA21E3C96EEB7 /* Stream.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stream.swift; path = Source/Stream.swift; sourceTree = "<group>"; };
+		CA48ED865CD31151D3275F9640F12C71 /* Pods-PLASOFTWAREUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PLASOFTWAREUITests.modulemap"; sourceTree = "<group>"; };
+		D4D10E35B782B508231FFA6A275CC491 /* Pods-PLASOFTWARE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PLASOFTWARE.debug.xcconfig"; sourceTree = "<group>"; };
+		D8D5D16FC2F400D9350D5CC9B11484E0 /* Pods_PLASOFTWARETests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PLASOFTWARETests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E11E177BE3D4868A2322A33BC0BF6583 /* Pods-PLASOFTWAREUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PLASOFTWAREUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E6D51E88CF06503F74AC8F5ECD5A209B /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		ED7FDFB772B47680ECADFCD11728E60E /* Pods-PLASOFTWAREUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PLASOFTWAREUITests-umbrella.h"; sourceTree = "<group>"; };
+		EE22E9191E62957A06526F4E22E765D9 /* Pods-PLASOFTWAREUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PLASOFTWAREUITests-resources.sh"; sourceTree = "<group>"; };
+		F3862CDFBF15040A13956AD4A816281F /* Pods-PLASOFTWAREUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PLASOFTWAREUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F5EBB70A7BA5F9037CD2DA409E148A73 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		F84E6F9887E21C05BD91CA422D4757EA /* Pods-PLASOFTWARE-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PLASOFTWARE-resources.sh"; sourceTree = "<group>"; };
+		F9AF0436361875DA6C883A0E2C60F1E9 /* Pods-PLASOFTWARETests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PLASOFTWARETests.modulemap"; sourceTree = "<group>"; };
+		FA23887509C9FF173ECBE0A470EDD527 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		FE6B42E2C34117B79B1D2365CAFAE534 /* Pods-PLASOFTWARETests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PLASOFTWARETests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		59CBCE0EA57D05D270EF3A6D31960B42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BB8CB026471055EE0BCF7AB9815C953 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C5F7085A8C05DCD9190C87086F83BD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE604447ADA105BA80B4FA24FF3AB301 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5AE1D340C4A0691EC28EEA8241C9FCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5015A01A000251006A0FC579720F7F13 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECDD05DB177B5790C2F26ACA5DA37D08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEDFE5A351D2C2FB93E3796CD740A382 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09192E6B9C45ACAB5568261F45FA3D88 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				23D4D8DBF3D77B1F970DB9DF6C963A84 /* Alamofire.swift */,
+				ADA14379DE2012C9EFB2B9C3A3A39AB4 /* Download.swift */,
+				83957AB2EE778B52399CC4C903539BD0 /* Error.swift */,
+				5241F56B5C8C48BD734958D586267D1A /* Manager.swift */,
+				10653C142FFDF1986227894BF0317944 /* MultipartFormData.swift */,
+				5465E2051CE332BA7D4E0595F9B44718 /* ParameterEncoding.swift */,
+				FA23887509C9FF173ECBE0A470EDD527 /* Request.swift */,
+				8AE82608C8C2A46981A07D7E422BEB45 /* Response.swift */,
+				F5EBB70A7BA5F9037CD2DA409E148A73 /* ResponseSerialization.swift */,
+				7835749D1C4FA403E4BB17A0C787EDCA /* Result.swift */,
+				52836A3E223CCB5C120D4BE7D37AC1BF /* ServerTrustPolicy.swift */,
+				C89117FC38D94C9DF36CA21E3C96EEB7 /* Stream.swift */,
+				948996616B0A38BD6FE8C4CB309CC964 /* Upload.swift */,
+				779B19103BE8402A434ED95F67573911 /* Validation.swift */,
+				405A7C3030F6D3BDE3978D6D558FDF7F /* Support Files */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		112C7921E3A497328D11F4930CBBC9CA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3997E5D2953ECDF377B85B234FDF550D /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		20C396BA1B90EEE39D4B19FE012C4F6D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				09192E6B9C45ACAB5568261F45FA3D88 /* Alamofire */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		247EF29BA6B8FCBF6AB17A5541CD1CFF /* Pods-PLASOFTWARE */ = {
+			isa = PBXGroup;
+			children = (
+				4D1381CA62341D8A70EA5F1F4D4C2D77 /* Info.plist */,
+				303748BE4E0EE296EBE1B3AF6C311903 /* Pods-PLASOFTWARE.modulemap */,
+				790ACA4CE96A2C9F3767C951184AE514 /* Pods-PLASOFTWARE-acknowledgements.markdown */,
+				2F70177294DBF4F99DDF8698937A641A /* Pods-PLASOFTWARE-acknowledgements.plist */,
+				603B8ED288A71E9DFF80EAFA119FDF33 /* Pods-PLASOFTWARE-dummy.m */,
+				68406E5F3F8E6762AF7A02DDA1EE2983 /* Pods-PLASOFTWARE-frameworks.sh */,
+				F84E6F9887E21C05BD91CA422D4757EA /* Pods-PLASOFTWARE-resources.sh */,
+				0D71226C2B1DCF4454ECCF65B567852D /* Pods-PLASOFTWARE-umbrella.h */,
+				D4D10E35B782B508231FFA6A275CC491 /* Pods-PLASOFTWARE.debug.xcconfig */,
+				7DE472CF1530A5BEB67A830500DEA5F1 /* Pods-PLASOFTWARE.release.xcconfig */,
+			);
+			name = "Pods-PLASOFTWARE";
+			path = "Target Support Files/Pods-PLASOFTWARE";
+			sourceTree = "<group>";
+		};
+		29168953DD5183BC6C3E3A639B88372F /* Pods-PLASOFTWARETests */ = {
+			isa = PBXGroup;
+			children = (
+				5E2C9CFB57A48949F78C4C3FA96A5A08 /* Info.plist */,
+				F9AF0436361875DA6C883A0E2C60F1E9 /* Pods-PLASOFTWARETests.modulemap */,
+				6A719CE2CEFED62D05AED98EB6CF4D3E /* Pods-PLASOFTWARETests-acknowledgements.markdown */,
+				58535ACBBB7F454163165F71F8478712 /* Pods-PLASOFTWARETests-acknowledgements.plist */,
+				23237FDF63959F5A11F6987E8C1BB69D /* Pods-PLASOFTWARETests-dummy.m */,
+				17D8D589CF62A55561885817CF5BC9A5 /* Pods-PLASOFTWARETests-frameworks.sh */,
+				7BE74512E4A3FB5A76E08833FFA91604 /* Pods-PLASOFTWARETests-resources.sh */,
+				8E8A55518B30A932056FF4A3FDC211A6 /* Pods-PLASOFTWARETests-umbrella.h */,
+				FE6B42E2C34117B79B1D2365CAFAE534 /* Pods-PLASOFTWARETests.debug.xcconfig */,
+				025CD37140906ECCE47373BB1BE70859 /* Pods-PLASOFTWARETests.release.xcconfig */,
+			);
+			name = "Pods-PLASOFTWARETests";
+			path = "Target Support Files/Pods-PLASOFTWARETests";
+			sourceTree = "<group>";
+		};
+		405A7C3030F6D3BDE3978D6D558FDF7F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				21FA4AD1EF77337F9C8F2AD871ED371D /* Alamofire.modulemap */,
+				7D7AAA0E85E40ED735D6BCBF7A243C46 /* Alamofire.xcconfig */,
+				8D1C843C58F0C2DFE4522F24897D8CCE /* Alamofire-dummy.m */,
+				E6D51E88CF06503F74AC8F5ECD5A209B /* Alamofire-prefix.pch */,
+				4FC4583A4BD15196E6859EA5E990AD3F /* Alamofire-umbrella.h */,
+				5E53BF5A61CAF6972C5CDD2C3EE6C003 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				20C396BA1B90EEE39D4B19FE012C4F6D /* Pods */,
+				F91178EA9D34E5CCA11CB2615F2148DC /* Products */,
+				EA7B17E23B4FE9E0AA311AF505D3EF0D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		88A28278F65430CAD881AD7BAD996261 /* Pods-PLASOFTWAREUITests */ = {
+			isa = PBXGroup;
+			children = (
+				761A3C2D854D5521EB256AD05C4A52C9 /* Info.plist */,
+				CA48ED865CD31151D3275F9640F12C71 /* Pods-PLASOFTWAREUITests.modulemap */,
+				102F638E633D687A0163404533F14F62 /* Pods-PLASOFTWAREUITests-acknowledgements.markdown */,
+				E11E177BE3D4868A2322A33BC0BF6583 /* Pods-PLASOFTWAREUITests-acknowledgements.plist */,
+				33EAE1690C649409AC14D6E7E29B0BC4 /* Pods-PLASOFTWAREUITests-dummy.m */,
+				1F20E4A5224193E5DC694C35C63F80E4 /* Pods-PLASOFTWAREUITests-frameworks.sh */,
+				EE22E9191E62957A06526F4E22E765D9 /* Pods-PLASOFTWAREUITests-resources.sh */,
+				ED7FDFB772B47680ECADFCD11728E60E /* Pods-PLASOFTWAREUITests-umbrella.h */,
+				F3862CDFBF15040A13956AD4A816281F /* Pods-PLASOFTWAREUITests.debug.xcconfig */,
+				4ACB2B83715F39121EA99EFEF82FA317 /* Pods-PLASOFTWAREUITests.release.xcconfig */,
+			);
+			name = "Pods-PLASOFTWAREUITests";
+			path = "Target Support Files/Pods-PLASOFTWAREUITests";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				112C7921E3A497328D11F4930CBBC9CA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA7B17E23B4FE9E0AA311AF505D3EF0D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				247EF29BA6B8FCBF6AB17A5541CD1CFF /* Pods-PLASOFTWARE */,
+				29168953DD5183BC6C3E3A639B88372F /* Pods-PLASOFTWARETests */,
+				88A28278F65430CAD881AD7BAD996261 /* Pods-PLASOFTWAREUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F91178EA9D34E5CCA11CB2615F2148DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65B825FA6B2ECC9B569BDF127BE0353C /* Alamofire.framework */,
+				C42A1FBD158E5AA06C70B1BBED2464E9 /* Pods_PLASOFTWARE.framework */,
+				D8D5D16FC2F400D9350D5CC9B11484E0 /* Pods_PLASOFTWARETests.framework */,
+				2A9ED914AF9904653A5E8C20844A22B2 /* Pods_PLASOFTWAREUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		119D202C1593763351FD2A52D09432E6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F18D930A30FE44906F08678A9B9E098 /* Pods-PLASOFTWARE-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E50250368016FD623B5B779DB52D365 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47573F09AFB42AEFCE5D0C07B242B478 /* Pods-PLASOFTWAREUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F7B61281F714E2A64A51E80A2C9C062 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C5450AC69398958CF6F7539EF7D99E5 /* Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAB7A0D8C99FF802F296F68CC19CF397 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6156C88425341A0EF78B3C9071C8F61 /* Pods-PLASOFTWARETests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		432ECC54282C84882B482CCB4CF227FC /* Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B2B2DA2F7F80D41B1FDB5FACFA4B3DE /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildPhases = (
+				EF659EFF40D426A3A32A82CDB98CC6EE /* Sources */,
+				A5AE1D340C4A0691EC28EEA8241C9FCD /* Frameworks */,
+				5F7B61281F714E2A64A51E80A2C9C062 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = 65B825FA6B2ECC9B569BDF127BE0353C /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CA8A58E463D579628290B9F684230108 /* Pods-PLASOFTWARE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F57C14807388CF6AC47AC3E44B52F86D /* Build configuration list for PBXNativeTarget "Pods-PLASOFTWARE" */;
+			buildPhases = (
+				1FB4919860A32B25ACA4B3DBDF252537 /* Sources */,
+				ECDD05DB177B5790C2F26ACA5DA37D08 /* Frameworks */,
+				119D202C1593763351FD2A52D09432E6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFF56EC2193A4D31970836F29E6BFE1A /* PBXTargetDependency */,
+			);
+			name = "Pods-PLASOFTWARE";
+			productName = "Pods-PLASOFTWARE";
+			productReference = C42A1FBD158E5AA06C70B1BBED2464E9 /* Pods_PLASOFTWARE.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E546452926EF642BF843144928193FB7 /* Pods-PLASOFTWAREUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4ED68736D8AD9961B652E3A033AF143 /* Build configuration list for PBXNativeTarget "Pods-PLASOFTWAREUITests" */;
+			buildPhases = (
+				8D33302B26D21A1C069073F6F69665D4 /* Sources */,
+				5C5F7085A8C05DCD9190C87086F83BD6 /* Frameworks */,
+				3E50250368016FD623B5B779DB52D365 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-PLASOFTWAREUITests";
+			productName = "Pods-PLASOFTWAREUITests";
+			productReference = 2A9ED914AF9904653A5E8C20844A22B2 /* Pods_PLASOFTWAREUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FB10F084BC2F80176099BE3C90F22514 /* Pods-PLASOFTWARETests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C34A65483E3A399684EDD46F833AB86 /* Build configuration list for PBXNativeTarget "Pods-PLASOFTWARETests" */;
+			buildPhases = (
+				6858C1DBDC490E96384C198FC364C447 /* Sources */,
+				59CBCE0EA57D05D270EF3A6D31960B42 /* Frameworks */,
+				EAB7A0D8C99FF802F296F68CC19CF397 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-PLASOFTWARETests";
+			productName = "Pods-PLASOFTWARETests";
+			productReference = D8D5D16FC2F400D9350D5CC9B11484E0 /* Pods_PLASOFTWARETests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = F91178EA9D34E5CCA11CB2615F2148DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				432ECC54282C84882B482CCB4CF227FC /* Alamofire */,
+				CA8A58E463D579628290B9F684230108 /* Pods-PLASOFTWARE */,
+				FB10F084BC2F80176099BE3C90F22514 /* Pods-PLASOFTWARETests */,
+				E546452926EF642BF843144928193FB7 /* Pods-PLASOFTWAREUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FB4919860A32B25ACA4B3DBDF252537 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C156F624B23C1FB73DCE0D45BEC5140B /* Pods-PLASOFTWARE-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6858C1DBDC490E96384C198FC364C447 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D300BC0040D05EECDBE756AD9130E253 /* Pods-PLASOFTWARETests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D33302B26D21A1C069073F6F69665D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F1A8C9ACEEE1004A02256B70F3DFC49 /* Pods-PLASOFTWAREUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF659EFF40D426A3A32A82CDB98CC6EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D2DC3E3DA44CD382B9B425F40E11C1 /* Alamofire-dummy.m in Sources */,
+				B0FB4B01682814B9E3D32F9DC4A5E762 /* Alamofire.swift in Sources */,
+				A3505FA2FB3067D53847AD288AC04F03 /* Download.swift in Sources */,
+				D75CA395D510E08C404E55F5BDAE55CE /* Error.swift in Sources */,
+				A2C172FE407C0BC3478ADCA91A6C9CEC /* Manager.swift in Sources */,
+				8399DBEE3E2D98EB1F466132E476F4D9 /* MultipartFormData.swift in Sources */,
+				4DE5FCC41D100B113B6645EA64410F16 /* ParameterEncoding.swift in Sources */,
+				FC14480CECE872865A9C6E584F886DA3 /* Request.swift in Sources */,
+				03F494989CC1A8857B68A317D5D6860F /* Response.swift in Sources */,
+				D21B7325B3642887BFBE977E021F2D26 /* ResponseSerialization.swift in Sources */,
+				82971968CBDAB224212EEB4607C9FB8D /* Result.swift in Sources */,
+				80F496237530D382A045A29654D8C11C /* ServerTrustPolicy.swift in Sources */,
+				FEF0D7653948988B804226129471C1EC /* Stream.swift in Sources */,
+				0681ADC8BAE2C3185F13487BAAB4D9DD /* Upload.swift in Sources */,
+				C75519F0450166A6F28126ECC7664E9C /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BFF56EC2193A4D31970836F29E6BFE1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 432ECC54282C84882B482CCB4CF227FC /* Alamofire */;
+			targetProxy = D21C90B007D72347CA09070D41FE43AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4F9486365287BF53A5997AA7C867B8B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3862CDFBF15040A13956AD4A816281F /* Pods-PLASOFTWAREUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PLASOFTWAREUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PLASOFTWAREUITests/Pods-PLASOFTWAREUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PLASOFTWAREUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6D997C0CD427B85A57ADA5EA1A422F12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DE472CF1530A5BEB67A830500DEA5F1 /* Pods-PLASOFTWARE.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PLASOFTWARE/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PLASOFTWARE/Pods-PLASOFTWARE.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PLASOFTWARE;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		811519CB8F683AC06F9C98B55AC40F11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		882EB4391EC2E701934974DA86F7343F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		99277FEDB3768F083356CDC57E6BE491 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4D10E35B782B508231FFA6A275CC491 /* Pods-PLASOFTWARE.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PLASOFTWARE/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PLASOFTWARE/Pods-PLASOFTWARE.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PLASOFTWARE;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9B26D3A39011247999C097562A550399 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D7AAA0E85E40ED735D6BCBF7A243C46 /* Alamofire.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BE1BF3E5FC53BAFA505AB342C35E1F50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D7AAA0E85E40ED735D6BCBF7A243C46 /* Alamofire.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C09B682511307D6906DB2D118616692F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE6B42E2C34117B79B1D2365CAFAE534 /* Pods-PLASOFTWARETests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PLASOFTWARETests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PLASOFTWARETests/Pods-PLASOFTWARETests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PLASOFTWARETests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D70358C6F2C7ADEAA0AD3EF6B7C1C1B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4ACB2B83715F39121EA99EFEF82FA317 /* Pods-PLASOFTWAREUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PLASOFTWAREUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PLASOFTWAREUITests/Pods-PLASOFTWAREUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PLASOFTWAREUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FA8E965CC77725EFEC250EE9D3BF0FDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 025CD37140906ECCE47373BB1BE70859 /* Pods-PLASOFTWARETests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PLASOFTWARETests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PLASOFTWARETests/Pods-PLASOFTWARETests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PLASOFTWARETests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				882EB4391EC2E701934974DA86F7343F /* Debug */,
+				811519CB8F683AC06F9C98B55AC40F11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C34A65483E3A399684EDD46F833AB86 /* Build configuration list for PBXNativeTarget "Pods-PLASOFTWARETests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C09B682511307D6906DB2D118616692F /* Debug */,
+				FA8E965CC77725EFEC250EE9D3BF0FDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B2B2DA2F7F80D41B1FDB5FACFA4B3DE /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE1BF3E5FC53BAFA505AB342C35E1F50 /* Debug */,
+				9B26D3A39011247999C097562A550399 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4ED68736D8AD9961B652E3A033AF143 /* Build configuration list for PBXNativeTarget "Pods-PLASOFTWAREUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F9486365287BF53A5997AA7C867B8B8 /* Debug */,
+				D70358C6F2C7ADEAA0AD3EF6B7C1C1B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F57C14807388CF6AC47AC3E44B52F86D /* Build configuration list for PBXNativeTarget "Pods-PLASOFTWARE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99277FEDB3768F083356CDC57E6BE491 /* Debug */,
+				6D997C0CD427B85A57ADA5EA1A422F12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

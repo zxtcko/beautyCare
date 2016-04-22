@@ -1,0 +1,81 @@
+
+/*
+  Localizable.strings
+  PLASOFTWARE
+
+  Created by Chris on 16/3/31.
+  Copyright © 2016年 Young. All rights reserved.
+*/
+
+"BUTTON WILL BE GRAY IF NO ACCOUNT" = "没有账号按钮会变灰";
+
+"PASSWORD FILL IN" = "请输入密码";
+
+"REMEMBER PASSWORD" = "记住密码";
+
+"LOG-IN" = "登陆";
+
+"RESERVATION" = "预约";
+
+"SHOPS" = "商品";
+
+"ACTIVITIES" = "活动";
+
+"SCHEDULE" = "日历";
+
+"NEW" = "新的预约";
+
+"TO BE CONFIRMED" = "待确认";
+
+"RESERVED" = "已预约";
+
+"BRANCH" = "品牌";
+
+"ITEMS" = "商品";
+
+"BEAUTICIAN" = "保养人";
+
+"TIME" = "时间";
+
+"PHONE" = "手机";
+
+"CONFIRM" = "确认";
+
+"The neck care" = "颈部护理";
+
+"DETAILS" = "详情";
+
+"CANCEL" = "取消";
+
+"The reason of cancel" = "取消原因";
+
+"GIVE UP" = "放弃";
+
+"MY BOOKING" = "我的预约";
+
+"CATEGORY" = "种类";
+
+"Hanoi" = "";
+
+"Haiphong" = "";
+
+"Thanh Hoa" = "";
+
+"Vinh" = "";
+
+"Dong Hoi" = "";
+
+"NAME" = "名称";
+
+"PRODUCT INFORMATION" = "产品信息";
+
+"Quantity" = "数量";
+
+"Item details" = "产品详情";
+
+"Detailed address" = "详细地址";
+
+"CANCEL BOOKING" = "取消预约";
+
+
+

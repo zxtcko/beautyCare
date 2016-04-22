@@ -1,0 +1,84 @@
+
+/*
+ Localizable.strings
+ PLASOFTWARE
+ 
+ Created by Chris on 16/3/31.
+ Copyright © 2016年 Young. All rights reserved.
+ */
+
+"BUTTON WILL BE GREY IF NO ACCOUNT" = "Phím hiển thị màu xám khi không có tài khoản nào";
+
+"PASSWORD FILL IN" = "Nhập mật khẩu";
+
+"REMEMBER PASSWORD" = "Ghi nhớ mật khẩu";
+
+"LOG-IN" = "Đăng nhập";
+
+"RESERVATION" = "Đặt hẹn";
+
+"SHOPS" = "Sản phẩm";
+
+"ACTIVITIES" = "Khuyến mại";
+
+"SCHEDULE" = "Lịch";
+
+"NEW" = "Đặt hẹn mới";
+
+"TO BE CONFIRMED" = "Chờ xác nhận";
+
+"RESERVED" = "Đã đặt hẹn";
+
+"BRANCH" = "Chi nhánh";
+
+"ITEM" = "Sản phẩm";
+
+"BEAUTICIAN" = "Nhân viên thẩm mỹ";
+
+"TIME" = "Thời gian";
+
+"PHONE" = "Điện thoại";
+
+"CONFIRM" = "Đồng ý";
+
+"The Neck Care" = "Chăm sóc vùng cổ";
+
+"DETAILS" = "Chi tiết";
+
+"CANCEL" = "Huỷ";
+
+"The reason of cancel" = "Lý do huỷ";
+
+"GIVE UP" = "Bỏ qua";
+
+"MY BOOKING" = "Đặt hẹn của tôi";
+
+"CATEGORY" = "Loại";
+
+"Hanoi" = "Hà Nội";
+
+"Haiphong" = "Hải Phòng";
+
+"Thanh Hoa" = "Thanh Hoá";
+
+"Vinh" = "Vinh";
+
+"Dong Hoi" = "Đồng Hới";
+
+"NAME" = "Tên";
+
+"PRODUCT INFORMATION" = "Thông tin sản phẩm";
+
+"Quantity" = "Số lượng";
+
+"Item details" = "Chi tiết sản phẩm";
+
+"Detailed Address" = "Địa chỉ cụ thể";
+
+"CANCEL BOOKING" = "Huỷ đặt hàng";
+
+"Button" = "PHÍM";
+
+"BRAND" = "CHI NHÁNH";
+
+"Item Details" = "CHI TIẾT SẢN PHẨM";

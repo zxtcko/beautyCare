@@ -15,6 +15,7 @@ class ShopsViewController: UIViewController, UIPopoverPresentationControllerDele
     @IBOutlet weak var categoryShowButton: UIButton!
     @IBOutlet weak var categorySelectButton: UIButton!
     @IBOutlet weak var shopTableView: UITableView!
+    @IBOutlet weak var myBookingButtonItem: UIBarButtonItem!
     
     let productCellReusableIdentifier = "ProductCell"
     let productInfoSegue = "ProductInfoSegue"
@@ -26,6 +27,14 @@ class ShopsViewController: UIViewController, UIPopoverPresentationControllerDele
     
     func setupUI(){
         title = NSLocalizedString("SHOPS", comment: "")
+        
+        branchShowButton.setTitle(NSLocalizedString("Button", comment: ""), forState: .Normal);
+        branchSelectButton.setTitle(NSLocalizedString("BRANCH", comment: ""), forState: .Normal);
+        
+        categoryShowButton.setTitle(NSLocalizedString("Button", comment: ""), forState: .Normal);
+        categorySelectButton.setTitle(NSLocalizedString("CATEGORY", comment: ""), forState: .Normal);
+        
+        myBookingButtonItem.title = NSLocalizedString("MY BOOKING", comment: "")
         
         shopTableView.delegate = self
         shopTableView.dataSource = self

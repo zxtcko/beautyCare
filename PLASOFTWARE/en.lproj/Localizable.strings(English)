@@ -1,0 +1,81 @@
+
+/*
+Localizable.strings
+PLASOFTWARE
+
+Created by Chris on 16/3/31.
+Copyright © 2016年 Young. All rights reserved.
+*/
+
+"BUTTON WILL BE GRAY IF NO ACCOUNT" = "BUTTON WILL BE GRAY IF NO ACCOUNT";
+
+"PASSWORD FILL IN" = "PASSWORD FILL IN";
+
+"REMEMBER PASSWORD" = "REMEMBER PASSWORD";
+
+"LOG-IN" = "LOG-IN";
+
+"RESERVATION" = "RESERVATION";
+
+"SHOPS" = "SHOPS";
+
+"ACTIVITIES" = "ACTIVITIES";
+
+"SCHEDULE" = "SCHEDULE";
+
+"NEW" = "NEW";
+
+"TO BE CONFIRMED" = "TO BE CONFIRMED";
+
+"RESERVED" = "RESERVED";
+
+"BRANCH" = "BRANCH";
+
+"ITEMS" = "ITEMS";
+
+"BEAUTICIAN" = "BEAUTICIAN";
+
+"TIME" = "TIME";
+
+"PHONE" = "PHONE";
+
+"CONFIRM" = "CONFIRM";
+
+"The neck care" = "The neck care";
+
+"DETAILS" = "DETAILS";
+
+"CANCEL" = "CANCEL";
+
+"The reason of cancel" = "The reason of cancel";
+
+"GIVE UP" = "GIVE UP";
+
+"MY BOOKING" = "MY BOOKING";
+
+"CATEGORY" = "CATEGORY";
+
+"Hanoi" = "Hanoi";
+
+"Haiphong" = "Haiphong";
+
+"Thanh Hoa" = "Thanh Hoa";
+
+"Vinh" = "Vinh";
+
+"Dong Hoi" = "Dong Hoi";
+
+"NAME" = "NAME";
+
+"PRODUCT INFORMATION" = "PRODUCT INFORMATION";
+
+"Quantity" = "Quantity";
+
+"Item details" = "Item details";
+
+"Detailed address" = "Detailed address";
+
+"CANCEL BOOKING" = "CANCEL BOOKING";
+
+
+

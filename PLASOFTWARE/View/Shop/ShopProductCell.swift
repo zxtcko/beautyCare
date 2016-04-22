@@ -17,8 +17,8 @@ class ShopProductCell: UITableViewCell {
     
     override func awakeFromNib() {
         productImage.image = UIImage(named: "图层-5")
-        productNameLabel.text = "NAME"
-        productBranchLabel.text = "BRANCH"
+        productNameLabel.text = NSLocalizedString("NAME", comment: "")
+        productBranchLabel.text = NSLocalizedString("BRANCH", comment: "") 
         productPriceLabel.text = "$ 999"
         
         let backgroundView = UIView(frame: CGRectMake(0,self.frame.size.height - 2,self.frame.size.width,2))

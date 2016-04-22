@@ -23,18 +23,22 @@ class MainViewController: UIViewController {
     }
 
     func setupUI(){
+        reserveButton.setTitle(NSLocalizedString("RESERVATION", comment: ""), forState: .Normal);
         reserveButton.setTitleColor(UIColor.plaWordl3Color(), forState: .Normal)
         reserveButton.setTitleColor(UIColor.plaAquaColor(), forState: .Highlighted)
         reserveButton.setImage(UIImage(named: "icon_03-25"), forState: .Highlighted)
         
+        shopButton.setTitle(NSLocalizedString("SHOPS", comment: ""), forState: .Normal);
         shopButton.setTitleColor(UIColor.plaWordl3Color(), forState: .Normal)
         shopButton.setTitleColor(UIColor.plaAquaColor(), forState: .Highlighted)
         shopButton.setImage(UIImage(named: "icon_03-5"), forState: .Highlighted)
         
+        activityButton.setTitle(NSLocalizedString("ACTIVITIES", comment: ""), forState: .Normal);
         activityButton.setTitleColor(UIColor.plaWordl3Color(), forState: .Normal)
         activityButton.setTitleColor(UIColor.plaAquaColor(), forState: .Highlighted)
         activityButton.setImage(UIImage(named: "icon_03-31"), forState: .Highlighted)
         
+        scheduleButton.setTitle(NSLocalizedString("SCHEDULE", comment: ""), forState: .Normal);
         scheduleButton.setTitleColor(UIColor.plaWordl3Color(), forState: .Normal)
         scheduleButton.setTitleColor(UIColor.plaAquaColor(), forState: .Highlighted)
         scheduleButton.setImage(UIImage(named: "icon_03-19"), forState: .Highlighted)

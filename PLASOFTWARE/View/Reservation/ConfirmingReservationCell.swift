@@ -20,6 +20,8 @@ class ConfirmingReservationCell: UITableViewCell {
     
     override func awakeFromNib() {
         
+        itemSubtitle.text = NSLocalizedString("ITEM", comment: "")
+        
         let gradient = CAGradientLayer()
         gradient.frame = self.bounds
         gradient.gradientForPla(UIColor.plaSteelblueColor(), endColor: UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.4), startPoint: CGPointMake(0.0,0.5), endPoint: CGPointMake(1.0,0.5))
