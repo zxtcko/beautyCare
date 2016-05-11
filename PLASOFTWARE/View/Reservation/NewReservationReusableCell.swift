@@ -32,7 +32,7 @@ class NewReservationReusableCell: UITableViewCell {
     
     func configCellWithItem(){
         self.textLabel?.text = NSLocalizedString("Xuhui District, Shanghai", comment: "")
-        self.detailTextLabel?.text = "Room 505 Qinzhou Building, NO6. Lane"
+        self.detailTextLabel?.text = NSLocalizedString("Room 505 Qinzhou Building, NO6. Lane", comment: "")
     }
 
 }

@@ -34,7 +34,7 @@ class ReservationDetailViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 7
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -61,6 +61,12 @@ class ReservationDetailViewController: UITableViewController {
         case 4:
             cell.textLabel?.text = NSLocalizedString("PHONE", comment: "")
             cell.detailTextLabel?.text = NSLocalizedString("159366888585", comment: "")
+        case 5:
+            cell.textLabel?.text = NSLocalizedString("Note", comment: "")
+            cell.detailTextLabel?.text = NSLocalizedString("", comment: "")
+        case 6:
+            cell.textLabel?.text = NSLocalizedString("ADDRESS", comment: "")
+            cell.detailTextLabel?.text = NSLocalizedString("Room 505 Qinzhou Building", comment: "")
         default: break
         }
         

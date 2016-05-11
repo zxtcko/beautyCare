@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Fabric
+import Crashlytics
+import DigitsKit
 
 
 let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
@@ -28,11 +31,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         UINavigationBar.appearance().barTintColor = UIColor.plaSteelblueColor()
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
+        
+        Fabric.with([Crashlytics.self, Digits.self])
+        
+        Digits.sharedInstance().logOut()
         
         
-        let signInViewController: AnyObject! = UIStoryboard.mainStoryboard.instantiateViewControllerWithIdentifier(SignInViewControllerIdentifier)
+        let signInViewController = UIStoryboard.mainStoryboard.instantiateViewControllerWithIdentifier(SignInViewControllerIdentifier)
         
-        window?.rootViewController = signInViewController as? UIViewController
+        let navController = UINavigationController.init(rootViewController: signInViewController)
+        
+//        navController.navigationBarHidden = true
+        navController.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
+        navController.navigationBar.shadowImage = UIImage()
+        navController.navigationBar.translucent = true
+        navController.navigationBar.backgroundColor = UIColor.clearColor()
+        
+        window?.rootViewController = navController
         
 //        let registViewController: AnyObject! = UIStoryboard.mainStoryboard.instantiateViewControllerWithIdentifier(RegistViewControllerIdentifier)
 //        

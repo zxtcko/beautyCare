@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import DigitsKit
 
 class RegistViewController: UIViewController {
 
@@ -23,6 +24,10 @@ class RegistViewController: UIViewController {
     
     @IBOutlet weak var confirmButton: UIButton!
     
+    let digits = Digits.sharedInstance()
+    
+    internal var phoneNum = String()
+    
     let registToMainSegue = "registToMainSegue"
 
     var paraDict : [String: String] = [:]
@@ -30,11 +35,16 @@ class RegistViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        print("\(phoneNum)")
         
+        mobileTextField.text = (phoneNum as NSString).substringFromIndex(1)
     }
 
 
-
+    func naviReturnToMain(){
+        performSegueWithIdentifier(registToMainSegue, sender: self)
+    }
+    
 
     @IBAction func registButtonAction(sender: AnyObject) {
         
@@ -56,6 +66,8 @@ class RegistViewController: UIViewController {
             "time" : Utils.UNIX_TIMESTAMP()
         ]
         
+        
+        
         Alamofire.request(.POST, urlStr, parameters: paraDict).responseJSON {
             response in switch response.result
             {
@@ -70,7 +82,34 @@ class RegistViewController: UIViewController {
                 //example if there is an id
                 let info = response.objectForKey("info")!
                 
-                print("Success Info:\(info)")
+                
+                //state
+                let state = response.objectForKey("iserror")! as! Int
+                
+                print("Success :\(info)")
+                
+                
+                if state == 0 {
+                    
+                    let userDefault = NSUserDefaults.standardUserDefaults()
+                    
+                    userDefault.setValue("\(self.usernameTextField.text!)", forKey: "username")
+                    userDefault.setValue("\(self.passwordTextField.text!)", forKey: "password")
+                    
+                    self.naviReturnToMain()
+                    
+                }
+                
+                if state == 1 {
+                    
+                    let alertController = UIAlertController(title: "错误", message: "\(info)", preferredStyle: .Alert)
+                    
+                    let alertDoneAction = UIAlertAction(title: "确定", style: .Default, handler: nil)
+                    
+                    alertController.addAction(alertDoneAction)
+                    
+                    self.presentViewController(alertController, animated: true, completion: nil)
+                }
                 
             case .Failure(let error):
                 
@@ -79,7 +118,7 @@ class RegistViewController: UIViewController {
             }
         }
         
-        performSegueWithIdentifier(registToMainSegue, sender: self)
+//        performSegueWithIdentifier(registToMainSegue, sender: self)
         
     }
 

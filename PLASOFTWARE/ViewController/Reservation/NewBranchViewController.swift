@@ -20,7 +20,10 @@ class NewBranchViewController: UITableViewController {
         
         title = "NEW"
         
-        self.tableView.backgroundColor = UIColor(patternImage: UIImage(named: "背景2")!)
+        let imageView = UIImageView(frame: self.view.frame)
+        imageView.image = UIImage(named: "背景2")
+        
+        self.view.insertSubview(imageView, atIndex: 0)
         
     }
     
@@ -34,10 +37,9 @@ class NewBranchViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("NewReservationCell", forIndexPath: indexPath) as! NewReservationReusableCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("ConfirmingCell", forIndexPath: indexPath) as! ConfirmingReservationCell
         
-        cell.configCellWithItem()
-        
+        cell.configCellWithNewBranchItem()
         
         return cell
         

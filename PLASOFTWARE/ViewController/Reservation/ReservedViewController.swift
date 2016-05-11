@@ -12,8 +12,6 @@ class ReservedViewController: UITableViewController {
 
     let ConfirmingCellReusableIdentifier = "ConfirmingCell"
     
-    let DetailReservationSegue = "ReservedDetailedSegue"
-    
     override func viewDidLoad() {
         setupUI()
     }
@@ -40,6 +38,10 @@ class ReservedViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        performSegueWithIdentifier(DetailReservationSegue, sender: nil)
+        
+        let reservedDetailViewController = UIStoryboard.mainStoryboard.instantiateViewControllerWithIdentifier("ReservedDetailedTableViewCOntroller")
+        
+        self.navigationController?.pushViewController(reservedDetailViewController, animated: true)
+        
     }
 }

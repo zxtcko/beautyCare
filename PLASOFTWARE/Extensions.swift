@@ -70,6 +70,18 @@ extension UIButton{
     }
 }
 
+//建立纯色背景图片
+extension UIImage {
+    func makeImageWithColorAndSize(color: UIColor, size: CGSize) -> UIImage {
+        UIGraphicsBeginImageContextWithOptions(size, false, 0)
+        color.setFill()
+        UIRectFill(CGRectMake(0, 0, size.width, size.height))
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return image
+    }
+}
+
 extension CAGradientLayer{
     
     func gradientForPla(startColor:UIColor, endColor:UIColor, startPoint:CGPoint, endPoint:CGPoint ){
@@ -80,12 +92,14 @@ extension CAGradientLayer{
     }
 }
 
+//MainStoryboard
 extension UIStoryboard{
     static var mainStoryboard: UIStoryboard {
         return UIStoryboard(name: "Main", bundle: nil)
     }
 }
 
+//隐藏键盘
 extension UIViewController{
     func hideKeyboardWhenTappedAround(){
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")

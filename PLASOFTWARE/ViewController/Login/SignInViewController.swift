@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import DigitsKit
 
 class SignInViewController: UIViewController, UITextFieldDelegate {
     
@@ -24,6 +25,8 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
     
     var paraDict : [String: String] = [:]
     
+    let digits = Digits.sharedInstance()
+    
     var passwordRememberFlag = false
     
     static let storyboardIdentifier = "SignInViewController"
@@ -32,17 +35,48 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
     
     let registIdentifier = "RegistViewController"
     
+    var isPhoneVerified = false
+    
+    var registViewController = UIStoryboard.mainStoryboard.instantiateViewControllerWithIdentifier("RegistViewController") as! RegistViewController
+    
     override func viewDidLoad() {
         setupUI()
     }
     
+    
+    override func viewDidAppear(animated: Bool) {
+        
+        
+        if let session = Digits.sharedInstance().session()  {
+            
+            if isPhoneVerified == false{
+                
+                self.registViewController.phoneNum = session.phoneNumber
+            
+                self.navigationController?.pushViewController(registViewController, animated: true)
+                
+                isPhoneVerified = true
+            }
+        }
+    }
+    
     //MARK: UI
     func setupUI(){
+        
+        
         usenameTextField.attributedPlaceholder = NSAttributedString(string: NSLocalizedString("BUTTON WILL BE GREY IF NO ACCOUNT", comment: "") , attributes: [NSForegroundColorAttributeName: UIColor.plaWordl2Color()])
         passwordTextField.attributedPlaceholder = NSAttributedString(string: NSLocalizedString("PASSWORD FILL IN", comment: ""), attributes: [NSForegroundColorAttributeName: UIColor.plaWordl2Color()])
         
         usenameTextField.delegate = self
         passwordTextField.delegate = self
+        
+        let userDefault = NSUserDefaults.standardUserDefaults()
+        if (userDefault.valueForKey("username") != nil && userDefault.valueForKey("password") != nil) {
+            
+            usenameTextField.text = userDefault.valueForKey("username")?.string
+            passwordTextField.text = userDefault.valueForKey("password")?.string
+            
+        }
         
         markPasswordLabel.text = NSLocalizedString("REMEMBER PASSWORD", comment: "")
         markPasswordLabel.textColor = UIColor.plaWordl2Color()
@@ -51,6 +85,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         
         forgetPassButton.setTitle(NSLocalizedString("FORGOT PASSWORD", comment: ""), forState: .Normal)
         registButton.setTitle(NSLocalizedString("REGIST", comment: ""), forState: .Normal)
+        
         
         
     }
@@ -74,10 +109,29 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func registAction(sender: AnyObject) {
         
-        let registViewController = UIStoryboard.mainStoryboard.instantiateViewControllerWithIdentifier(registIdentifier)
+        if let _ = Digits.sharedInstance().session() {
+            Digits.sharedInstance().logOut()
+        }
         
-        self.presentViewController(registViewController, animated: true, completion: nil)
         
+        let configuration = DGTAuthenticationConfiguration(accountFields: .DefaultOptionMask)
+        
+        configuration.appearance = DGTAppearance()
+        
+        configuration.appearance.logoImage = UIImage(named: "图层-2")
+        
+        configuration.appearance.labelFont = UIFont.systemFontOfSize(16.0)
+        configuration.appearance.bodyFont = UIFont.systemFontOfSize(16.0)
+        
+        configuration.appearance.accentColor = UIColor.plaAquaColor()
+        
+        configuration.appearance.backgroundColor = UIColor.plaSteelblueColor()
+        
+        self.digits.authenticateWithViewController(nil, configuration: configuration) { (session, error) -> Void in
+        }
+        
+        isPhoneVerified = false
+//        self.navigationController?.pushViewController(registViewController, animated: true)
     }
     
 
@@ -95,6 +149,8 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         textField.resignFirstResponder()
         return true
     }
+    
+    
     
     //MARK: NetWorking
     func apiRequest(){
@@ -158,4 +214,5 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
             }
         }
     }
+    
 }

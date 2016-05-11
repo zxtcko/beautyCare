@@ -5,6 +5,10 @@ use_frameworks!
 
 target 'PLASOFTWARE' do
 	pod 'Alamofire', '~> 3.0.0'
+	pod 'Fabric'
+	pod 'Crashlytics'
+	pod 'Digits'
+	pod 'TwitterCore'
 end
 
 target 'PLASOFTWARETests' do

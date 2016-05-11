@@ -11,17 +11,20 @@ import UIKit
 class BranchDetailTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     
-    let cellReusableIdentifier = "DetailCell"
+    let cellReusableIdentifier = "BranchDetailCell"
     
     @IBOutlet weak var BranchDetailTableView: UITableView!
     
     override func viewDidLoad() {
         
-        
+        setupUI()
         
     }
     
     func setupUI(){
+        
+        BranchDetailTableView.delegate = self
+        BranchDetailTableView.dataSource = self
         
     }
     
@@ -43,6 +46,8 @@ class BranchDetailTableViewController: UIViewController, UITableViewDelegate, UI
         
         switch indexPath.row{
         case 0:
+            cell.textLabel?.text = NSLocalizedString("Xuhui District, Shanghai Branch", comment: "")
+            cell.detailTextLabel?.text = ""
             break
         case 1:
             cell.textLabel?.text = NSLocalizedString("ITEMS", comment: "")

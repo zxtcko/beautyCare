@@ -36,11 +36,11 @@ class ShopPopoverMenu: UIViewController {
         vinhButton.setTitle(NSLocalizedString("Vinh", comment: ""), forState: .Normal)
         donghoiButton.setTitle(NSLocalizedString("Dong Hoi", comment: ""), forState: .Normal)
         
-        hanoiButton.addTarget(self, action: "popoverButtonSelectedAction:", forControlEvents: .TouchUpInside)
-        haiphongButton.addTarget(self, action: "popoverButtonSelectedAction:", forControlEvents: .TouchUpInside)
-        thanhhoaButton.addTarget(self, action: "popoverButtonSelectedAction:", forControlEvents: .TouchUpInside)
-        vinhButton.addTarget(self, action: "popoverButtonSelectedAction:", forControlEvents: .TouchUpInside)
-        donghoiButton.addTarget(self, action: "popoverButtonSelectedAction:", forControlEvents: .TouchUpInside)
+        hanoiButton.addTarget(self, action: #selector(ShopPopoverMenu.popoverButtonSelectedAction(_:)), forControlEvents: .TouchUpInside)
+        haiphongButton.addTarget(self, action: #selector(ShopPopoverMenu.popoverButtonSelectedAction(_:)), forControlEvents: .TouchUpInside)
+        thanhhoaButton.addTarget(self, action: #selector(ShopPopoverMenu.popoverButtonSelectedAction(_:)), forControlEvents: .TouchUpInside)
+        vinhButton.addTarget(self, action: #selector(ShopPopoverMenu.popoverButtonSelectedAction(_:)), forControlEvents: .TouchUpInside)
+        donghoiButton.addTarget(self, action: #selector(ShopPopoverMenu.popoverButtonSelectedAction(_:)), forControlEvents: .TouchUpInside)
     }
     
     func popoverButtonSelectedAction(sender: UIButton){

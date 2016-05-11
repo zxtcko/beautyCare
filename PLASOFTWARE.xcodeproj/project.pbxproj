@@ -38,6 +38,8 @@
 		01CBB3961CCA1FE700645700 /* NewBranchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CBB3951CCA1FE600645700 /* NewBranchViewController.swift */; };
 		01CBB3981CCA244A00645700 /* NewReservationReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CBB3971CCA244A00645700 /* NewReservationReusableCell.swift */; };
 		01CBB39A1CCA271F00645700 /* BranchDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CBB3991CCA271F00645700 /* BranchDetailTableViewController.swift */; };
+		01FAB1BD1CCDBEC5002E320C /* ReservedDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FAB1BC1CCDBEC5002E320C /* ReservedDetailTableViewController.swift */; };
+		01FAB1BF1CCDC3CE002E320C /* RefusedDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FAB1BE1CCDC3CE002E320C /* RefusedDetailTableViewController.swift */; };
 		8A4EB0B01C9F86CE0000EA47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4EB0AF1C9F86CE0000EA47 /* AppDelegate.swift */; };
 		8A4EB0B51C9F86CE0000EA47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A4EB0B31C9F86CE0000EA47 /* Main.storyboard */; };
 		8A4EB0B71C9F86CE0000EA47 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A4EB0B61C9F86CE0000EA47 /* Images.xcassets */; };
@@ -108,6 +110,8 @@
 		01CBB3951CCA1FE600645700 /* NewBranchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewBranchViewController.swift; sourceTree = "<group>"; };
 		01CBB3971CCA244A00645700 /* NewReservationReusableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewReservationReusableCell.swift; sourceTree = "<group>"; };
 		01CBB3991CCA271F00645700 /* BranchDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BranchDetailTableViewController.swift; sourceTree = "<group>"; };
+		01FAB1BC1CCDBEC5002E320C /* ReservedDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservedDetailTableViewController.swift; sourceTree = "<group>"; };
+		01FAB1BE1CCDC3CE002E320C /* RefusedDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefusedDetailTableViewController.swift; sourceTree = "<group>"; };
 		049DDCA5DB50AD3DD3ACD6D8 /* Pods-PLASOFTWAREUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PLASOFTWAREUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PLASOFTWAREUITests/Pods-PLASOFTWAREUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2C5F8CF0A72714B65FCD7F48 /* Pods-PLASOFTWARETests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PLASOFTWARETests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PLASOFTWARETests/Pods-PLASOFTWARETests.debug.xcconfig"; sourceTree = "<group>"; };
 		38363EFD067F230915B7620D /* Pods-PLASOFTWARE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PLASOFTWARE.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PLASOFTWARE/Pods-PLASOFTWARE.debug.xcconfig"; sourceTree = "<group>"; };
@@ -254,10 +258,12 @@
 				0160810F1CA3840400514BCD /* ReservationDetailViewController.swift */,
 				016081101CA3840400514BCD /* ReservationViewController.swift */,
 				016081111CA3840400514BCD /* ReservedViewController.swift */,
-				0112094E1CC9FC8800E589DA /* RefusedViewController.swift */,
 				01CBB3911CCA0B4900645700 /* NewCollectionViewController.swift */,
 				01CBB3951CCA1FE600645700 /* NewBranchViewController.swift */,
 				01CBB3991CCA271F00645700 /* BranchDetailTableViewController.swift */,
+				01FAB1BC1CCDBEC5002E320C /* ReservedDetailTableViewController.swift */,
+				0112094E1CC9FC8800E589DA /* RefusedViewController.swift */,
+				01FAB1BE1CCDC3CE002E320C /* RefusedDetailTableViewController.swift */,
 			);
 			path = Reservation;
 			sourceTree = "<group>";
@@ -666,8 +672,10 @@
 				016081221CA3840400514BCD /* NewReservationViewController.swift in Sources */,
 				0160811A1CA3840400514BCD /* ReservationCellView.swift in Sources */,
 				016081231CA3840400514BCD /* ReservationDetailViewController.swift in Sources */,
+				01FAB1BF1CCDC3CE002E320C /* RefusedDetailTableViewController.swift in Sources */,
 				016081211CA3840400514BCD /* ConfirmingReservationViewController.swift in Sources */,
 				8A4EB0B01C9F86CE0000EA47 /* AppDelegate.swift in Sources */,
+				01FAB1BD1CCDBEC5002E320C /* ReservedDetailTableViewController.swift in Sources */,
 				016081351CA53E4A00514BCD /* ShopBookingCell.swift in Sources */,
 				0160811F1CA3840400514BCD /* MainViewController.swift in Sources */,
 				016081281CA3840400514BCD /* ShopPopoverMenu.swift in Sources */,
@@ -827,6 +835,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = PLASOFTWARE/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = happy9.PLASOFTWARE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -842,6 +851,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = PLASOFTWARE/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = happy9.PLASOFTWARE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
