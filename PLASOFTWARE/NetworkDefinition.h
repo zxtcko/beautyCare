@@ -24,4 +24,7 @@
 //用户注册
 #define USERREGIST @"beaut/registeruser.php"
 
+//商户查询
+#define STORE_ALL @"beaut/orginfosearch.php"
+
 #endif /* NetworkDefinition_h */

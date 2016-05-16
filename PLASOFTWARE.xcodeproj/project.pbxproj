@@ -32,6 +32,7 @@
 		0195A1741CC7186B00927959 /* PlaNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0195A1731CC7186B00927959 /* PlaNetworking.swift */; };
 		0195A1761CC718D700927959 /* RegistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0195A1751CC718D700927959 /* RegistViewController.swift */; };
 		0195A17A1CC71D5800927959 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0195A1791CC71D5800927959 /* Utils.m */; };
+		01BE62DA1CE99EAC00BC9155 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BE62D91CE99EAC00BC9155 /* Model.swift */; };
 		01CBB3901CCA08DF00645700 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CBB38F1CCA08DF00645700 /* MainTabBarViewController.swift */; };
 		01CBB3921CCA0B4900645700 /* NewCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CBB3911CCA0B4900645700 /* NewCollectionViewController.swift */; };
 		01CBB3941CCA131500645700 /* NewReservationCollectionReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CBB3931CCA131500645700 /* NewReservationCollectionReusableCell.swift */; };
@@ -104,6 +105,7 @@
 		0195A1771CC71AD800927959 /* NetworkDefinition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkDefinition.h; sourceTree = "<group>"; };
 		0195A1781CC71D5800927959 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		0195A1791CC71D5800927959 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		01BE62D91CE99EAC00BC9155 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		01CBB38F1CCA08DF00645700 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		01CBB3911CCA0B4900645700 /* NewCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewCollectionViewController.swift; sourceTree = "<group>"; };
 		01CBB3931CCA131500645700 /* NewReservationCollectionReusableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewReservationCollectionReusableCell.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 		016080FA1CA3840400514BCD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				01BE62D91CE99EAC00BC9155 /* Model.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -252,18 +255,9 @@
 		0160810B1CA3840400514BCD /* Reservation */ = {
 			isa = PBXGroup;
 			children = (
-				0160810C1CA3840400514BCD /* CancelReservationViewController.swift */,
-				0160810D1CA3840400514BCD /* ConfirmingReservationViewController.swift */,
+				019C1B851CE9CE7200B15FF7 /* latest */,
 				0160810E1CA3840400514BCD /* NewReservationViewController.swift */,
-				0160810F1CA3840400514BCD /* ReservationDetailViewController.swift */,
 				016081101CA3840400514BCD /* ReservationViewController.swift */,
-				016081111CA3840400514BCD /* ReservedViewController.swift */,
-				01CBB3911CCA0B4900645700 /* NewCollectionViewController.swift */,
-				01CBB3951CCA1FE600645700 /* NewBranchViewController.swift */,
-				01CBB3991CCA271F00645700 /* BranchDetailTableViewController.swift */,
-				01FAB1BC1CCDBEC5002E320C /* ReservedDetailTableViewController.swift */,
-				0112094E1CC9FC8800E589DA /* RefusedViewController.swift */,
-				01FAB1BE1CCDC3CE002E320C /* RefusedDetailTableViewController.swift */,
 			);
 			path = Reservation;
 			sourceTree = "<group>";
@@ -294,6 +288,55 @@
 				0195A1731CC7186B00927959 /* PlaNetworking.swift */,
 			);
 			name = Services;
+			sourceTree = "<group>";
+		};
+		019C1B851CE9CE7200B15FF7 /* latest */ = {
+			isa = PBXGroup;
+			children = (
+				019C1B891CE9CF2E00B15FF7 /* Refused */,
+				019C1B881CE9CF2800B15FF7 /* Reserved */,
+				019C1B871CE9CF1500B15FF7 /* ToBeConfirmed */,
+				019C1B861CE9CF0C00B15FF7 /* New */,
+			);
+			name = latest;
+			sourceTree = "<group>";
+		};
+		019C1B861CE9CF0C00B15FF7 /* New */ = {
+			isa = PBXGroup;
+			children = (
+				01CBB3911CCA0B4900645700 /* NewCollectionViewController.swift */,
+				01CBB3951CCA1FE600645700 /* NewBranchViewController.swift */,
+				01CBB3991CCA271F00645700 /* BranchDetailTableViewController.swift */,
+			);
+			name = New;
+			sourceTree = "<group>";
+		};
+		019C1B871CE9CF1500B15FF7 /* ToBeConfirmed */ = {
+			isa = PBXGroup;
+			children = (
+				0160810D1CA3840400514BCD /* ConfirmingReservationViewController.swift */,
+				0160810F1CA3840400514BCD /* ReservationDetailViewController.swift */,
+				0160810C1CA3840400514BCD /* CancelReservationViewController.swift */,
+			);
+			name = ToBeConfirmed;
+			sourceTree = "<group>";
+		};
+		019C1B881CE9CF2800B15FF7 /* Reserved */ = {
+			isa = PBXGroup;
+			children = (
+				01FAB1BC1CCDBEC5002E320C /* ReservedDetailTableViewController.swift */,
+				016081111CA3840400514BCD /* ReservedViewController.swift */,
+			);
+			name = Reserved;
+			sourceTree = "<group>";
+		};
+		019C1B891CE9CF2E00B15FF7 /* Refused */ = {
+			isa = PBXGroup;
+			children = (
+				01FAB1BE1CCDC3CE002E320C /* RefusedDetailTableViewController.swift */,
+				0112094E1CC9FC8800E589DA /* RefusedViewController.swift */,
+			);
+			name = Refused;
 			sourceTree = "<group>";
 		};
 		1AD8594EF0E8C447F11554DF /* Pods */ = {
@@ -387,12 +430,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A4EB0D41C9F86CE0000EA47 /* Build configuration list for PBXNativeTarget "PLASOFTWARE" */;
 			buildPhases = (
-				DCF1FF9927395DA6B19C7816 /* Check Pods Manifest.lock */,
+				DCF1FF9927395DA6B19C7816 /* 📦 Check Pods Manifest.lock */,
 				8A4EB0A81C9F86CD0000EA47 /* Sources */,
 				8A4EB0A91C9F86CD0000EA47 /* Frameworks */,
 				8A4EB0AA1C9F86CD0000EA47 /* Resources */,
-				0E15DBA8F90D0F41EA105056 /* Embed Pods Frameworks */,
-				DF5C29A7E0ECC6D2B14EC91D /* Copy Pods Resources */,
+				0E15DBA8F90D0F41EA105056 /* 📦 Embed Pods Frameworks */,
+				DF5C29A7E0ECC6D2B14EC91D /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -407,12 +450,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A4EB0D71C9F86CE0000EA47 /* Build configuration list for PBXNativeTarget "PLASOFTWARETests" */;
 			buildPhases = (
-				DE4B8ABF89BFAF8A7B097146 /* Check Pods Manifest.lock */,
+				DE4B8ABF89BFAF8A7B097146 /* 📦 Check Pods Manifest.lock */,
 				8A4EB0BC1C9F86CE0000EA47 /* Sources */,
 				8A4EB0BD1C9F86CE0000EA47 /* Frameworks */,
 				8A4EB0BE1C9F86CE0000EA47 /* Resources */,
-				97A215EF8EE1B4D5C528EA0A /* Embed Pods Frameworks */,
-				122B72308E1CFCF340953501 /* Copy Pods Resources */,
+				97A215EF8EE1B4D5C528EA0A /* 📦 Embed Pods Frameworks */,
+				122B72308E1CFCF340953501 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -428,11 +471,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A4EB0DA1C9F86CE0000EA47 /* Build configuration list for PBXNativeTarget "PLASOFTWAREUITests" */;
 			buildPhases = (
-				5D050D016EC95ED7025B8C63 /* Check Pods Manifest.lock */,
+				5D050D016EC95ED7025B8C63 /* 📦 Check Pods Manifest.lock */,
 				8A4EB0C71C9F86CE0000EA47 /* Sources */,
 				8A4EB0C81C9F86CE0000EA47 /* Frameworks */,
 				8A4EB0C91C9F86CE0000EA47 /* Resources */,
-				557FEE626CC3F444013E3665 /* Copy Pods Resources */,
+				557FEE626CC3F444013E3665 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -518,14 +561,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0E15DBA8F90D0F41EA105056 /* Embed Pods Frameworks */ = {
+		0E15DBA8F90D0F41EA105056 /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "📦 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -533,14 +576,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PLASOFTWARE/Pods-PLASOFTWARE-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		122B72308E1CFCF340953501 /* Copy Pods Resources */ = {
+		122B72308E1CFCF340953501 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -548,14 +591,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PLASOFTWARETests/Pods-PLASOFTWARETests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		557FEE626CC3F444013E3665 /* Copy Pods Resources */ = {
+		557FEE626CC3F444013E3665 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -563,14 +606,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PLASOFTWAREUITests/Pods-PLASOFTWAREUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5D050D016EC95ED7025B8C63 /* Check Pods Manifest.lock */ = {
+		5D050D016EC95ED7025B8C63 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -578,14 +621,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		97A215EF8EE1B4D5C528EA0A /* Embed Pods Frameworks */ = {
+		97A215EF8EE1B4D5C528EA0A /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "📦 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -593,14 +636,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PLASOFTWARETests/Pods-PLASOFTWARETests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DCF1FF9927395DA6B19C7816 /* Check Pods Manifest.lock */ = {
+		DCF1FF9927395DA6B19C7816 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -608,14 +651,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		DE4B8ABF89BFAF8A7B097146 /* Check Pods Manifest.lock */ = {
+		DE4B8ABF89BFAF8A7B097146 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -623,14 +666,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		DF5C29A7E0ECC6D2B14EC91D /* Copy Pods Resources */ = {
+		DF5C29A7E0ECC6D2B14EC91D /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -655,6 +698,7 @@
 				016081261CA3840400514BCD /* ScheduleViewController.swift in Sources */,
 				01CBB39A1CCA271F00645700 /* BranchDetailTableViewController.swift in Sources */,
 				8A4EB0E11C9F873A0000EA47 /* Extensions.swift in Sources */,
+				01BE62DA1CE99EAC00BC9155 /* Model.swift in Sources */,
 				0160811C1CA3840400514BCD /* ActivitiesViewController.swift in Sources */,
 				0160811D1CA3840400514BCD /* ActivityDetailViewController.swift in Sources */,
 				016081241CA3840400514BCD /* ReservationViewController.swift in Sources */,

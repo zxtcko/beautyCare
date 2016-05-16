@@ -4,11 +4,13 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'PLASOFTWARE' do
-	pod 'Alamofire', '~> 3.0.0'
+	pod 'Alamofire', '~> 3.2.0'
+	pod 'ObjectMapper', '~> 1.3.0'
 	pod 'Fabric'
 	pod 'Crashlytics'
 	pod 'Digits'
 	pod 'TwitterCore'
+
 end
 
 target 'PLASOFTWARETests' do

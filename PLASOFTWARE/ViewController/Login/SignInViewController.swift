@@ -71,10 +71,11 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         passwordTextField.delegate = self
         
         let userDefault = NSUserDefaults.standardUserDefaults()
-        if (userDefault.valueForKey("username") != nil && userDefault.valueForKey("password") != nil) {
+        
+        if (userDefault.stringForKey("username") != nil && userDefault.stringForKey("password") != nil) {
             
-            usenameTextField.text = userDefault.valueForKey("username")?.string
-            passwordTextField.text = userDefault.valueForKey("password")?.string
+            usenameTextField.text = userDefault.stringForKey("username")
+            passwordTextField.text = userDefault.stringForKey("password")
             
         }
         
@@ -191,6 +192,12 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
                     let state = response.objectForKey("iserror")! as! Int
                     
                     if state == 0 {
+                        
+                        let userDefault = NSUserDefaults.standardUserDefaults()
+                        
+                        userDefault.setObject("\(self.usenameTextField.text!)", forKey: "username")
+                        userDefault.setObject("\(self.passwordTextField.text!)", forKey: "password")
+                        
                         self.naviReturnToMain()
                     }
                     

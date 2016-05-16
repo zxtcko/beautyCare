@@ -38,6 +38,8 @@ class RegistViewController: UIViewController {
         print("\(phoneNum)")
         
         mobileTextField.text = (phoneNum as NSString).substringFromIndex(1)
+        
+        self.hideKeyboardWhenTappedAround()
     }
 
 

@@ -1,27 +1,43 @@
-è¯´æ˜ï¼š
-æµ‹è¯•å‰è¯·å…ˆç»‘å®šIPï¼š192.168.1.21 localhost.cn
+×¢²á£º
+url: http://www.zendaiart.net/beaut/registeruser.php
+·½Ê½£ºPOST
+²ÎÊı£º
+mobile	ÊÖ»úºÅ
+user	×¢²áÕÊºÅ
+pass	ÃÜÂë
+string	Ğ£ÑéÂë£¨Éú³É£ºmd5(pass.md5(time.user.check_char.mobile))£¬ÆäÖĞ check_char="QW!!22*&90)" £©
+time	Ê±¼ä´Á
+·µ»ØÖµ£º£¨jsonÊı¾İ£©
+iserror	Îª1Ê±±íÊ¾´íÎó£¬0Ê±±íÊ¾³É¹¦
+info	´íÎó»ò³É¹¦µÄĞÅÏ¢
 
-æ³¨å†Œï¼š
-url: http://localhost.cn/beaut/registeruser.php
-æ–¹å¼ï¼šPOST
-å‚æ•°ï¼š
-mobile	æ‰‹æœºå·
-user	æ³¨å†Œå¸å·
-pass	å¯†ç 
-string	æ ¡éªŒç ï¼ˆç”Ÿæˆï¼šmd5(pass.md5(time.user.check_char.mobile))ï¼Œå…¶ä¸­ check_char="QW!!22*&90)" ï¼‰
-time	æ—¶é—´æˆ³
-è¿”å›å€¼ï¼šï¼ˆjsonæ•°æ®ï¼‰
-iserror	ä¸º1æ—¶è¡¨ç¤ºé”™è¯¯ï¼Œ0æ—¶è¡¨ç¤ºæˆåŠŸ
-info	é”™è¯¯æˆ–æˆåŠŸçš„ä¿¡æ¯
+µÇÂ¼£º
+url: http://www.zendaiart.net/beaut/loginuser.php
+·½Ê½£ºPOST
+²ÎÊı£º
+user	ÕÊºÅ
+pass	ÃÜÂë
+string	Ğ£ÑéÂë£¨Éú³É£ºmd5(pass.md5(time.user.check_char))£¬ÆäÖĞ check_char="QW!!22*&90)" £©
+time	Ê±¼ä´Á
+·µ»ØÖµ£º£¨jsonÊı¾İ£©
+iserror	Îª1Ê±±íÊ¾´íÎó£¬0Ê±±íÊ¾³É¹¦
+info	´íÎó»ò³É¹¦µÄĞÅÏ¢
 
-ç™»å½•ï¼š
-url: http://localhost.cn/beaut/loginuser.php
-æ–¹å¼ï¼šPOST
-å‚æ•°ï¼š
-user	å¸å·
-pass	å¯†ç 
-string	æ ¡éªŒç ï¼ˆç”Ÿæˆï¼šmd5(pass.md5(time.user.check_char))ï¼Œå…¶ä¸­ check_char="QW!!22*&90)" ï¼‰
-time	æ—¶é—´æˆ³
-è¿”å›å€¼ï¼šï¼ˆjsonæ•°æ®ï¼‰
-iserror	ä¸º1æ—¶è¡¨ç¤ºé”™è¯¯ï¼Œ0æ—¶è¡¨ç¤ºæˆåŠŸ
-info	é”™è¯¯æˆ–æˆåŠŸçš„ä¿¡æ¯
+ÉÌ»§²éÑ¯£º
+url: http://www.zendaiart.net/beaut/orginfosearch.php
+·½Ê½£ºPOST
+²ÎÊı£º
+skey	ÉÌ»§¹Ø¼ü×Ö
+city	³ÇÊĞÃû³Æ
+string	Ğ£ÑéÂë£¨Éú³É£ºmd5(city.md5("org_name".check_char.skey))£¬ÆäÖĞ check_char="QW!!22*&90)" £©
+time	Ê±¼ä´Á
+·µ»ØÖµ£º£¨jsonÊı¾İ£©
+iserror	Îª1Ê±±íÊ¾´íÎó£¬0Ê±±íÊ¾³É¹¦
+info	iserror=1Ê±·µ»ØµÄ´íÎóĞÅÏ¢
+data	iserror=0Ê±·µ»ØµÄÊı¾İ£¬¸ñÊ½£¨Êı×é£©£º
+	info(ÉÌ»§ĞÅÏ¢)£º
+	    id: ÉÌ»§ID
+	    name: ÉÌ»§Ãû³Æ
+	    store£¨ÃÅµêĞÅÏ¢£©£º
+	    	id: ÃÅµêID
+	    	name: ÃÅµêÃû³Æ

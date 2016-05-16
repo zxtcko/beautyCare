@@ -10,6 +10,8 @@ import UIKit
 
 class NewBranchViewController: UITableViewController {
     
+    var storeModel:StoreModel? = nil
+    
     override func viewDidLoad() {
         
         setupUI()
