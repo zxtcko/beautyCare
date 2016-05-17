@@ -35,9 +35,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         Fabric.with([Crashlytics.self, Digits.self])
         
-        Digits.sharedInstance().logOut()
-        
-        
         let signInViewController = UIStoryboard.mainStoryboard.instantiateViewControllerWithIdentifier(SignInViewControllerIdentifier)
         
         let navController = UINavigationController.init(rootViewController: signInViewController)
@@ -49,10 +46,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navController.navigationBar.backgroundColor = UIColor.clearColor()
         
         window?.rootViewController = navController
-        
-//        let registViewController: AnyObject! = UIStoryboard.mainStoryboard.instantiateViewControllerWithIdentifier(RegistViewControllerIdentifier)
-//        
-//        window?.rootViewController = registViewController as? UIViewController
         
         print("simulator launched")
         return true

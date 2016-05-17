@@ -46,15 +46,16 @@ class ConfirmingReservationCell: UITableViewCell {
         timeTitle.text = "2016/03/17 07:00~09:00"
     }
     
-    func configCellWithNewBranchItem(){
+    func configCellWithNewBranchItem(storeModel: StoreModel, indexPath: NSIndexPath){
         
-        itemTitle.text = NSLocalizedString("Xuhui District, Shanghai", comment: "")
-        itemTitle.font = UIFont.systemFontOfSize(11)
+//        itemTitle.text = NSLocalizedString("Xuhui District, Shanghai", comment: "")
+        itemTitle.font = UIFont.systemFontOfSize(12)
+        itemTitle.text = storeModel.branches![indexPath.row].name
         itemSubtitle.text = NSLocalizedString("Branch", comment: "")
         itemSubtitle.font = UIFont.systemFontOfSize(10)
         
         timeTitle.text = NSLocalizedString("Room 505 Qinzhou Building, NO6. Lane", comment: "")
-        timeTitle.font = UIFont.systemFontOfSize(11)
+        timeTitle.font = UIFont.systemFontOfSize(12)
         timeSubtitle.text = NSLocalizedString("Qinzhou Road, Xuhui District, Shanghai", comment: "")
         timeSubtitle.font = UIFont.systemFontOfSize(10)
         

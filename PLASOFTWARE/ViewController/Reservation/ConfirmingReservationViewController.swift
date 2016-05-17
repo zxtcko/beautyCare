@@ -18,6 +18,10 @@ class ConfirmingReservationViewController: UITableViewController {
     }
     
     func setupUI(){
+        
+        self.navigationController?.navigationBar.tintColor = UIColor.redColor()
+        self.navigationController?.navigationBar.translucent = true
+        
         title = NSLocalizedString("TO BE CONFIRMED", comment: "")
 
         let imageView = UIImageView(frame: self.view.frame)

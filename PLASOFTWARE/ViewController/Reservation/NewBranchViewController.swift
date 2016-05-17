@@ -10,7 +10,7 @@ import UIKit
 
 class NewBranchViewController: UITableViewController {
     
-    var storeModel:StoreModel? = nil
+    internal var storeModel:StoreModel? = nil
     
     override func viewDidLoad() {
         
@@ -34,14 +34,14 @@ class NewBranchViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return (storeModel?.branches?.count)!
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("ConfirmingCell", forIndexPath: indexPath) as! ConfirmingReservationCell
         
-        cell.configCellWithNewBranchItem()
+        cell.configCellWithNewBranchItem(storeModel!, indexPath: indexPath)
         
         return cell
         

@@ -10,26 +10,40 @@ import UIKit
 import Alamofire
 import ObjectMapper
 
-class NewCollectionViewController: UICollectionViewController {
+class NewCollectionViewController: UICollectionViewController, UITextFieldDelegate {
     
+    @IBOutlet weak var searchTextField: UITextField!
     
     let reusableCellIdentifier = "NewReservationCollectionReusableCell"
     
-    let searchKey = "上海"
+    var searchKey = "上海"
     
-    let searchCity = "上海"
+    var searchCity = "上海"
     
     var paraDict : [String: String] = [:]
     
+    var storeArray = [StoreModel]()
+    
     override func viewDidLoad() {
         
-        self.collectionView?.backgroundColor = UIColor(patternImage: UIImage(named: "bg-1")!)
+        setupUI()
         
         apiRequest()
         
     }
     
+    func setupUI(){
+        
+        self.view.backgroundColor = UIColor.clearColor()
+        
+        self.collectionView?.backgroundColor = UIColor(patternImage: UIImage(named: "bg-1")!)
+        
+        searchTextField.delegate = self
+    }
+    
     func apiRequest(){
+        
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = true
         
         let urlStr = SERVER_URL + STORE_ALL
         
@@ -53,12 +67,18 @@ class NewCollectionViewController: UICollectionViewController {
                 
                 let response = JSON as! NSDictionary
                 
+//                print("paraDict: \(self.paraDict)")
+//                
+//                print("Succeed JSON: \(JSON)")
+                
                 //state
                 let state = response.objectForKey("iserror")! as! Int
-
-                let data = response.objectForKey("data") as! NSArray
                 
                 if state == 0{
+                    
+                    let data = response.objectForKey("data") as! NSArray
+                    
+                    self.storeArray.removeAll()
                     
                     for dataObject : AnyObject in data
                     {
@@ -70,6 +90,8 @@ class NewCollectionViewController: UICollectionViewController {
                             
                             print("storeModel: \(storeModel?.name)")
                             
+                            self.storeArray.append(storeModel!)
+                            
                             if let branches = storeModel?.branches{
                                 for store in branches{
                                     print(store.name)
@@ -77,12 +99,32 @@ class NewCollectionViewController: UICollectionViewController {
                             }
                         }
                     }
+                    
+                    if self.storeArray.count == 0{
+                        
+                        let alertController = UIAlertController(title: "没有结果", message: nil, preferredStyle: .Alert)
+                        
+                        let alertDoneAction = UIAlertAction(title: "确定", style: .Default, handler: nil)
+                        
+                        alertController.addAction(alertDoneAction)
+                        
+                        self.presentViewController(alertController, animated: true, completion: nil)
+                    }
+                    
+                    dispatch_async(dispatch_get_main_queue(), {
+                        
+                        UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+                
+                        self.collectionView?.reloadData()
+                    })
+                    
+                    
                 }
                 
               if state == 1 {
                 
                 
-            //error info
+                //error info
                 let info = response.objectForKey("info")!
                 
                 let alertController = UIAlertController(title: "错误", message: "\(info)", preferredStyle: .Alert)
@@ -92,8 +134,18 @@ class NewCollectionViewController: UICollectionViewController {
                 alertController.addAction(alertDoneAction)
                 
                 self.presentViewController(alertController, animated: true, completion: nil)
+                
+                
+                UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+
+                self.storeArray.removeAll()
+
+                self.collectionView?.reloadData()
+
                 }
-            
+
+
+                
             case .Failure(let error):
                 print ("\(error)")
             }
@@ -103,17 +155,39 @@ class NewCollectionViewController: UICollectionViewController {
         
     }
     
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        
+        searchTextField.resignFirstResponder()
+        
+        searchKey = textField.text!
+        
+        apiRequest()
+        
+        return true
+    }
+    
+    func textFieldDidEndEditing(textField: UITextField) {
+        
+        searchKey = textField.text!
+        
+        apiRequest()
+    }
+    
     override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
     }
     
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 30
+        return storeArray.count
     }
     
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reusableCellIdentifier, forIndexPath: indexPath) as! NewReservationCollectionReusableCell
+        
+        let store = storeArray[indexPath.row]
+        
+        cell.cellLabel.text = store.name
         
         return cell
         
@@ -121,7 +195,11 @@ class NewCollectionViewController: UICollectionViewController {
     
     override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
-        let newBranchViewController = UIStoryboard.mainStoryboard.instantiateViewControllerWithIdentifier("newBranchViewController")
+        let newBranchViewController = UIStoryboard.mainStoryboard.instantiateViewControllerWithIdentifier("newBranchViewController") as! NewBranchViewController
+        
+        let store = storeArray[indexPath.row]
+        
+        newBranchViewController.storeModel = store
         
         self.navigationController?.pushViewController(newBranchViewController, animated: true)
     }

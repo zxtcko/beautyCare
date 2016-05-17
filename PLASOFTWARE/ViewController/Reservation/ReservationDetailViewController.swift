@@ -26,7 +26,7 @@ class ReservationDetailViewController: UITableViewController {
         title = NSLocalizedString("DETAILS", comment: "")
         
         cancelReservationButton.target = self
-        cancelReservationButton.action = "cancelReservationAction"
+        cancelReservationButton.action = #selector(ReservationDetailViewController.cancelReservationAction)
     }
     
     func cancelReservationAction(){
