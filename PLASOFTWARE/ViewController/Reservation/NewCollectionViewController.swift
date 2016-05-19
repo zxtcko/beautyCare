@@ -10,7 +10,7 @@ import UIKit
 import Alamofire
 import ObjectMapper
 
-class NewCollectionViewController: UICollectionViewController, UITextFieldDelegate {
+class NewCollectionViewController: UICollectionViewController, UITextFieldDelegate, UISearchBarDelegate {
     
     @IBOutlet weak var searchTextField: UITextField!
     
@@ -24,6 +24,11 @@ class NewCollectionViewController: UICollectionViewController, UITextFieldDelega
     
     var storeArray = [StoreModel]()
     
+    var searchBar: UISearchBar!
+    
+    private let searchBarStartingAlpha: CGFloat = 0
+    private let searchBarEndingAlpha: CGFloat = 1
+    
     override func viewDidLoad() {
         
         setupUI()
@@ -32,13 +37,70 @@ class NewCollectionViewController: UICollectionViewController, UITextFieldDelega
         
     }
     
+    @IBAction func searchBarCalledAction(sender: AnyObject) {
+        showSearchBar()
+    }
+    
+    func showSearchBar(){
+        
+        UIView.animateWithDuration(0.3, animations: {
+            
+            self.searchBar.becomeFirstResponder()
+            self.searchBar.frame = CGRectMake(10, -15, UIScreen.mainScreen().bounds.width-10, 60)
+            self.searchBar.alpha = self.searchBarEndingAlpha
+            self.searchBar.text = nil
+            
+            self.navigationItem.rightBarButtonItem?.image = nil
+            self.navigationItem.leftBarButtonItem?.image = nil
+            })
+        
+    }
+    
+    func hideSearchBar(){
+        
+        UIView.animateWithDuration(0.3, animations: {
+            
+            self.becomeFirstResponder()
+            
+            self.searchBar.frame = CGRectMake(10, -60, UIScreen.mainScreen().bounds.width-10, 60)
+            self.searchBar.alpha = 0
+            
+            self.navigationItem.rightBarButtonItem?.image = UIImage(named: "iconfont-profile")
+            self.navigationItem.leftBarButtonItem?.image = UIImage(named: "2")
+        })
+    }
+    
     func setupUI(){
         
         self.view.backgroundColor = UIColor.clearColor()
         
         self.collectionView?.backgroundColor = UIColor(patternImage: UIImage(named: "bg-1")!)
+    
+        //setup searchBar
+        searchBar = UISearchBar(frame: CGRectMake(10, -30, UIScreen.mainScreen().bounds.width-10, 60))
+        searchBar.tintColor = UIColor.whiteColor()
+        searchBar.showsCancelButton = true
+        searchBar.alpha = 0
+        searchBar.delegate = self
         
-        searchTextField.delegate = self
+        self.navigationController?.navigationBar.addSubview(searchBar)
+    }
+    
+    
+    func searchBarCancelButtonClicked(searchBar: UISearchBar) {
+        hideSearchBar()
+        
+        searchBar.resignFirstResponder()
+    }
+    
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+        hideSearchBar()
+        
+        searchBar.resignFirstResponder()
+
+        searchKey = searchBar.text!
+        
+        apiRequest()
     }
     
     func apiRequest(){
@@ -66,10 +128,6 @@ class NewCollectionViewController: UICollectionViewController, UITextFieldDelega
             case .Success(let JSON):
                 
                 let response = JSON as! NSDictionary
-                
-//                print("paraDict: \(self.paraDict)")
-//                
-//                print("Succeed JSON: \(JSON)")
                 
                 //state
                 let state = response.objectForKey("iserror")! as! Int
@@ -99,7 +157,6 @@ class NewCollectionViewController: UICollectionViewController, UITextFieldDelega
                             }
                         }
                     }
-                    
                     if self.storeArray.count == 0{
                         
                         let alertController = UIAlertController(title: "没有结果", message: nil, preferredStyle: .Alert)
@@ -122,8 +179,6 @@ class NewCollectionViewController: UICollectionViewController, UITextFieldDelega
                 }
                 
               if state == 1 {
-                
-                
                 //error info
                 let info = response.objectForKey("info")!
                 
@@ -143,35 +198,12 @@ class NewCollectionViewController: UICollectionViewController, UITextFieldDelega
                 self.collectionView?.reloadData()
 
                 }
-
-
-                
             case .Failure(let error):
                 print ("\(error)")
             }
-    
-            
         }
-        
     }
     
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
-        
-        searchTextField.resignFirstResponder()
-        
-        searchKey = textField.text!
-        
-        apiRequest()
-        
-        return true
-    }
-    
-    func textFieldDidEndEditing(textField: UITextField) {
-        
-        searchKey = textField.text!
-        
-        apiRequest()
-    }
     
     override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
@@ -202,6 +234,18 @@ class NewCollectionViewController: UICollectionViewController, UITextFieldDelega
         newBranchViewController.storeModel = store
         
         self.navigationController?.pushViewController(newBranchViewController, animated: true)
+    }
+
+    override func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
+        
+        let view = collectionView.dequeueReusableSupplementaryViewOfKind(UICollectionElementKindSectionHeader, withReuseIdentifier: "header", forIndexPath: indexPath)
+        return view
+        
+    }
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        
+        return CGSize.init(width: UIScreen.mainScreen().bounds.width, height: 270.0)
     }
 
 }
