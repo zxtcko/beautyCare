@@ -619,7 +619,7 @@
                                 <rect key="frame" x="0.0" y="143" width="375" height="360"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BranchDetailCell" textLabel="uJo-m8-PtL" detailTextLabel="Ri4-KO-QGW" style="IBUITableViewCellStyleValue1" id="s1k-g2-LzA">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BranchDetailCell" textLabel="uJo-m8-PtL" detailTextLabel="Ri4-KO-QGW" style="IBUITableViewCellStyleValue1" id="s1k-g2-LzA" customClass="BranchDetailReusableCell" customModule="PLASOFTWARE" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="1" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="s1k-g2-LzA" id="Vdt-vP-PbO">
@@ -654,6 +654,9 @@
                                 <state key="normal" title="CONFIRM" backgroundImage="圆角矩形-1-拷贝">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="reserveButtonAction:" destination="gUR-0q-dPH" eventType="touchUpInside" id="OoA-cY-fgD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.79607843140000001" green="0.79607843140000001" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -918,7 +921,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.79607843140000001" green="0.79607843140000001" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReservedDetailCell" textLabel="5eo-x0-5to" detailTextLabel="bKt-nB-RjS" style="IBUITableViewCellStyleValue1" id="11T-XU-xep">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReservedDetailCell" textLabel="5eo-x0-5to" detailTextLabel="bKt-nB-RjS" style="IBUITableViewCellStyleValue1" id="11T-XU-xep" customClass="ReservationDetailCell" customModule="PLASOFTWARE" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="11T-XU-xep" id="K8A-hu-hz6">
@@ -1043,16 +1046,16 @@
             </objects>
             <point key="canvasLocation" x="1480.5" y="2140.5"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Refused Detail Table View Controller-->
         <scene sceneID="YpF-kr-kPm">
             <objects>
-                <tableViewController id="OLS-bb-5Bx" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="RefusedDetailIdentifier" id="OLS-bb-5Bx" customClass="RefusedDetailTableViewController" customModule="PLASOFTWARE" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" id="Etx-WQ-B4u">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RefusedDetailCell" textLabel="YTr-Qr-lqB" detailTextLabel="vK9-UL-v3J" style="IBUITableViewCellStyleValue1" id="icB-Ic-gpG">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="RejectedReservationIdentifier" selectionStyle="default" indentationWidth="10" reuseIdentifier="RejectedReservationIdentifier" textLabel="YTr-Qr-lqB" detailTextLabel="vK9-UL-v3J" style="IBUITableViewCellStyleValue1" id="icB-Ic-gpG" customClass="RejectedReservationCell" customModule="PLASOFTWARE" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="icB-Ic-gpG" id="3bR-2O-HpH">
@@ -1092,13 +1095,13 @@
         <!--Reservation Detail View Controller-->
         <scene sceneID="144-Ho-G5z">
             <objects>
-                <tableViewController id="CuF-qW-OBw" customClass="ReservationDetailViewController" customModule="PLASOFTWARE" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="ConfirmingDetailTableViewController" id="CuF-qW-OBw" customClass="ReservationDetailViewController" customModule="PLASOFTWARE" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" id="nK4-nm-2cI">
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DetailCell" textLabel="r0c-LZ-0px" detailTextLabel="72u-BQ-2UB" style="IBUITableViewCellStyleValue1" id="SXk-Sx-4lJ">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DetailCell" textLabel="r0c-LZ-0px" detailTextLabel="72u-BQ-2UB" style="IBUITableViewCellStyleValue1" id="SXk-Sx-4lJ" customClass="ReservationDetailCell" customModule="PLASOFTWARE" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SXk-Sx-4lJ" id="aTD-Su-WVF">
@@ -1144,7 +1147,7 @@
         <!--Cancel Reservation View Controller-->
         <scene sceneID="qR7-Ho-xS9">
             <objects>
-                <viewController id="9cb-Nt-4zJ" customClass="CancelReservationViewController" customModule="PLASOFTWARE" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CancelReservationIdentifier" id="9cb-Nt-4zJ" customClass="CancelReservationViewController" customModule="PLASOFTWARE" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GtI-bB-Qiq"/>
                         <viewControllerLayoutGuide type="bottom" id="zxq-ab-rAr"/>
@@ -1153,24 +1156,24 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="背景2" translatesAutoresizingMaskIntoConstraints="NO" id="g4Y-fZ-6pH">
-                                <rect key="frame" x="-4" y="64" width="383" height="554"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="背景2" translatesAutoresizingMaskIntoConstraints="NO" id="g4Y-fZ-6pH">
+                                <rect key="frame" x="-4" y="0.0" width="383" height="554"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LAt-5G-l0o">
-                                <rect key="frame" x="20" y="502" width="145" height="40"/>
+                                <rect key="frame" x="20" y="451" width="145" height="40"/>
                                 <state key="normal" title="CONFIRM" backgroundImage="圆角矩形-1-拷贝">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="confirmButtonAction:" destination="9cb-Nt-4zJ" eventType="touchUpInside" id="28f-xF-2tC"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZW-no-9ek">
-                                <rect key="frame" x="210" y="502" width="145" height="40"/>
-                                <state key="normal" title="GIVE UP" backgroundImage="圆角矩形-1-拷贝-3">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sPr-ch-D9Q">
-                                <rect key="frame" x="20" y="103" width="335" height="363"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sPr-ch-D9Q">
+                                <rect key="frame" x="20" y="20" width="335" height="363"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="363" id="ASX-3s-Uol"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <userDefinedRuntimeAttributes>
@@ -1179,11 +1182,23 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZW-no-9ek">
+                                <rect key="frame" x="210" y="451" width="145" height="40"/>
+                                <state key="normal" title="GIVE UP" backgroundImage="圆角矩形-1-拷贝-3">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="giveupButtonAction:" destination="9cb-Nt-4zJ" eventType="touchUpInside" id="cO0-tr-fKO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="sPr-ch-D9Q" firstAttribute="leading" secondItem="P2g-Y4-TBk" secondAttribute="leadingMargin" id="1Pg-6F-Rf2"/>
+                            <constraint firstItem="sPr-ch-D9Q" firstAttribute="trailing" secondItem="P2g-Y4-TBk" secondAttribute="trailingMargin" id="DIG-0i-by6"/>
                             <constraint firstItem="zxq-ab-rAr" firstAttribute="top" secondItem="g4Y-fZ-6pH" secondAttribute="bottom" id="LkB-tW-hRz"/>
                             <constraint firstItem="g4Y-fZ-6pH" firstAttribute="leading" secondItem="P2g-Y4-TBk" secondAttribute="leadingMargin" constant="-20" id="Vqx-3c-Fff"/>
+                            <constraint firstItem="sPr-ch-D9Q" firstAttribute="top" secondItem="GtI-bB-Qiq" secondAttribute="bottom" constant="20" id="bjk-Cz-kHo"/>
                             <constraint firstItem="g4Y-fZ-6pH" firstAttribute="top" secondItem="GtI-bB-Qiq" secondAttribute="bottom" id="iRB-6B-zfF"/>
                             <constraint firstAttribute="trailingMargin" secondItem="g4Y-fZ-6pH" secondAttribute="trailing" constant="-20" id="jb8-7L-3p4"/>
                         </constraints>
@@ -1694,6 +1709,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="geR-Mx-ohY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1733,6 +1749,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jsk-uw-f6S">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1752,6 +1769,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Q4e-KM-KxA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

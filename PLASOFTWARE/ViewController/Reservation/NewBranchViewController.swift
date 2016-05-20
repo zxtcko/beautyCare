@@ -49,7 +49,14 @@ class NewBranchViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        let branchDetailViewController = UIStoryboard.mainStoryboard.instantiateViewControllerWithIdentifier("branchDetailViewController")
+        let branchDetailViewController = UIStoryboard.mainStoryboard.instantiateViewControllerWithIdentifier("branchDetailViewController") as! BranchDetailTableViewController
+        
+        let storeid = storeModel?.branches![indexPath.row].id
+        
+        branchDetailViewController.storeID = storeModel?.id
+        branchDetailViewController.subStoreID = storeid
+        branchDetailViewController.storeName = storeModel?.name
+        branchDetailViewController.subStroeName = storeModel?.branches![indexPath.row].name
         
         self.navigationController?.pushViewController(branchDetailViewController, animated: true)
         

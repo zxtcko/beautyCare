@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0112094F1CC9FC8800E589DA /* RefusedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0112094E1CC9FC8800E589DA /* RefusedViewController.swift */; };
 		012EE23C1CAE76060049BF5F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 012EE23E1CAE76060049BF5F /* Localizable.strings */; };
+		015D3D771CEEADA500F38921 /* BranchDetailReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015D3D761CEEADA500F38921 /* BranchDetailReusableCell.swift */; };
 		016081181CA3840400514BCD /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016080FD1CA3840400514BCD /* ActivityCell.swift */; };
 		016081191CA3840400514BCD /* ConfirmingReservationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016080FF1CA3840400514BCD /* ConfirmingReservationCell.swift */; };
 		0160811A1CA3840400514BCD /* ReservationCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016081001CA3840400514BCD /* ReservationCellView.swift */; };
@@ -29,6 +30,8 @@
 		016081291CA3840400514BCD /* ShopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016081171CA3840400514BCD /* ShopsViewController.swift */; };
 		016081331CA5395A00514BCD /* ShopBookingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016081321CA5395A00514BCD /* ShopBookingTableViewController.swift */; };
 		016081351CA53E4A00514BCD /* ShopBookingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016081341CA53E4A00514BCD /* ShopBookingCell.swift */; };
+		0175B55E1CEEF95E008B42DD /* ReservationDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0175B55D1CEEF95E008B42DD /* ReservationDetailCell.swift */; };
+		0175B5601CEF0E2F008B42DD /* RejectedReservationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0175B55F1CEF0E2F008B42DD /* RejectedReservationCell.swift */; };
 		0195A1741CC7186B00927959 /* PlaNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0195A1731CC7186B00927959 /* PlaNetworking.swift */; };
 		0195A1761CC718D700927959 /* RegistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0195A1751CC718D700927959 /* RegistViewController.swift */; };
 		0195A17A1CC71D5800927959 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0195A1791CC71D5800927959 /* Utils.m */; };
@@ -79,6 +82,7 @@
 		012EE2471CAE7A7A0049BF5F /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Main.strings; sourceTree = "<group>"; };
 		012EE2481CAE7A7A0049BF5F /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		012EE2491CAE7A7A0049BF5F /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		015D3D761CEEADA500F38921 /* BranchDetailReusableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BranchDetailReusableCell.swift; sourceTree = "<group>"; };
 		016080FD1CA3840400514BCD /* ActivityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
 		016080FF1CA3840400514BCD /* ConfirmingReservationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmingReservationCell.swift; sourceTree = "<group>"; };
 		016081001CA3840400514BCD /* ReservationCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservationCellView.swift; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 		016081321CA5395A00514BCD /* ShopBookingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopBookingTableViewController.swift; sourceTree = "<group>"; };
 		016081341CA53E4A00514BCD /* ShopBookingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopBookingCell.swift; sourceTree = "<group>"; };
 		0161F1521CC6382900916DBF /* PLASOFTWARE-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PLASOFTWARE-Bridging-Header.h"; sourceTree = "<group>"; };
+		0175B55D1CEEF95E008B42DD /* ReservationDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservationDetailCell.swift; sourceTree = "<group>"; };
+		0175B55F1CEF0E2F008B42DD /* RejectedReservationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RejectedReservationCell.swift; sourceTree = "<group>"; };
 		0195A1731CC7186B00927959 /* PlaNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaNetworking.swift; sourceTree = "<group>"; };
 		0195A1751CC718D700927959 /* RegistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistViewController.swift; sourceTree = "<group>"; };
 		0195A1771CC71AD800927959 /* NetworkDefinition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkDefinition.h; sourceTree = "<group>"; };
@@ -199,6 +205,9 @@
 				016081001CA3840400514BCD /* ReservationCellView.swift */,
 				01CBB3931CCA131500645700 /* NewReservationCollectionReusableCell.swift */,
 				01CBB3971CCA244A00645700 /* NewReservationReusableCell.swift */,
+				015D3D761CEEADA500F38921 /* BranchDetailReusableCell.swift */,
+				0175B55D1CEEF95E008B42DD /* ReservationDetailCell.swift */,
+				0175B55F1CEF0E2F008B42DD /* RejectedReservationCell.swift */,
 			);
 			path = Reservation;
 			sourceTree = "<group>";
@@ -690,6 +699,7 @@
 			files = (
 				016081271CA3840400514BCD /* ProductInfoViewController.swift in Sources */,
 				0112094F1CC9FC8800E589DA /* RefusedViewController.swift in Sources */,
+				0175B5601CEF0E2F008B42DD /* RejectedReservationCell.swift in Sources */,
 				016081191CA3840400514BCD /* ConfirmingReservationCell.swift in Sources */,
 				01CBB3901CCA08DF00645700 /* MainTabBarViewController.swift in Sources */,
 				0195A1761CC718D700927959 /* RegistViewController.swift in Sources */,
@@ -705,6 +715,7 @@
 				016081291CA3840400514BCD /* ShopsViewController.swift in Sources */,
 				016081251CA3840400514BCD /* ReservedViewController.swift in Sources */,
 				0160811E1CA3840400514BCD /* SignInViewController.swift in Sources */,
+				015D3D771CEEADA500F38921 /* BranchDetailReusableCell.swift in Sources */,
 				01CBB3961CCA1FE700645700 /* NewBranchViewController.swift in Sources */,
 				016081331CA5395A00514BCD /* ShopBookingTableViewController.swift in Sources */,
 				01CBB3921CCA0B4900645700 /* NewCollectionViewController.swift in Sources */,
@@ -719,6 +730,7 @@
 				01FAB1BF1CCDC3CE002E320C /* RefusedDetailTableViewController.swift in Sources */,
 				016081211CA3840400514BCD /* ConfirmingReservationViewController.swift in Sources */,
 				8A4EB0B01C9F86CE0000EA47 /* AppDelegate.swift in Sources */,
+				0175B55E1CEEF95E008B42DD /* ReservationDetailCell.swift in Sources */,
 				01FAB1BD1CCDBEC5002E320C /* ReservedDetailTableViewController.swift in Sources */,
 				016081351CA53E4A00514BCD /* ShopBookingCell.swift in Sources */,
 				0160811F1CA3840400514BCD /* MainViewController.swift in Sources */,

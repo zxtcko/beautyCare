@@ -4,7 +4,7 @@ url: http://www.zendaiart.net/beaut/registeruser.php
 参数：
 mobile	手机号
 user	注册帐号
-pass	密码
+pass	密码(md5加密后的)
 string	校验码（生成：md5(pass.md5(time.user.check_char.mobile))，其中 check_char="QW!!22*&90)" ）
 time	时间戳
 返回值：（json数据）
@@ -16,12 +16,46 @@ url: http://www.zendaiart.net/beaut/loginuser.php
 方式：POST
 参数：
 user	帐号
-pass	密码
+pass	密码(md5加密后的)
 string	校验码（生成：md5(pass.md5(time.user.check_char))，其中 check_char="QW!!22*&90)" ）
 time	时间戳
 返回值：（json数据）
 iserror	为1时表示错误，0时表示成功
 info	错误或成功的信息
+
+忘记密码：
+url: http://www.zendaiart.net/beaut/forgetpwd.php
+方式：POST
+参数：
+mobile	手机号
+pass	密码(md5加密后的)
+string	校验码（生成：md5(pass.md5(mobile.check_char.time))，其中 check_char="QW!!22*&90)" ）
+time	时间戳
+返回值：（json数据）
+iserror	为1时表示错误，0时表示成功
+info	错误或成功的信息
+
+修改密码
+url: http://www.zendaiart.net/beaut/changepwd.php
+方式：POST
+参数：
+user	登录的用户名
+pass	密码(md5加密后的旧密码)
+pass2	密码(md5加密后的新密码)
+string	校验码（生成：md5(pass2.md5(time.user.check_char.pass))，其中 check_char="QW!!22*&90)" ）
+time	时间戳
+返回值：（json数据）
+iserror	为1时表示错误，0时表示成功
+info	错误或成功的信息
+
+城市列表：
+url: http://www.zendaiart.net/beaut/getcitylist.php
+方式：POST
+返回值：（json数据）
+iserror	为1时表示错误，0时表示成功
+info	iserror=1时返回的错误信息
+data	iserror=0时返回的数据，格式（数组）：
+	    city: 城市名称
 
 商户查询：
 url: http://www.zendaiart.net/beaut/orginfosearch.php
@@ -39,5 +73,112 @@ data	iserror=0时返回的数据，格式（数组）：
 	    id: 商户ID
 	    name: 商户名称
 	    store（门店信息）：
-	    	id: 门店ID
-	    	name: 门店名称
+		id: 门店ID
+		name: 门店名称
+
+项目查询：
+url: http://www.zendaiart.net/beaut/servicesearch.php
+方式：POST
+参数：
+skey	项目关键字
+city	城市名称
+string	校验码（生成：md5(city.md5("name".check_char.skey))，其中 check_char="QW!!22*&90)" ）
+time	时间戳
+返回值：（json数据）
+iserror	为1时表示错误，0时表示成功
+info	iserror=1时返回的错误信息
+data	iserror=0时返回的数据，格式（数组）：
+	    serviceid: 项目ID
+	    servicename: 项目名称
+	    serviceprice: 项目价格
+	    storeid: 门店ID
+	    storename: 门店名称
+	    orgid: 商户ID
+	    orgname: 商户名称
+
+服务项目、员工查询：
+url: http://www.zendaiart.net/beaut/prodservicesearch.php
+方式：POST
+参数：
+orgid	商户ID
+storeid	门店ID
+string	校验码（生成：md5(time.md5(orgid.check_char.storeid))，其中 check_char="QW!!22*&90)" ）
+time	时间戳
+返回值：（json数据）
+iserror	为1时表示错误，0时表示成功
+info	iserror=1时返回的错误信息
+data	iserror=0时返回的数据，格式（数组）：
+	service(服务项目)：
+	    id: 项目ID
+	    name: 项目名称
+	    price: 项目价格
+	employee(员工)：
+	    id: 员工ID
+	    name: 员工名称
+
+进行预约：
+url: http://www.zendaiart.net/beaut/custorder.php
+方式：POST
+参数：
+user		用户名
+storeid		门店ID
+serviceid	服务项目ID
+employeeid	员工ID
+begintime	预约开始时间
+endtime		预约结束时间
+mobile		联系方式
+remark		备注
+string		校验码（生成：md5(user.storeid.md5(serviceid.employeeid.begintime.check_char.endtime.mobile.remark))，其中 check_char="QW!!22*&90)" ）
+time		时间戳
+返回值：（json数据）
+iserror	为1时表示错误，0时表示成功
+info	错误或成功的信息
+
+预约列表：
+url: http://www.zendaiart.net/beaut/orderlist.php
+方式：POST
+参数：
+user	用户名
+status	预约状态（0预约取消，10预约待确认，11预约已确认）
+string	校验码（生成：md5(status.md5(user.check_char.time))，其中 check_char="QW!!22*&90)" ）
+time	时间戳
+返回值：（json数据）
+iserror	为1时表示错误，0时表示成功
+info	iserror=1时返回的错误信息
+data	iserror=0时返回的数据，格式（数组）：
+	    id: 预约ID
+	    name: 服务项目名称
+	    begindate: 预约开始时间
+	    enddate: 预约结束时间
+
+预约详情：
+url: http://www.zendaiart.net/beaut/orderdetail.php
+方式：POST
+参数：
+status	预约状态（0预约取消，10预约待确认，11预约已确认）
+id	预约ID
+string	校验码（生成：md5(time.md5(id.check_char.status))，其中 check_char="QW!!22*&90)" ）
+time	时间戳
+返回值：（json数据）
+iserror	为1时表示错误，0时表示成功
+info	iserror=1时返回的错误信息
+data	iserror=0时返回的数据，格式（数组）：
+	    storename: 门店名称
+	    begindate: 预约开始时间
+	    enddate: 预约结束时间
+	    mobile：联系方式
+	    remark：备注
+	    employeename：员工名称
+	    servicename：服务项目名称
+	    price：价格
+
+取消预约：
+url: http://www.zendaiart.net/beaut/ordercancel.php
+方式：POST
+参数：
+id	预约ID
+string	校验码（生成：md5(time.md5(id.check_char))，其中 check_char="QW!!22*&90)" ）
+time	时间戳
+返回值：（json数据）
+iserror	为1时表示错误，0时表示成功
+info	错误或成功的信息

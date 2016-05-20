@@ -635,4 +635,16 @@
     return TRUE;
 }
 
+//从userdefault中获取特定值
++ (NSString *)getValueFromUserDefaultWithKey:(NSString *)key
+{
+    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+    NSString *resultString;
+    
+    if ([userDefault objectForKey:key] != nil) {
+        NSString *String = [userDefault stringForKey:key];
+        resultString = String;
+    }
+    return resultString;
+}
 @end

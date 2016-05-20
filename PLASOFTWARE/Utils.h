@@ -98,4 +98,6 @@
 //验证身份证号码合法性
 + (BOOL)verifyIDCardNumber:(NSString *)value;
 
+//从userdefault中获取特定值
++ (NSString *)getValueFromUserDefaultWithKey:(NSString *)key;
 @end

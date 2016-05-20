@@ -5,16 +5,17 @@
 //  Copyright (c) 2015 Twitter Inc. All rights reserved.
 //
 
-
+#if __has_feature(modules)
+@import AddressBook;
+@import Foundation;
+@import UIKit;
+#else
 #import <AddressBook/AddressBook.h>
 #import <CoreData/CoreData.h>
 #import <Foundation/Foundation.h>
-
-#if __has_feature(modules)
-@import TwitterCore;
-#else
-#import <TwitterCore/TwitterCore.h>
 #endif
+
+#import <TwitterCore/TwitterCore.h>
 
 #if TARGET_OS_IOS
 #import <UIKit/UIKit.h>

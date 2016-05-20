@@ -41,9 +41,11 @@ class ConfirmingReservationCell: UITableViewCell {
         timeSubtitle.textColor = UIColor.plaWordl3Color()
     }
     
-    func configCellWithItem(){
-        itemTitle.text = NSLocalizedString("The Neck Care", comment: "")
-        timeTitle.text = "2016/03/17 07:00~09:00"
+    func configCellWithReservationInfo(reserveInfo: reservationList){
+        
+        itemTitle.text = NSLocalizedString(reserveInfo.name!, comment: "")
+        timeTitle.text = reserveInfo.begindate
+        
     }
     
     func configCellWithNewBranchItem(storeModel: StoreModel, indexPath: NSIndexPath){

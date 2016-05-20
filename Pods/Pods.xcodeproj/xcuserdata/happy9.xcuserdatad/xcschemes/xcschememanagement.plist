@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>ActionSheetPicker-3.0.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Alamofire.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,7 +37,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>51DAB7A96D907FECE8C7B22E3687A782</key>
+		<key>053617A05C5A952CF2888B88D119FE01</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -48,6 +53,11 @@
 			<true/>
 		</dict>
 		<key>E546452926EF642BF843144928193FB7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F4DF5A814CD688B749DE2E5D0A0540DB</key>
 		<dict>
 			<key>primary</key>
 			<true/>

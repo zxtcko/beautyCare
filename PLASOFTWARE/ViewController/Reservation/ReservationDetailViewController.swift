@@ -7,10 +7,21 @@
 //
 
 import UIKit
+import Alamofire
+import ObjectMapper
 
 class ReservationDetailViewController: UITableViewController {
     
     @IBOutlet weak var cancelReservationButton: UIBarButtonItem!
+    
+    //0: cancel ,10: confirming, 11: confirmed
+    var status : String = "10"
+    
+    internal var reservationID : String = ""
+    
+    var paraDict : [String: String] = [:]
+    
+    var reserveDetailModel : reservationInfo?
     
     let cancelReservationSegue = "CancelReservationSegue"
     
@@ -20,6 +31,77 @@ class ReservationDetailViewController: UITableViewController {
     
     override func viewDidLoad() {
         setupUI()
+        
+        apiRequest()
+    }
+    
+    func apiRequest(){
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = true
+        
+        let urlStr = SERVER_URL + RESERVATION_INFO
+        
+        let md5SubStr = Utils.md5(self.reservationID + MD5_KEY + self.status)
+        
+        let timeStamp = Utils.UNIX_TIMESTAMP()
+        
+        let md5Str = Utils.md5(timeStamp + md5SubStr)
+        
+        self.paraDict = [
+            
+            "status" : status,
+            "id" : reservationID,
+            "string" : md5Str,
+            "time" : timeStamp
+            
+        ]
+        
+        Alamofire.request(.POST, urlStr, parameters: paraDict).responseJSON {
+            (response) in switch response.result
+            {
+                
+            case.Success(let JSON):
+                let response = JSON as! NSDictionary
+                
+//                self.reserveDetailModel.removeAll()
+                
+                print(self.paraDict)
+                
+                print(JSON)
+                let state = response.objectForKey("iserror") as! Int
+                
+                let data = response.objectForKey("data") as! NSDictionary
+                
+                if state == 0{
+
+                    let reserveDetail = Mapper<reservationInfo>().map(data)
+                    
+                    self.reserveDetailModel = reserveDetail
+//                    self.reserveDetailModel.append(reserveDetail!)
+                    
+                    print("storeModel: \(reserveDetail?.servicename)")
+                    
+                    dispatch_async(dispatch_get_main_queue(), { 
+                        UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+                        
+                        self.tableView.reloadData()
+                    })
+                }
+                
+                if state == 1{
+                    
+                    let info = response.objectForKey("info") as! String
+                    
+                    let alertController = UIAlertController(title: "错误", message: "\(info)", preferredStyle: .Alert)
+                    alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+                    
+                    self.presentViewController(alertController, animated: true, completion: nil)
+                    
+                }
+            case.Failure(let error):
+                
+                print(error)
+            }
+        }
     }
     
     func setupUI(){
@@ -30,45 +112,28 @@ class ReservationDetailViewController: UITableViewController {
     }
     
     func cancelReservationAction(){
-        performSegueWithIdentifier(cancelReservationSegue, sender: nil)
+        let cancelReservationViewController = UIStoryboard.mainStoryboard.instantiateViewControllerWithIdentifier("CancelReservationIdentifier") as! CancelReservationViewController
+        
+        cancelReservationViewController.reservationId = self.reservationID
+        self.navigationController?.pushViewController(cancelReservationViewController, animated: true)
+    }
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if self.reserveDetailModel == nil{
+            return 0
+        }
+
         return 7
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellReusableIdentifier, forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellReusableIdentifier, forIndexPath: indexPath) as! ReservationDetailCell
         
-        let imageView = UIImageView(frame: CGRectMake(0, cell.contentView.frame.size.height - 2, cell.contentView.frame.size.width, 2))
-        imageView.image = UIImage(named: "矩形-3-拷贝-5")
-        cell.contentView.addSubview(imageView)
-        
-        switch indexPath.row{
-        case 0:
-            cell.textLabel?.text = NSLocalizedString("BRANCH", comment: "")
-            cell.detailTextLabel?.text = NSLocalizedString("Hanoi", comment: "")
-        case 1:
-            cell.textLabel?.text = NSLocalizedString("ITEMS", comment: "")
-            cell.detailTextLabel?.text = NSLocalizedString("The Neck Care", comment: "")
-        case 2:
-            cell.textLabel?.text = NSLocalizedString("BEAUTICIAN", comment: "")
-            cell.detailTextLabel?.text = NSLocalizedString("MeiLi Wang", comment: "")
-        case 3:
-            cell.textLabel?.text = NSLocalizedString("TIME", comment: "")
-            cell.detailTextLabel?.text = NSLocalizedString("", comment: "")
-        case 4:
-            cell.textLabel?.text = NSLocalizedString("PHONE", comment: "")
-            cell.detailTextLabel?.text = NSLocalizedString("159366888585", comment: "")
-        case 5:
-            cell.textLabel?.text = NSLocalizedString("Note", comment: "")
-            cell.detailTextLabel?.text = NSLocalizedString("", comment: "")
-        case 6:
-            cell.textLabel?.text = NSLocalizedString("ADDRESS", comment: "")
-            cell.detailTextLabel?.text = NSLocalizedString("Room 505 Qinzhou Building", comment: "")
-        default: break
-        }
+        cell.configCellWithModel(reserveDetailModel!, forIndexPath: indexPath)
         
         return cell
     }
