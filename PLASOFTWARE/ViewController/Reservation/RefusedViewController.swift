@@ -9,6 +9,7 @@
 import UIKit
 import Alamofire
 import ObjectMapper
+import Refresher
 
 class RefusedViewController: UITableViewController {
     
@@ -34,6 +35,14 @@ class RefusedViewController: UITableViewController {
         imageView.image = UIImage(named: "背景2")
         
         self.view.insertSubview(imageView, atIndex: 0)
+        self.view.backgroundColor = UIColor.plaSteelblueColor()
+        
+        self.tableView.addPullToRefreshWithAction {
+            self.apiRequest()
+            NSOperationQueue.mainQueue().addOperationWithBlock({
+                self.tableView.stopPullToRefresh()
+            })
+        }
     }
     
     

@@ -7,6 +7,7 @@ target 'PLASOFTWARE' do
 	pod 'Alamofire', '~> 3.2.0'
 	pod 'ObjectMapper', '~> 1.3.0'
 	pod 'ActionSheetPicker-3.0'
+	pod 'Refresher'
 	pod 'Fabric'
 	pod 'Crashlytics'
 	pod 'Digits'

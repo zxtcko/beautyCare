@@ -34,10 +34,25 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Refresher.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>053617A05C5A952CF2888B88D119FE01</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1065CC2003A428D96A375A504F73B6AA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>64496F16F1FF232935103067620C6ED7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -53,11 +68,6 @@
 			<true/>
 		</dict>
 		<key>E546452926EF642BF843144928193FB7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F4DF5A814CD688B749DE2E5D0A0540DB</key>
 		<dict>
 			<key>primary</key>
 			<true/>

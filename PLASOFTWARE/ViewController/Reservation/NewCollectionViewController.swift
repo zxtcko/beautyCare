@@ -10,7 +10,7 @@ import UIKit
 import Alamofire
 import ObjectMapper
 
-class NewCollectionViewController: UICollectionViewController, UITextFieldDelegate, UISearchBarDelegate {
+class NewCollectionViewController: UICollectionViewController, UITextFieldDelegate, UISearchBarDelegate,  UIPopoverPresentationControllerDelegate,CityPopoverMenuDelegate {
     
     @IBOutlet weak var searchTextField: UITextField!
     
@@ -24,7 +24,11 @@ class NewCollectionViewController: UICollectionViewController, UITextFieldDelega
     
     var storeArray = [StoreModel]()
     
+    var cityArray : [city] = []
+    
     var searchBar: UISearchBar!
+    
+    @IBOutlet weak var citySelectedButton: UIButton!
     
     private let searchBarStartingAlpha: CGFloat = 0
     private let searchBarEndingAlpha: CGFloat = 1
@@ -35,6 +39,10 @@ class NewCollectionViewController: UICollectionViewController, UITextFieldDelega
         
         apiRequest()
         
+    }
+    
+    @IBAction func cityButtonAction(sender: AnyObject) {
+        self.apiCityRequest()
     }
     
     @IBAction func searchBarCalledAction(sender: AnyObject) {
@@ -150,6 +158,7 @@ class NewCollectionViewController: UICollectionViewController, UITextFieldDelega
                             
                             self.storeArray.append(storeModel!)
                             
+                            
                             if let branches = storeModel?.branches{
                                 for store in branches{
                                     print(store.name)
@@ -204,6 +213,79 @@ class NewCollectionViewController: UICollectionViewController, UITextFieldDelega
         }
     }
     
+    func apiCityRequest(){
+        
+        let urlStr = SERVER_URL + CITYLIST
+        
+        self.cityArray.removeAll()
+        
+        Alamofire.request(.POST, urlStr).responseJSON {
+            (response) in switch response.result{
+            case.Success(let JSON):
+                print("city JSON: \(JSON)")
+                
+                let response = JSON as! NSDictionary
+                
+                let state = response.objectForKey("iserror") as! Int
+                
+                if state == 0{
+                    let data = response.objectForKey("data") as! NSArray
+                    
+                    for dataObject : AnyObject in data
+                    {
+                        let cityModel = Mapper<city>().map(dataObject)
+                            
+                        print("cityModel: \(cityModel?.city)")
+                            
+                        self.cityArray.append(cityModel!)
+                        
+                        print("inittial city count: \(self.cityArray.count)")
+                    }
+                    self.performSegueWithIdentifier("cityPopoverSegue", sender: self.citySelectedButton)
+                }
+                if state == 1 {
+                    //error info
+                    let info = response.objectForKey("info")!
+                    
+                    let alertController = UIAlertController(title: "错误", message: "\(info)", preferredStyle: .Alert)
+                    let alertDoneAction = UIAlertAction(title: "确定", style: .Default, handler: nil)
+                    alertController.addAction(alertDoneAction)
+                    
+                    self.presentViewController(alertController, animated: true, completion: nil)
+                }
+            case.Failure(let error):
+                print(error)
+            }
+            
+        }
+        
+    }
+    
+    //cityPopover segue preparation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "cityPopoverSegue"
+        {
+            let cityPopoverVC = segue.destinationViewController as! CityPopoverMenu
+            cityPopoverVC.citiesArray = self.cityArray
+            cityPopoverVC.modalPresentationStyle = UIModalPresentationStyle.Popover
+            cityPopoverVC.popoverPresentationController!.delegate = self
+            cityPopoverVC.popoverPresentationController?.sourceView = sender as! UIButton
+            cityPopoverVC.popoverPresentationController?.sourceRect = (sender as! UIButton).bounds
+            cityPopoverVC.delegate = self
+        }
+    }
+    
+    //MARK: ShopPopoverMenuDelegate
+    func popoverButtonDidSelected(button: UIButton) {
+        
+        citySelectedButton.setTitle(button.titleLabel?.text, forState: .Normal)
+        
+    }
+    
+    //MARK: PopoverPresentationControllerDelegate
+    func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle {
+        return .None
+    }
     
     override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1

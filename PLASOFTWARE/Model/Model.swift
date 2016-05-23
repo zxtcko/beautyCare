@@ -45,6 +45,20 @@ class SubStoreModel: Mappable {
     
 }
 
+//citys
+class city: Mappable{
+    
+    var city : String?
+    
+    required init?(_ map: Map) {
+        
+    }
+    
+    func mapping(map: Map) {
+        city <- map["city"]
+    }
+}
+
 //projects
 class projects: Mappable{
     

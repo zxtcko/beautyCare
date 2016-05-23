@@ -307,10 +307,29 @@
             </objects>
             <point key="canvasLocation" x="302.5" y="54.5"/>
         </scene>
+        <!--City Popover Menu-->
+        <scene sceneID="bSG-k6-3dk">
+            <objects>
+                <viewController storyboardIdentifier="CityPopoverMenu" id="IcO-DD-r61" customClass="CityPopoverMenu" customModule="PLASOFTWARE" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0Xa-SV-vr0"/>
+                        <viewControllerLayoutGuide type="bottom" id="Kv8-gH-Wpn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aTj-B1-fMO">
+                        <rect key="frame" x="0.0" y="0.0" width="120" height="200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="120" height="200"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k70-2f-iwU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1742" y="-903"/>
+        </scene>
         <!--New Collection View Controller-->
         <scene sceneID="qmH-rz-Qp3">
             <objects>
-                <collectionViewController id="3mS-yQ-bbK" customClass="NewCollectionViewController" customModule="PLASOFTWARE" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="NewCollectionViewController" id="3mS-yQ-bbK" customClass="NewCollectionViewController" customModule="PLASOFTWARE" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="m7i-0d-p5m">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -475,6 +494,9 @@
                                     <state key="normal" title="Shanghai">
                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </state>
+                                    <connections>
+                                        <action selector="cityButtonAction:" destination="3mS-yQ-bbK" eventType="touchUpInside" id="kzb-xA-pCz"/>
+                                    </connections>
                                 </button>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_城市下拉" translatesAutoresizingMaskIntoConstraints="NO" id="9Qo-YP-xpe">
                                     <rect key="frame" x="130" y="11" width="20" height="11"/>
@@ -504,7 +526,11 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="citySelectedButton" destination="eTf-1l-RpV" id="hfZ-we-UEw"/>
                         <segue destination="d2c-ff-vsL" kind="push" id="tex-ri-VSq"/>
+                        <segue destination="IcO-DD-r61" kind="popoverPresentation" identifier="cityPopoverSegue" popoverAnchorView="eTf-1l-RpV" id="UiS-9V-VxX">
+                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                        </segue>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0gt-yS-82a" userLabel="First Responder" sceneMemberID="firstResponder"/>

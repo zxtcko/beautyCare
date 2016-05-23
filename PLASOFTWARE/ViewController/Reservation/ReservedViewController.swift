@@ -9,6 +9,7 @@
 import UIKit
 import Alamofire
 import ObjectMapper
+import Refresher
 
 class ReservedViewController: UITableViewController {
 
@@ -35,7 +36,14 @@ class ReservedViewController: UITableViewController {
         
         self.view.insertSubview(imageView, atIndex: 0)
         
+        self.view.backgroundColor = UIColor.plaSteelblueColor()
         
+        self.tableView.addPullToRefreshWithAction {
+            self.apiRequest()
+            NSOperationQueue.mainQueue().addOperationWithBlock({
+                self.tableView.stopPullToRefresh()
+            })
+        }
     }
     
     func apiRequest(){

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0112094F1CC9FC8800E589DA /* RefusedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0112094E1CC9FC8800E589DA /* RefusedViewController.swift */; };
 		012EE23C1CAE76060049BF5F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 012EE23E1CAE76060049BF5F /* Localizable.strings */; };
+		014F05171CF2A19600107971 /* CityPopoverMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014F05161CF2A19600107971 /* CityPopoverMenu.swift */; };
 		015D3D771CEEADA500F38921 /* BranchDetailReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015D3D761CEEADA500F38921 /* BranchDetailReusableCell.swift */; };
 		016081181CA3840400514BCD /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016080FD1CA3840400514BCD /* ActivityCell.swift */; };
 		016081191CA3840400514BCD /* ConfirmingReservationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016080FF1CA3840400514BCD /* ConfirmingReservationCell.swift */; };
@@ -82,6 +83,7 @@
 		012EE2471CAE7A7A0049BF5F /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Main.strings; sourceTree = "<group>"; };
 		012EE2481CAE7A7A0049BF5F /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		012EE2491CAE7A7A0049BF5F /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		014F05161CF2A19600107971 /* CityPopoverMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityPopoverMenu.swift; sourceTree = "<group>"; };
 		015D3D761CEEADA500F38921 /* BranchDetailReusableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BranchDetailReusableCell.swift; sourceTree = "<group>"; };
 		016080FD1CA3840400514BCD /* ActivityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
 		016080FF1CA3840400514BCD /* ConfirmingReservationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmingReservationCell.swift; sourceTree = "<group>"; };
@@ -316,6 +318,7 @@
 				01CBB3911CCA0B4900645700 /* NewCollectionViewController.swift */,
 				01CBB3951CCA1FE600645700 /* NewBranchViewController.swift */,
 				01CBB3991CCA271F00645700 /* BranchDetailTableViewController.swift */,
+				014F05161CF2A19600107971 /* CityPopoverMenu.swift */,
 			);
 			name = New;
 			sourceTree = "<group>";
@@ -713,6 +716,7 @@
 				0160811D1CA3840400514BCD /* ActivityDetailViewController.swift in Sources */,
 				016081241CA3840400514BCD /* ReservationViewController.swift in Sources */,
 				016081291CA3840400514BCD /* ShopsViewController.swift in Sources */,
+				014F05171CF2A19600107971 /* CityPopoverMenu.swift in Sources */,
 				016081251CA3840400514BCD /* ReservedViewController.swift in Sources */,
 				0160811E1CA3840400514BCD /* SignInViewController.swift in Sources */,
 				015D3D771CEEADA500F38921 /* BranchDetailReusableCell.swift in Sources */,
